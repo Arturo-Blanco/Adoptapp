@@ -13,11 +13,28 @@
             <a href="#"><img src="logo_size.jpg" class="logo" alt=""></a>
             <nav id="nav" class="main-nav" >
             <ul class="nav-links">
-                <li><a href="#" class="link-item">Adopciones</a></li>
-                <li><a href="#" class="link-item">Denuncias</a></li>
-                <li><a href="#" class="link-item">Informacion general</a></li>
-                <li><a href="#" class="link-item">Donaciones</a></li>
-                <li><a href="#" class="link-item">Contacto</a></li>
+                <li class="link-item" data-submenu="true"><a href="#">Adopciones</a>
+                    <ul class="sub-menu open">
+                        <li class="adopt-link"><a href="#">Quiero adoptar</a></li>
+                        <li class="adopt-link"><a href="#">Doy en adopcion</a></li>
+                    </ul></li>
+                <li class="link-item" data-submenu="true"><a href="#">Denuncias</a>
+                    <ul class="sub-menu open">
+                        <li class="complaint-link"><a href="#" >Extravio</a></li>
+                        <li class="complaint-link"><a href="#">Maltrato</a></li>
+                        <li class="complaint-link"><a href="#">Animal en situacion de calle</a></li>
+                        <li class="complaint-link"><a href="#">Otra denuncia</a></li>
+                    </ul></li>
+                <li  class="link-item" data-submenu="true"><a href="#">Informacion general</a>
+                    <ul class="sub-menu open">
+                        <li class="information-link"><a href="#">Numeros de emergencia</a></li>
+                        <li class="information-link"><a href="#">Castracion gratis</a></li>
+                        <li class="information-link"><a href="#">Veterinaria de turno</a></li>
+                        <li  class="information-link"><a href="#">Servicios adicionales</a></li>
+                    </ul>
+                </li>
+                <li class="link-item"><a href="#">Donaciones</a></li>
+                <li class="link-item"><a href="#">Contacto</a></li>
             </ul>
         </nav>
         <button type="button" id="btn-burger" class="button-menu">
