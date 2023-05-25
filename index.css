@@ -2,40 +2,79 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	text-decoration: none;
 	text-align: center;
+	color: white;
+	letter-spacing: 2px;
 }
 li {
 	list-style: none;
 }
 body {
-	background: linear-gradient(90deg, rgb(169, 245, 175), rgba(7, 175, 10, 0.5), rgba(10, 123, 10, 0.759));
+	background-color:#00a4b2;
+	background-color:#00b269;
+	background-color:#ff731d;
+	background-color:#ff9e00;
+	background-color:#057e58;
+	background: linear-gradient(120deg,#00a4b2,#00b269,#057e58);
 }
 .container{
 	width: 98%;
 	margin: 0 auto;
 }
-header {
-	height: 90px;
+header{
+	height: 50vh;
 	display: flex;
-	align-items: center;
-	color: whitesmoke;
-	margin:20px auto;
-	background-color:rgba(255, 255, 255, 0.613);
-	border-bottom: #51e94f solid 2px;
-	border-top: #51e94f solid 2px;
+	background-image: url("https://www.elmueble.com/medio/2022/06/05/perro-y-gato-foto-de-andrew-s-en-unsplash_04c9c691_1280x853.jpg");
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: 50% 40%;
+	border-radius: 0 0 50px 50px;
+	opacity: 0.9;
+}
+.logo{
+	border-radius: 80px;
+	width: 140px;
+	height: auto;
+	background-color: #fff;
 }
 .main-nav{
+	height: 50%;
 	width: 100%;
+	background:linear-gradient(190deg,rgba(0, 0, 0, 0.726), rgba(128, 128, 128, 0.582));
+	margin-top: 0%;
+	border-radius: 0 0 50px 50px;
 }
 .nav-links{
 	display: flex;
 	justify-content: space-around;
+	margin-top: 2%;
 }
 .link-item > a{
-	font-size: 1.5vw;
-	color: #111;
+	font-size: 1vw;
+	text-transform: uppercase;
+	transition: opacity 0.3s ease;
+}
+
+.link-item > a::after{
+	content: "";
+	position: absolute;
+	bottom: 55px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background-color: #1eeaad;
+	transition: width 0.5s ease; /* Transición del ancho */
+}
+.link-item > a:hover::after{
+	width: 100%;
+}
+.button-menu{
+	display: none;
+}
+.link-item a:hover{
+	color: #1eeaad;
 }
 /* Estilos para el menú desplegable */
 .nav-links li {
@@ -43,113 +82,170 @@ header {
 	display: flex;
 	align-items: center;
 }
-.nav-links li:hover > .sub-menu {
+/*.nav-links li:hover > .sub-menu {
 	display: block;
 	position: absolute;
-	top:100%;
+	top: 60%;
 	right: 0;
-	z-index: 1;
+	z-index: 10000;
 }
   /* Estilos para los elementos del submenú */
-.sub-menu {
+/*.sub-menu {
 	display: none;
-	background-color: #333;
+	background-color: #0d0909;
 	box-shadow: 0 2px 5px rgba(26, 22, 22, 0.2);
 	border-radius: 5px 0px 5px 5px;
-	padding: 10px;
+	padding: 20px;
 	white-space: nowrap;
-	font-size: 1.2vw;
-}
-.sub-menu::after {
-	content: "";
-	position: absolute;
-	bottom: 100%;
-	right: -8px;
-	transform: translateX(-50%);
-	border-width: 0 8px 8px;
-	border-style: solid;
-	border-color: transparent transparent #333 transparent;
-}
-.sub-menu a {
-	color: #f8eeee;
+	font-size: 1vw;
 }
 /* Estilos para la flecha hacia abajo en los elementos padre con submenú */
-[data-submenu="true"]::after {
-	content: " >"; /* Agrega un espacio antes del ">" para separarlo del texto */
+/*[data-submenu="true"]::after {
+	content: " >"; /* Agrega un espacio antes del ">" para separarlo del texto 
 	display: inline-block;
 	margin-left: 10px;
-	transform: translateY(2px) rotate(90deg); /* Rota el carácter 90 grados en sentido horario */
-	color: #111;
+	transform: translateY(2px) rotate(90deg);  Rota el carácter 90 grados en sentido horario 
 	font-size: 1.2vw;
+} */
+
+.nav-icons{
+	display: none;
 }
-.logo{
-	border-radius: 80px ;
-	width: 120px;
-	height: auto;
+.content {
+	width: 80%;
+	margin: auto;
 }
 .content h1{
-	max-width: 1900px;
 	font-size: 4rem;
-	font-weight: 400;
-	margin: 15px auto;
+	font-weight: 600;
+	margin: 10% auto;
+	color: white;
+	text-transform: uppercase;
+}
+.body-media{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+	animation: slideleft 1s forwards;
+	height: 80vh;
+}
+.img-home{
+	width: 25%;
+	min-width: 300px;
+	background: url("https://images.pexels.com/photos/7149465/pexels-photo-7149465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
+	background-size: cover;
+	border-radius: 30px;
+	box-shadow:inset 0 6px 1px 0 rgba(0, 0, 0, 0.35), 
+		0 5px 5px rgba(0, 0, 0, 0.5),
+		0 15px 25px rgba(0, 0, 0, 0.35);
+	opacity: 0.9;
 }
 .text-img{
+	background-color: #e9eced;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	margin: 10px 10px;
+	justify-content: center;
 	font-size: 1.2rem;
-	color: #fff;
 	animation: slideleft 1s forwards;
+	box-shadow: rgb(42, 36, 36) 5px 5px 5px 2px;
+	border-radius: 59px;
+	width: 70%;
+	min-width: 400px;
+	font-family: 'Courier New', Courier, monospace;
 }
-.btn-info{
-	width: 50%;
+.text-img > ul > li {
+	color: #0d0909;
+	font-size: 2rem;
+}
+/*.btn-info{
+	width: 200px;
+	height: 35px;
 	margin:auto;
-	border: 2px solid white;
-	border-radius: 10px;
-	padding: 3%;
-	color: #fff;
+	border: 2px solid rgb(8, 6, 6);
+	border-radius: 20px;
+	color: #f3efef;
+	background-color: #045a30cd;
+	text-transform: uppercase;
 }
 .btn-info:hover{
-	background-color: #d69110ec;
+	background-color: #a3df4fec;
 	color: black;
-}
+	transition: .5s ease;
+}*/
 .card-content{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
 	width: 100%;
-	margin: 30px auto;
+	margin: 10% 0;
+	border-top: 2px white solid;
+	padding-top: 10%;
 }
-.card {
-	background-color: #e4dede;
+.cards{
 	display: flex;
+	justify-content: space-between;
+}
+.card-adopt{
+	display: flex;
+	flex-direction: column;
 	border-radius: 40px;
+	height: 50vh;
 	width: 30%;
-	min-width: 400px;
-	height: 250px;
-	margin: 20px auto;
+	margin: 20px 0;
+	background-color: white;
+	box-shadow: grey 5px 5px 5px 2px;
+	opacity: 0.9;
+	transition: 0.6s ease;
+	overflow: hidden;
+}
+.card-adopt:hover{
+	width: 50%;
+	margin: 0%;
+	opacity: 1;
+}
+.text-img h2{
+	width: 100%;
+	color: rgb(4, 7, 2);
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 50px auto;
+}
+.card-content h2{
+	color: aliceblue;
+	border-bottom: aliceblue 2px solid;
+	font-size: 5em;
 }
 .card-image{
-	width: 70%;
+	height: 100%;
+	width: 100%;
 	border-radius: 40px;
-	background-color: #4fb1e9;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmnHDRRFKYi-7S87SgyU8u4QygUuy8Z-yZuA&usqp=CAU");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 80%
+}
+.card-name, .card-info{
+	color: #0d0909;
 }
 .card-button{
 	width: 100px;
 	height: 40px;
-	background-color: #05c328;
+	background-color: #045a30cd;
 	border: none;
 	border-radius: 20px;
 	font-size: 100%;
-	color: white;
 	text-transform: uppercase;
-	margin: 170px auto auto auto;
 	font-weight: 600;
+	margin: auto;
 }
 .slide-left{
+	height: 150px;
 	animation: slideleft 1s forwards;
-	font-size: 1.5rem;
+	padding-top:25px ;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.869);
 }
 @keyframes slideleft{
 	0%{
@@ -161,52 +257,25 @@ header {
 		opacity: 1;
 	}
 } 
-.links {
+.links{
 	animation-delay: 2s;
 }
-.body-media{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 90%;
-	height: auto;
-	margin: auto;
-	animation: slideleft 1s forwards;
-}
-.img-home{
-	width: 25%;
-	height: auto;
-	min-width: 300px;
-	min-height: 400px;
-	background: url("https://images.pexels.com/photos/7149465/pexels-photo-7149465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
-	background-size: cover;
+.btn-info{
+	border: 2px solid #111;
+	font-weight: 600;
 	border-radius: 30px;
-	box-shadow:inset 0 6px 1px 0 rgba(0, 0, 0, 0.35), 
-		0 5px 5px rgba(0, 0, 0, 0.5),
-		0 15px 25px rgba(0, 0, 0, 0.35);
-	opacity: 0.9;
-	margin: 20px auto;
+	margin:auto;
+	padding: auto;
+	box-shadow: 0 5px 5px rgba(128, 128, 128, 0.363);
+	width: 150px;
+	height: 40px;
 }
-.video-home{
-	width: 70%;
-	height: auto;
-	min-width: 300px;
-	max-width: 1200px;
-	opacity: 0.9;
-	margin: 20px auto;
-}
-video{
-    border-radius: 30px;
-	box-shadow:inset 0 6px 1px 0 rgba(0, 0, 0, 0.35), 
-		0 5px 5px rgba(0, 0, 0, 0.5),
-		0 15px 25px rgba(0, 0, 0, 0.35);
-}
-
     /* ------   FOOTER STYLES  -----*/
 footer{
 	margin: 10% 0 0 0;
 	width: 100%;
-	background-color: rgba(30, 58, 3, 0.721);
+	padding-top: 2%;
+	background:#136c44;
 }
 .footer-content{
 	display: flex;
@@ -227,32 +296,8 @@ footer{
 .menu{
 	width: 100%;
 }
-.footer-icon{
-	display: flex;
-	width: 25%;
-	min-width: 300px;
-	justify-content: space-around;
-	margin: auto;
-}
-.icon {
-	display: flex;
-	width: 100%;
-	margin: auto;
-}
-footer .icon li{
-	font-size: 2em;
-	color:#fff;
-	cursor: pointer;
-	transition: 0.5s;
-	margin:25px auto;
-}
-footer .icon li:hover{
-	transform: translateY( -10px);
-	opacity: 1;
-}
 footer .menu li{
 	font-size: 1.2em;
-	color:#fff;
 	margin: 0 10px;
 	cursor: pointer;
 	margin:25px auto;
@@ -261,10 +306,42 @@ footer .menu li:hover{
 	opacity: 0.7;
 }
 footer p{
-	color: #fff;
 	margin-top: 15px;
 	margin-bottom: 10px;
 	font-size: 1.1em;
+}
+.footer-info{
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	margin: auto;
+}
+.newsleatter{
+	width: 80%;
+	height: 30px;
+	border-radius: 10px;
+	text-align: start;
+	margin: 20px auto;
+}
+.footer-icon{
+	width: 25%;
+	min-width: 300px;
+	margin: auto;
+}
+.icon{
+	display: flex;
+	width: 100%;
+	margin: auto;
+}
+footer .icon li{
+	font-size: 2em;
+	cursor: pointer;
+	transition: 0.5s;
+	margin:25px auto;
+}
+footer .icon li:hover{
+	transform: translateY( -10px);
+	opacity: 1;
 }
 .fa-whatsapp:hover {
     color: rgb(108, 233, 108);
@@ -281,36 +358,30 @@ footer p{
 }
 @media screen and (max-width:700px) {
 	header{
-		height: 50px;
-    	display: flex;
-    	justify-content: space-between;
-    	align-items: center;
-    	background-color: white;
-    	margin: 10px 2px;
-		border-top:rgba(18, 231, 22, 0.5) 2px solid;
-		border-bottom:rgba(18, 231, 22, 0.5) 2px solid;
+		height: 40vw;
+		opacity: 1;
 	}
 	.logo{
-		border-radius: 50px ;
-		width: 60px;
+		border-radius: 80px ;
+		width: 120px;
 		height: auto;
 	}
 	.main-nav{
 		position: fixed;
 		top: 0;
 		left: 0;
+		margin-left: -100%;
 		height: 100vh;
 		width: 100%;
-		margin-left: -100%;
 		transition: all .2s linear;
-		background-color: rgb(7, 5, 5);
-		z-index: 100;
+		background-color: #01080486;
+		z-index: 1;
 	}
 	.main-nav.show{
 		margin-left: 0;
 	}
 	.nav-links{
-		background-color: rgba(35, 46, 35, 0.849);
+		background-color: rgb(22, 28, 32);
 		display: flex;
 		flex-direction: column;
 		width: 70%;
@@ -321,31 +392,36 @@ footer p{
 		padding-bottom: 100px;
 	}
 	.link-item > a{
+		color: white;
 		width: 100%;
-		color: #e4dede;
-		font-size: 32px;
-		text-decoration: none;
+		font-size: 20px;
 		font-weight: bold;
 		position: relative;
 	}
 	.link-item{
 		width: 100%;
 	}
-	.link-item > a:hover{
-		color: #51e94f;
-		transition: 0.5s ease all;
+	.link-item:last-child{
+		flex-direction: column;
 	}
-
-	.sub-menu > li > a:hover{
-		color: #51e94f;
-		transition: 0.5 ease all;
+	.nav-icons{
+		display: flex;
+		justify-content: space-around;
+		margin: 40px;
+		width: 80%;
+	}
+	.nav-icons li i{
+		font-size: 18px;
 	}
 	.sub-menu{
 		width: 100%;
 	}
-	.sub-menu > li > a{
-		font-size: 20px;
+	.sub-menu  li  a{
+		font-size: 18px;
 		margin: auto;
+	}
+	.nav-links li:hover > .sub-menu {
+		top:100%;
 	}
 	.img-home{
 		height: 400px;
@@ -353,22 +429,23 @@ footer p{
 	}
 	.button-menu{
 		z-index: 200;
-		width: 40px;
-		height: 40px;
+		width: 60px;
+		height: 60px;
 		border: none;
 		display: flex;
-		background: none;
+		background: rgb(22, 28, 32);
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+		border-radius: 6px;
 	}
 	.button-menu span{
 		width: 37px;
 		height: 4px;
 		margin-bottom: 5px;
 		position: relative;
-		background: #05c328;
+		background: #e3e9e4;
 		border-radius: 3px;
 		transform-origin: 4px 0px;
 		transition: all .2s linear;
@@ -376,7 +453,7 @@ footer p{
 	.button-menu.close span {
 		opacity: 1;
 		transform: rotate(45deg) translate(0px, 0px);
-		background: #27dc0b;
+		background: #eff1ee;
 	}
 	.button-menu.close span:nth-child(2){
 		transform: rotate(-45deg) translate(-8px, 5px);
@@ -419,7 +496,6 @@ footer p{
 		margin: auto;
 	}
 	.footer-icon{
-		display: flex;
 		width: 100%;
 		margin: auto;
 	}

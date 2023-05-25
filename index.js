@@ -1,9 +1,9 @@
-const toggleButton = document.getElementById('btn-burger')
-const navWrapper = document.getElementById('nav')
+const toggleButton = document.getElementById('btn-burger');
+const navWrapper = document.getElementById('nav');
 
 toggleButton.addEventListener('click',() => {
-  toggleButton.classList.toggle('close')
-  navWrapper.classList.toggle('show')
+  toggleButton.classList.toggle('close');
+  navWrapper.classList.toggle('show');
 })
 
 navWrapper.addEventListener('click',e => {

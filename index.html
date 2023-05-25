@@ -10,31 +10,39 @@
 <body>
     <div class="container">
         <header>
-            <a href="#"><img src="logo_size.jpg" class="logo" alt=""></a>
-            <nav id="nav" class="main-nav" >
+            <nav id="nav" class="main-nav">
             <ul class="nav-links">
+                <li><a href="#"><img src="logo.svg.svg" class="logo" alt=""></a></li>
                 <li class="link-item" data-submenu="true"><a href="#">Adopciones</a>
-                    <ul class="sub-menu open">
+                    <!--<ul class="sub-menu open">
                         <li class="adopt-link"><a href="#">Quiero adoptar</a></li>
                         <li class="adopt-link"><a href="#">Doy en adopcion</a></li>
-                    </ul></li>
+                    </ul>-->
+                </li>
                 <li class="link-item" data-submenu="true"><a href="#">Denuncias</a>
-                    <ul class="sub-menu open">
-                        <li class="complaint-link"><a href="#" >Extravio</a></li>
+                    <!--<ul class="sub-menu open">
+                        <li class="complaint-link"><a href="#">Extravio</a></li>
                         <li class="complaint-link"><a href="#">Maltrato</a></li>
                         <li class="complaint-link"><a href="#">Animal en situacion de calle</a></li>
                         <li class="complaint-link"><a href="#">Otra denuncia</a></li>
-                    </ul></li>
+                    </ul>-->
+                </li>
                 <li  class="link-item" data-submenu="true"><a href="#">Informacion general</a>
-                    <ul class="sub-menu open">
+                    <!--<ul class="sub-menu open">
                         <li class="information-link"><a href="#">Numeros de emergencia</a></li>
                         <li class="information-link"><a href="#">Castracion gratis</a></li>
                         <li class="information-link"><a href="#">Veterinaria de turno</a></li>
-                        <li  class="information-link"><a href="#">Servicios adicionales</a></li>
-                    </ul>
+                        <li class="information-link"><a href="#">Servicios adicionales</a></li>
+                    </ul>-->
                 </li>
                 <li class="link-item"><a href="#">Donaciones</a></li>
-                <li class="link-item"><a href="#">Contacto</a></li>
+                <li class="link-item"><a href="#">Contacto</a>
+                    <ul class="nav-icons">
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <button type="button" id="btn-burger" class="button-menu">
@@ -44,39 +52,59 @@
         </button>
         </header>
     <div class="content">
-        <h1 class="slide-left">Adopta. Informate. Ayuda</h1>
+        <h1 class="slide-left">¡Un nuevo amigo está esperándote!</h1>
         <div class="body-media">
-            <video class="video-home" src="./pexels-gram-film-3045714-1920x1080-25fps.mp4" autoplay loop muted></video>
         <div class="img-home">
+            </div>
             <div class="text-img">
                 <h2>¿Porqué adoptar es mejor?</h2>
-                <p> x razones</p>
-                    <a href="#" class="btn-info">Leer Mas</a>
-            </div>
+                <ul>
+                <li>Salvar una vida o dos, en realidad.</li>
+                <li>Reducir la sobrepoblación.</li>
+                <li>Luchar contra la cría indiscriminada.</li>
+                <li>Evitar futuros abandonos.</li>
+                <li> Conocer la verdad.</li>
+            </ul>
+                <a href="#" class="btn-info">Leer Mas</a>
         </div>
         </div>
         <div class="card-content">
-            <div class="card">
+            <div class="cards">
+            <div class="card-adopt">
                 <div class="card-image">
-                    <h3 class="card-name"></h3>
-                    <h4 class="card-info"></h4>
+                <div class="card-text">
+                    <h3 class="card-name"> Name</h3>
+                    <h4 class="card-info">Info</h4>
+                    <button type="button" class="card-button" id="card-button1"> Ver mas</button>
                 </div>
-                <button type="button" class="heart-button"></button>
-                <button type="button" class="card-button" id="card-button1"> Adoptar</button>
+                </div>
             </div>
-            <div class="card">
+            <div class="card-adopt">
                 <div class="card-image">
-                    <h3 class="card-name"></h3>
-                    <h4 class="card-info"></h4>
+                <div class="card-text">
+                    <h3 class="card-name"> Name</h3>
+                    <h4 class="card-info">Info</h4>
+                    <button type="button" class="card-button" id="card-button1"> Ver mas</button>
                 </div>
-                <button type="button" class="card-button" id="card-button2"> Adoptar</button>
+                </div>
+            </div>
+            <div class="card-adopt">
+                <div class="card-image">
+                <div class="card-text">
+                    <h3 class="card-name"> Name</h3>
+                    <h4 class="card-info">Info</h4>
+                    <button type="button" class="card-button" id="card-button1"> Ver mas</button>
+                </div>
+            </div>
             </div>
         </div>
+        
+        </div> 
     </div>
         <footer>
             <div class="footer-content">
                 <div class="footer-text">
-                    <a href="#"><img src="logo_size.jpg" class="logo" alt=""></a>
+                    <a href="#"><img src="logo.svg.svg" class="logo" alt=""></a>
                     <p>Adoptapp es una aplicación para ayudar a las
                 mascotas sin hogar, mejorar la vida en general
                 de los animales de la zona, informar sobre
@@ -93,12 +121,17 @@
                     <li>Contacto</li>
                 </ul>
             </div>
-            <div class="footer-icon">
-                <ul class="icon">
-                    <li><i class="fa-brands fa-whatsapp"></i></li>
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
+            <div class="footer-info">
+                <label for="newsleatter">Suscribete a nuestro newsleatter</label>
+                <input class="newsleatter" type="email" placeholder="Ingresa tu email"/>
+                <div class="footer-icon">
+                    <h4>Nuestras redes sociales</h4>
+                    <ul class="icon">
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="copyright">
