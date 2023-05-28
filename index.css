@@ -12,11 +12,6 @@ li {
 	list-style: none;
 }
 body {
-	background-color:#00a4b2;
-	background-color:#00b269;
-	background-color:#ff731d;
-	background-color:#ff9e00;
-	background-color:#057e58;
 	background: linear-gradient(120deg,#00a4b2,#00b269,#057e58);
 }
 .container{
@@ -24,8 +19,7 @@ body {
 	margin: 0 auto;
 }
 header{
-	height: 50vh;
-	display: flex;
+	height: 60vh;
 	background-image: url("https://www.elmueble.com/medio/2022/06/05/perro-y-gato-foto-de-andrew-s-en-unsplash_04c9c691_1280x853.jpg");
 	background-repeat: repeat;
 	background-size: cover;
@@ -33,34 +27,32 @@ header{
 	border-radius: 0 0 50px 50px;
 	opacity: 0.9;
 }
-.logo{
-	border-radius: 80px;
-	width: 140px;
-	height: auto;
-	background-color: #fff;
-}
 .main-nav{
-	height: 50%;
+	height: 20%;
 	width: 100%;
-	background:linear-gradient(190deg,rgba(0, 0, 0, 0.726), rgba(128, 128, 128, 0.582));
-	margin-top: 0%;
+	background:linear-gradient(190deg,rgba(66, 74, 65, 0.726), rgba(100, 92, 92, 0.582));
 	border-radius: 0 0 50px 50px;
 }
 .nav-links{
 	display: flex;
 	justify-content: space-around;
-	margin-top: 2%;
+	align-items: center;
 }
-.link-item > a{
+.link-item a{
 	font-size: 1vw;
 	text-transform: uppercase;
 	transition: opacity 0.3s ease;
 }
-
+.logo{
+	border-radius: 80px;
+	width: 100px;
+	height: auto;
+	background-color: #fff;
+}
 .link-item > a::after{
 	content: "";
 	position: absolute;
-	bottom: 55px;
+	bottom: -20px;
 	left: 0;
 	width: 0;
 	height: 3px;
@@ -76,128 +68,75 @@ header{
 .link-item a:hover{
 	color: #1eeaad;
 }
-/* Estilos para el menú desplegable */
-.nav-links li {
+.nav-links li{
 	position: relative;
 	display: flex;
 	align-items: center;
 }
-/*.nav-links li:hover > .sub-menu {
-	display: block;
-	position: absolute;
-	top: 60%;
-	right: 0;
-	z-index: 10000;
-}
-  /* Estilos para los elementos del submenú */
-/*.sub-menu {
-	display: none;
-	background-color: #0d0909;
-	box-shadow: 0 2px 5px rgba(26, 22, 22, 0.2);
-	border-radius: 5px 0px 5px 5px;
-	padding: 20px;
-	white-space: nowrap;
-	font-size: 1vw;
-}
-/* Estilos para la flecha hacia abajo en los elementos padre con submenú */
-/*[data-submenu="true"]::after {
-	content: " >"; /* Agrega un espacio antes del ">" para separarlo del texto 
-	display: inline-block;
-	margin-left: 10px;
-	transform: translateY(2px) rotate(90deg);  Rota el carácter 90 grados en sentido horario 
-	font-size: 1.2vw;
-} */
-
 .nav-icons{
 	display: none;
 }
 .content {
 	width: 80%;
+	height: 100%;
 	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.card-content{
+	display: flex;
+	justify-content: space-around;
 }
 .content h1{
 	font-size: 4rem;
 	font-weight: 600;
 	margin: 10% auto;
-	color: white;
+	color: rgb(19, 3, 3);
 	text-transform: uppercase;
 }
 .body-media{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: auto;
+	margin: 100px auto;
 	animation: slideleft 1s forwards;
-	height: 80vh;
+	width: 100%;
+	height: 60vh;
 }
 .img-home{
-	width: 25%;
+	width: 30%;
+	height: auto;
 	min-width: 300px;
+	min-height: 400px;
 	background: url("https://images.pexels.com/photos/7149465/pexels-photo-7149465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
 	background-size: cover;
-	border-radius: 30px;
-	box-shadow:inset 0 6px 1px 0 rgba(0, 0, 0, 0.35), 
-		0 5px 5px rgba(0, 0, 0, 0.5),
-		0 15px 25px rgba(0, 0, 0, 0.35);
-	opacity: 0.9;
+	border-radius: 0 30px 30px 0;
 }
 .text-img{
-	background-color: #e9eced;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	font-size: 1.2rem;
 	animation: slideleft 1s forwards;
-	box-shadow: rgb(42, 36, 36) 5px 5px 5px 2px;
-	border-radius: 59px;
-	width: 70%;
+	width: 60%;
 	min-width: 400px;
 	font-family: 'Courier New', Courier, monospace;
+	box-shadow: 2px 2px grey;
 }
 .text-img > ul > li {
 	color: #0d0909;
 	font-size: 2rem;
 }
-/*.btn-info{
-	width: 200px;
-	height: 35px;
-	margin:auto;
-	border: 2px solid rgb(8, 6, 6);
-	border-radius: 20px;
-	color: #f3efef;
-	background-color: #045a30cd;
-	text-transform: uppercase;
-}
-.btn-info:hover{
-	background-color: #a3df4fec;
-	color: black;
-	transition: .5s ease;
-}*/
-.card-content{
-	width: 100%;
-	margin: 10% 0;
-	border-top: 2px white solid;
-	padding-top: 10%;
-}
-.cards{
-	display: flex;
-	justify-content: space-between;
-}
 .card-adopt{
 	display: flex;
 	flex-direction: column;
-	border-radius: 40px;
 	height: 50vh;
-	width: 30%;
+	width: 20%;
 	margin: 20px 0;
-	background-color: white;
-	box-shadow: grey 5px 5px 5px 2px;
 	opacity: 0.9;
-	transition: 0.6s ease;
-	overflow: hidden;
+	transition: 0.6s ease all;
 }
 .card-adopt:hover{
-	width: 50%;
+	width: 80%;
 	margin: 0%;
 	opacity: 1;
 }
@@ -208,15 +147,9 @@ header{
 	font-weight: 600;
 	margin: 50px auto;
 }
-.card-content h2{
-	color: aliceblue;
-	border-bottom: aliceblue 2px solid;
-	font-size: 5em;
-}
 .card-image{
 	height: 100%;
 	width: 100%;
-	border-radius: 40px;
 	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmnHDRRFKYi-7S87SgyU8u4QygUuy8Z-yZuA&usqp=CAU");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -240,12 +173,6 @@ header{
 	text-transform: uppercase;
 	font-weight: 600;
 	margin: auto;
-}
-.slide-left{
-	height: 150px;
-	animation: slideleft 1s forwards;
-	padding-top:25px ;
-	border-bottom: 2px solid rgba(255, 255, 255, 0.869);
 }
 @keyframes slideleft{
 	0%{
@@ -381,7 +308,7 @@ footer .icon li:hover{
 		margin-left: 0;
 	}
 	.nav-links{
-		background-color: rgb(22, 28, 32);
+		background-color: rgb(1, 36, 55);
 		display: flex;
 		flex-direction: column;
 		width: 70%;
@@ -390,6 +317,17 @@ footer .icon li:hover{
 		justify-content: space-around;
 		padding-top: 100px;
 		padding-bottom: 100px;
+		margin: 0%;
+	}
+	.link-item > a::after{
+		content: "";
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		width: 0;
+		height: 3px;
+		background-color: #1eeaad;
+		transition: width 0.5s ease; /* Transición del ancho */
 	}
 	.link-item > a{
 		color: white;
