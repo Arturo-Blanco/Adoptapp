@@ -1,20 +1,29 @@
 import './header.css';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     return(
         <header>
-            <nav id="nav" class="main-nav">
-            <ul class="nav-links">
-                <li><a href="#"><img src="../../../Img/logo.svg.svg" class="logo" alt=""></img></a></li>
-                <li class="link-item" data-submenu="true"><a href="#">Adopciones</a>
+            <nav id="nav" className="main-nav">
+            <ul className="nav-links">
+                <li>
+                    <Link to='/'><img src="../../../Img/logo.svg.svg" className="logo" alt=""></img> </Link>
                 </li>
-                <li class="link-item" data-submenu="true"><a href="#">Denuncias</a>
+                <li class="link-item" data-submenu="true">
+                    <Link to='/adopciones'>Adopciones</Link>
                 </li>
-                <li  class="link-item" data-submenu="true"><a href="#">Información general</a>
+                <li class="link-item" data-submenu="true">
+                    <Link to='/denuncias'>Denuncias</Link>
                 </li>
-                <li class="link-item"><a href="#">Donaciones</a></li>
-                <li class="link-item"><a href="#">Contacto</a>
+                <li  class="link-item" data-submenu="true">
+                    <Link to='/informaciongeneral'>Información general</Link>
+                </li>
+                <li class="link-item">
+                    <Link to='/donaciones'>Donaciones</Link>
+                </li>
+                <li class="link-item">
+                <Link to='/contactos'>Contactos</Link>
                     <ul class="nav-icons">
                         <li><i class="fa-brands fa-whatsapp"></i></li>
                         <li><i class="fa-brands fa-facebook-f"></i></li>
