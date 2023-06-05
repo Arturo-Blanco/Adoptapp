@@ -8,10 +8,22 @@ import InfoGral from './Components/Info-Gral/infoGral';
 import Donaciones from './Components/Donaciones/donaciones';
 import Contactos from './Components/Contacto/contactos';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { getMascotas } from './Apis/getMascotas';
+import { useEffect, useState } from 'react';
 
 
 
 function App() {
+  const [animals, setAnimals] = useState([]);
+
+  useEffect(()=>{
+    const fetchMascotas = async () => {
+      const data = await getMascotas();
+      setAnimals(data);
+    }
+    fetchMascotas();
+  },[]);
+
   return (
     <BrowserRouter>
       <div className="container">
