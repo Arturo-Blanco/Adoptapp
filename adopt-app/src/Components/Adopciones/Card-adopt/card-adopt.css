@@ -1,0 +1,52 @@
+.card-animal{
+    background-color: #10A36E;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 250px;
+
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px black ;
+    
+}
+.img-animal{
+    width: 60%; 
+    height: 100%;          
+    
+    border-radius: 20px;
+}
+
+.datos{
+    
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin: 0px;
+    width: 40%;
+    border-radius: 20px;
+
+    
+}
+.img-sex{
+    width: 30px;
+    border: none;
+    align-items: end;
+    margin-right: 15px;
+}
+.div-item{
+    margin-left: 10px;    
+    
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content:space-between;
+}
+.btn-adoptar{
+    margin-top: 35px;    
+    padding: 10px;
+    background-color: #A8EED5;
+    border: none;
+    border-radius: 20px;
+    color: #10A36E;
+}

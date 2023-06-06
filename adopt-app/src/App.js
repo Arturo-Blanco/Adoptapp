@@ -9,7 +9,9 @@ import Donaciones from './Components/Donaciones/donaciones';
 import Contactos from './Components/Contacto/contactos';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { getMascotas } from './Apis/getMascotas';
-import { useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
+
+export const AnimalsContext = createContext([]);
 
 
 
@@ -25,6 +27,7 @@ function App() {
   },[]);
 
   return (
+    <AnimalsContext.Provider value={{ animals, setAnimals }}>
     <BrowserRouter>
       <div className="container">
         <Header></Header>
@@ -39,6 +42,7 @@ function App() {
         <Footer></Footer>
     </div>
     </BrowserRouter>
+    </AnimalsContext.Provider>
   );
 }
 
