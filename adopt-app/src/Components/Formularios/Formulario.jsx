@@ -1,5 +1,6 @@
 import ComponenteInput from './Input'
 import ComponenteTerminos from './Terminos';
+import './Formularios.css';
 
 const Formulario = () => {
 
@@ -37,7 +38,7 @@ const Formulario = () => {
           id="terminos" />
 
         <div className="contenedorBotonCentrado">
-          <button type='submit'>Enviar</button>
+          <button className='boton' type='submit'>Enviar</button>
         </div>
       </form>
     );

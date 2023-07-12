@@ -14,8 +14,8 @@ const ComponenteTerminos = (props) =>{
     }
     return(
         <div className="contenedorTerminos">
-            <label htmlFor={props.id}>
-            <input type="checkbox" name={props.id} id={props.id} onChange={handleInputChange}/>
+            <label className='label' htmlFor={props.id}>
+            <input className='input' type="checkbox" name={props.id} id={props.id} onChange={handleInputChange}/>
             {props.label}
             </label>
 </div>

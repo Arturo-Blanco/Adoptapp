@@ -20,9 +20,9 @@ const ComponenteInput = (props) =>{
     }
     return(
         <div>
-            <label htmlFor={props.id}>{props.label}</label>
+            <label className="label" htmlFor={props.id}>{props.label}</label>
             <div className="grupoInput">
-                <input type={props.type} placeholder={props.placeholder} id={props.id} onChange={handleInputChange}/>
+                <input className="input" type={props.type} placeholder={props.placeholder} id={props.id} onChange={handleInputChange}/>
             </div>
             <h3>{datos.nombre}</h3>
         </div>
