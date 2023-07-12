@@ -1,9 +1,9 @@
 import './card-adopt.css';
 import React, { useContext } from 'react';
 import { AnimalsContext } from '../../../App';
-import { useModal } from './useModal';
-import Modal from './Modal'
-import Formulario from './Formulario'
+import { useModal } from '../../Modales/useModal';
+import Modal from '../../Modales/Modal'
+import Formulario from '../../Formularios/Formulario'
 
 
 const CardAdopt = () => {
