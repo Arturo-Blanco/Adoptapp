@@ -8,6 +8,10 @@
 	color: white;
 	letter-spacing: 2px;
 }
+
+*, p{
+	color: #000;
+}
 li {
 	list-style: none;
 }
