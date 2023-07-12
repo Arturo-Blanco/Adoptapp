@@ -19,7 +19,7 @@ input{
     line-height: 45px;
     padding: 0px 40px 0px 10px;
     transition: .3s ease all;
-    border: 3px solid transparent;
+    border: 3px solid;
 }
     
 input:focus {
