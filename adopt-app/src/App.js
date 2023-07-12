@@ -2,7 +2,7 @@ import './App.css';
 import Footer from './Components/Footer/footer.jsx';
 import Header from './Components/Header/header.jsx';
 import Home from './Components/home/Home.jsx';
-import Adopciones from './Components/Adopciones/Adopciones.jsx';
+import Adopciones from './Components/Adopciones/adopciones.jsx';
 import Denuncias from './Components/Denuncias/denuncias';
 import InfoGral from './Components/Info-Gral/infoGral';
 import Donaciones from './Components/Donaciones/donaciones';
