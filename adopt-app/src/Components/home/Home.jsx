@@ -14,7 +14,7 @@ const Home = () => {
                 <li>Evitar futuros abandonos.</li>
                 <li> Conocer la verdad.</li>
             </ul>
-                <a href="#" class="btn-info">Leer Más</a>
+                <a href="#" className="btn-info">Leer Más</a>
         </div>
         <div className="img-home">
             </div> 
