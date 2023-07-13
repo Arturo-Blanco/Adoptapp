@@ -1,3 +1,7 @@
+.card-content{
+    display:flex;
+    flex-wrap: wrap;
+}
 .card-animal{
     background-color: #10A36E;
     display: flex;
