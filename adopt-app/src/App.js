@@ -8,26 +8,24 @@ import InfoGral from './Components/Info-Gral/infoGral';
 import Donaciones from './Components/Donaciones/donaciones';
 import Contactos from './Components/Contacto/contactos';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { getMascotas } from './Apis/getMascotas';
+import { getMascotas } from './Apis/getMascotas.mjs';
 import { createContext, useEffect, useState } from 'react';
 
-export const AnimalsContext = createContext([]);
-
-
+export const petsContext = createContext([]);
 
 function App() {
-  const [animals, setAnimals] = useState([]);
+  const [pets, setPets] = useState([]);
 
   useEffect(()=>{
     const fetchMascotas = async () => {
       const data = await getMascotas();
-      setAnimals(data);
+      setPets(data);
     }
     fetchMascotas();
   },[]);
 
   return (
-    <AnimalsContext.Provider value={{ animals, setAnimals }}>
+    <petsContext.Provider value={{ pets, setPets }}>
     <BrowserRouter>
       <div className="container">
         <Header></Header>
@@ -42,7 +40,7 @@ function App() {
         <Footer></Footer>
     </div>
     </BrowserRouter>
-    </AnimalsContext.Provider>
+    </petsContext.Provider>
   );
 }
 

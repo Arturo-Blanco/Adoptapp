@@ -1,52 +1,39 @@
 import './card-adopt.css';
-import React, { useContext, useState, useEffect } from 'react';
-import { AnimalsContext } from '../../../App';
+import React, { useContext, useState } from 'react';
+import { petsContext } from '../../../App';
 import { useModal } from '../../Modales/useModal';
 import Modal from '../../Modales/Modal'
 import Formulario from '../../Formularios/Formulario'
-import axios from 'axios';
-
 
 const CardAdopt = () => {
+    const { pets } = useContext(petsContext);
+    const [selectPetId, setSelectPetId] = useState(null);
+    const [isOpenModal1, openModal1, closeModal1] = useModal(false);
 
-    const[isOpenModal1, openModal1, closeModal1] = useModal(false);
-    const [pet, setPet] = useState([]);
-    useEffect(() => {
-        axios.get('http://localhost:3000/pets/petList')
-        .then(response => {
-            setPet(response.data);
-        })
-        .catch(error => {
-            console.error(error);
-        });
-      }, []);
-    //const { animals } = useContext(AnimalsContext);
     return(
 
         <div className='card-content'>
-            {pet.map(pet =>(
+            {pets.map(pet =>(
                 <div className='card-animal'>
-                    
-                    <img className='img-animal' key={pet.id} src={pet.img} alt='imagen'></img>
+                    <img className='img-animal' key={pet.id} src={pet.urlImg} alt='imagen'></img>
                     <div className='datos'>
-                        <div className='div-item'> <div> {pet.name}</div>{pet.gender === 'macho' ? <img className='img-sex' src="../../../Img/simbolMale.png" alt="male"/>  : <img className='img-sex' src="../../../Img/simbolFemale.webp" alt="female"/> }</div>
-                        <div className='div-item'>Raza: {pet.breed}</div>
-                    
-                        <div className='div-item'>Edad: {pet.age} años</div>
-                        <div className='div-item'>Disponible: {pet.disponible === 'Disponible' ? `Si` : `No`} </div>
-            
-                        <button className='btn-adoptar' onClick={openModal1}>Adoptar</button>
+                        <div className='div-item'> 
+                        <div className='pet-name'> {pet.name}</div>{pet.gender === 'Macho' ? <img className='img-sex' src="../../../Img/simbolMale.png" alt="male"/>  : <img className='img-sex' src="../../../Img/simbolFemale.webp" alt="female"/> }</div>
+                        <div className='div-item'>{pet.breed}</div>
+                        <div className='div-item'>{pet.description}</div>
+                        <div className='div-item'>{pet.age} años</div>
+                        <div className='div-item'>{pet.available === true ? `Disponible` : `Reservado`} </div>
+                        {pet.available ? (
+                        <button className='btn-available' value={pet.id} onClick={() => { setSelectPetId(pet.id); openModal1(); }}> Adoptar </button> ) : (
+                        <button className='btn-notAvailable' value={pet.id}disabled> Reservado </button> )}
                         <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
                             <h3>Formulario de Adopcion</h3>
                             <p>Rellene sus datos y nos comunicaremos a la brevedad</p>
-                            <Formulario></Formulario>
+                            <Formulario petId={selectPetId}></Formulario>
                         </Modal>
-
                     </div>
-
                 </div>
             ))}
-
         </div>
         /*
         <div>
