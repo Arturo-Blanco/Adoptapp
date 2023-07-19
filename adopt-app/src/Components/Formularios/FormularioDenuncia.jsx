@@ -24,11 +24,10 @@ const FormularioDenuncias = () => {
           placeholder="Escriba aqui"
           type="text"
           id="text"/>
-
         <ComponenteTerminos
         label="Acepto los terminos y condiciones"
-        id="terminos" />
-
+        id="terminos"
+        />
         <div className="contenedorBotonCentrado">
             <button className="boton" type='submit'>Enviar</button>
         </div>

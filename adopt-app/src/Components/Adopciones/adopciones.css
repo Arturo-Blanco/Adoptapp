@@ -1,7 +1,6 @@
-.adopciones{
-    display: flex;
-    flex-wrap: wrap;
-}
-h2{
+.adopciones h2{
+    margin: 40px auto;
     width: 100%;
+    font-size: 3rem;
+    font-weight: 600;
 }

@@ -6,10 +6,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-text">
                     <a href="#"><img src="logo.svg.svg" className="logo" alt=""></img></a>
-                    <p>Adoptapp es una aplicación para ayudar a las mascotas sin hogar, 
-                        mejorar la vida en general de los animales de la zona, informar sobre
-                        campañas de zoonosis, y ayudar a las organizaciones locales, todo con el fin de
-                        ayudar a los animales.
+                    <p>Adoptapp nacio de la idea de ayudar a las mascotas sin hogar, mejorar la vida de los animales de la zona, informar a la poblacion sobre campañas de zoonosis, apoyar a las organizaciones locales y brindar cualquier tipo de contencion para nuestros amigos de cuatro patas.
                     </p>
                 </div>
                 <div className="footer-menu">
@@ -21,7 +18,7 @@ const Footer = () => {
                         <li>Contacto</li>
                     </ul>
                 </div>
-                <div class="footer-info">
+                <div className="footer-info">
                     <label htmlFor="newsleatter">Suscribete a nuestro newsleatter</label>
                     <input className="newsleatter" type="email" placeholder="Ingresa tu email"/>
                     <div className="footer-icon">

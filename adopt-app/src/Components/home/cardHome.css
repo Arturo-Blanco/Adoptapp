@@ -1,0 +1,30 @@
+.card-home-content {
+    display: flex;
+    flex-wrap: wrap;
+    animation: slideleft 1s forwards;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.card-adopt {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 20%;
+    margin: 20px 0;
+    opacity: 0.9;
+    transition: 0.6s ease all;
+    border-radius: 50px;
+    background-color: aliceblue;
+    min-width: 250px;
+}
+.card-image{
+	height: 100%;
+	width: 100%;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmnHDRRFKYi-7S87SgyU8u4QygUuy8Z-yZuA&usqp=CAU");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card-name, .card-info{
+	color: #0d0909;
+}

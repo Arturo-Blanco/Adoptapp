@@ -23,11 +23,11 @@ const Header = () => {
                     <Link to='/donaciones'>Donaciones</Link>
                 </li>
                 <li className="link-item">
-                <Link to='/contactos'>Contactos</Link>
+                <Link to='/contacto'>Contacto</Link>
                     <ul className="nav-icons">
-                        <li><i class="fa-brands fa-whatsapp"></i></li>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i className="fa-brands fa-whatsapp"></i></li>
+                        <li><i className="fa-brands fa-facebook-f"></i></li>
+                        <li><i className="fa-brands fa-instagram"></i></li>
                     </ul>
                 </li>
             </ul>
