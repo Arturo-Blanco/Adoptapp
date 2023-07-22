@@ -5,7 +5,8 @@ import Modal from '../../Modales/Modal'
 import Formulario from '../../Formularios/Formulario'
 import { getMascotas } from '../../../Apis/getMascotas.mjs';
 
-const CardAdopt = () => {
+const CardAdopt = ({pageNumber}) => {
+    
     const [updateCard, setUpdateCard] = useState(false);
     const [petList, setPetList] = useState([]);
     const [selectPetId, setSelectPetId] = useState(null);
@@ -14,11 +15,11 @@ const CardAdopt = () => {
 
     useEffect(() => {
         const getPets = async() => { 
-            const data = await getMascotas();
+            const data = await getMascotas(pageNumber);
             setPetList(data);
         }
         getPets();
-    }, [updateCard]);
+    }, [pageNumber,updateCard]);
 
     return(
 
@@ -29,7 +30,7 @@ const CardAdopt = () => {
                     <div className='datos'>
                         <div className='div-item'> 
                         <div className='pet-name'> {pet.name}</div>{pet.gender === 'Macho' ? <img className='img-sex' src="../../../Img/simbolMale.png" alt="male"/>  : <img className='img-sex' src="../../../Img/simbolFemale.webp" alt="female"/> }</div>
-                        <div className='div-item'>{pet.breed}</div>
+                        {/*<div className='div-item'>{pet.breed}</div>*/}
                         <div className='div-item'>{pet.age} años</div>
                         <div className='div-item'>{pet.description}</div>
                         <div className='div-item'>{pet.location}</div>

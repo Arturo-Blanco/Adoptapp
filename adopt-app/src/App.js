@@ -22,7 +22,7 @@ function App() {
           <Route path='/informaciongeneral' element={<InfoGral/>}></Route>
           <Route path='/donaciones' element={<Donaciones/>}></Route>
           <Route path='/contacto' element={<Contacto/>}></Route>
-        </Routes>        
+        </Routes>
         <Footer></Footer>
     </div>
     </BrowserRouter>

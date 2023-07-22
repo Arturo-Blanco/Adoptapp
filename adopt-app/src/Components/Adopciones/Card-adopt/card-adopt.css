@@ -1,26 +1,32 @@
-.card-adopt-content{
+.card-adopt-content {
     margin: auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
-.card-animal{
+.card-animal {
     background-color: #ecf3f0b0;
     display: flex;
     justify-content: space-between;
-    width: 450px;
-    height: 250px;
-    margin: 40px auto;
-    border-radius: 20px;
-    box-shadow: 5px 10px 10px rgba(128, 122, 122, 0.877) ;
+    width: 430px;
+    height: 230px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: solid 1px black;
+    transition: 0.5s ease all;
+    opacity: 0.9;
 }
-.img-animal{
+.card-animal:hover {
+    box-shadow: 5px 10px 10px rgba(24, 19, 19, 0.877) ;
+    opacity: 1;
+}
+.img-animal {
     width: 60%; 
-    height: 100%;          
-    border-radius: 20px;
+    height: 100%;
+    border-radius: 5px;
 }
-.datos{
+.datos {
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -29,16 +35,18 @@
     border-radius: 20px;
     font-weight: 600;
 }
-.img-sex{
+.img-sex {
     width: 2rem;
     border: none;
     align-items: end;
 }
-.div-item{
+.div-item {
     margin: auto;    
     width: 100%;
     padding: auto;
-    color: black
+    color: black;
+    transition: 0.5s ease all;
+    font-size: 1.2rem;
 }
 .div-item:first-child {
     display: flex;
@@ -46,12 +54,13 @@
     margin: auto;
     justify-content: center;
 }
-.pet-name{
-    font-size: 1.5rem;
+.pet-name {
+    font-size: 1.8rem;
     color:black;
     font-weight: 600;
+    transition: 0.5s ease all;
 }
-.btn-available, .btn-notAvailable{
+.btn-available, .btn-notAvailable {
     width: max-content;
     padding: 12px;
     margin: auto;
@@ -60,12 +69,12 @@
     font-size: 1rem;
     font-weight: 600;
 }
-.btn-available{
+.btn-available {
     background-color: #28f06a;
     color: #040e0a;
     transition: 0.5s ease;
 }
-.btn-available:hover{
+.btn-available:hover {
     box-shadow: #151b19 2px 2px;
     cursor:pointer;
 }
