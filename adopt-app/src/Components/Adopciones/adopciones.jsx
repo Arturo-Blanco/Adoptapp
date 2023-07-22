@@ -8,8 +8,22 @@ import { baseUrl } from '../../Apis/getMascotas.mjs';
 
 const Adopciones = () => {
 
+    const [filter, setFilters] = useState({})
     const [pageNumber, setPageNumber] = useState(1);
     const [totalCount, setTotalCount] = useState(0);
+    const [values, setValues] = useState();
+
+    useEffect(() => {
+        const selectValues = Object.values(filter).filter((value) => 
+            value !== undefined
+        )
+        console.log(selectValues)
+        if(selectValues.length > 0){
+        setValues(selectValues.toString());
+        } else {
+            setValues('$')
+        }
+    }, [filter])
 
     useEffect(() => {
         const getLenght = async() => {
@@ -42,7 +56,7 @@ const Adopciones = () => {
         setPageNumber(parseInt(event.target.value));
         scrollToTopSmoothly()
     };
- 
+
     const activePage = (page) => {
         return page === pageNumber ? 'active-page' : 'disable-page';
     }
@@ -63,8 +77,8 @@ const Adopciones = () => {
         
         <div className='adopciones'>
             <h2>Encontra a un amigo</h2>
-            <Filter></Filter>
-            <CardAdopt pageNumber={pageNumber}/>
+            <Filter filter={filter} setFilters={setFilters}></Filter>
+            <CardAdopt pageNumber={pageNumber} filters={values}/>
             <div className='pagination-container'>
             <PaginationButton
                 className="pagination-btn"
@@ -73,6 +87,7 @@ const Adopciones = () => {
                 onClick={previousPage}
                 text="< Anterior"
             />
+            {/*Se crea un array declarando una longitud de totalCount, luego se itera en el mismo. Se utiliza '_' ya que no se requiere extraer valor, pero si el index para crear los botones */}
             {Array.from({length:totalCount}).map((_,index) => (
                 <PaginationButton
                     key = {index}

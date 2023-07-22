@@ -5,7 +5,7 @@ import Modal from '../../Modales/Modal'
 import Formulario from '../../Formularios/Formulario'
 import { getMascotas } from '../../../Apis/getMascotas.mjs';
 
-const CardAdopt = ({pageNumber}) => {
+const CardAdopt = ({filters,pageNumber}) => {
     
     const [updateCard, setUpdateCard] = useState(false);
     const [petList, setPetList] = useState([]);
@@ -15,11 +15,11 @@ const CardAdopt = ({pageNumber}) => {
 
     useEffect(() => {
         const getPets = async() => { 
-            const data = await getMascotas(pageNumber);
+            const data = await getMascotas(filters,pageNumber);
             setPetList(data);
         }
         getPets();
-    }, [pageNumber,updateCard]);
+    }, [filters,pageNumber,updateCard]);
 
     return(
 

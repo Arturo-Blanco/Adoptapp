@@ -54,7 +54,6 @@ const Formulario = ({ petId, updateCard, closeModal1 }) => {
     event.preventDefault();
     adoptFunction(petId);
     addUser(formData);
-    console.log(formData)
   }
     return(
       <>

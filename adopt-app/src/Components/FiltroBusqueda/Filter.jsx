@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from "react";
 import FilterBox from "./FilterBox/FilterBox";
 import FilterCheckbox from "./FilterCheckbox/FilterCheckbox";
 import './filter.css'
 
-const Filter = () => {
-    const [filters, setFilters] = useState([]);
-
-    useEffect(() => {
-    }, [filters])
+const Filter = ({setFilters}) => {
 
     const handleStateChange = (event) => {
-        setFilters({
-            ...filters,
-            [event.target.value] : event.target.checked
-        })
+        //Se desestructura los valores del checkbox al ocurrir el evento. Extrayendo los valores 'name' y checked
+        const {name, checked} = event.target
+    setFilters((prevFilter) => ({
+        ...prevFilter, // se crea una copia del objeto prevFilter para mantener todos los filtros seleccionados
+        [name] : checked ? name : undefined // se verifica si el check es true se retorna el name del mismo sino se devuelve undefined
+    }));
     }
 
     return (
@@ -71,8 +68,8 @@ const Filter = () => {
             <FilterCheckbox
             htmlFor="RioGrande"
             text="Rio Grande"
-            value="RioGrande"
-            name="RioGrande"
+            value="Rio Grande"
+            name="Rio Grande"
             onChange={handleStateChange}
             />
             <FilterCheckbox
