@@ -4,14 +4,13 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 45%;
-	border-radius: 0 0 50px 50px;
+	border-radius: 0 0 20px 20px;
 	opacity: 0.9;
 }
 .main-nav{
-	height: 35%;
+	height: 25%;
 	width: 100%;
-	background:linear-gradient(190deg,rgb(6, 8, 6), rgba(100, 92, 92, 0.582));
-	border-radius: 0 0 50px 50px;
+	background:linear-gradient(190deg,rgb(6, 8, 6), rgba(100, 92, 92, 0.822));
 }
 .nav-links{
 	display: flex;
@@ -19,20 +18,20 @@ header{
 	align-items: center;
 }
 .link-item a{
-	font-size: 1vw;
+	font-size: 1rem;
 	text-transform: uppercase;
 	transition: opacity 0.3s ease;
 }
 .logo{
-	border-radius: 80px;
-	width: 100px;
+	border-radius: 50px;
+	width: 70px;
 	height: auto;
-	background-color: #fff;
+	margin-top: 5px;
 }
 .link-item > a::after{
 	content: "";
 	position: absolute;
-	bottom: -20px;
+	bottom: -15px;
 	left: 0;
 	width: 0;
 	height: 3px;

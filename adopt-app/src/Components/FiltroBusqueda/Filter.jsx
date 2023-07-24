@@ -15,6 +15,7 @@ const Filter = ({setFilters}) => {
 
     return (
         <aside className="filter-container">
+            <h3 className="preferences">¿Que estas buscando?</h3>
             <FilterBox
             title="Especie">
             <FilterCheckbox
@@ -80,7 +81,7 @@ const Filter = ({setFilters}) => {
             onChange={handleStateChange}
             />
             </FilterBox>
-            <FilterBox
+            {/*<FilterBox
             title="Estado">
             <FilterCheckbox
             htmlFor="disponible"
@@ -96,7 +97,7 @@ const Filter = ({setFilters}) => {
             name="reservado"
             onChange={handleStateChange}
             />
-            </FilterBox>
+    </FilterBox>*/}
         </aside>
     )
 }

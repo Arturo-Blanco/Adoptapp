@@ -26,8 +26,22 @@
     cursor: pointer;
 }
 .filter-checkbox {
-    width: 15px;
-    height: 15px;
-    margin: 4px 4px 0 0;
+    margin-right: 5px;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
     cursor: pointer;
+}
+.filter-checkbox:checked {
+    background-color: rgb(37, 248, 37);
+}
+.preferences{
+    border-bottom: 1px solid black;
+    margin: auto;
 }

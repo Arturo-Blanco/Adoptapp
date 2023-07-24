@@ -9,7 +9,7 @@
     background-color: #ecf3f0b0;
     display: flex;
     justify-content: space-between;
-    width: 430px;
+    width: 450px;
     height: 230px;
     margin: 20px auto;
     border-radius: 5px;
@@ -29,7 +29,7 @@
 .datos {
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 90%;
     margin: auto;
     width: max-content;
     border-radius: 20px;
@@ -60,24 +60,25 @@
     font-weight: 600;
     transition: 0.5s ease all;
 }
-.btn-available, .btn-notAvailable {
+.btn-available{
     width: max-content;
-    padding: 12px;
+    padding: 5px;
     margin: auto;
     border: 0.1px black solid;
-    border-radius: 20px;
-    font-size: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
     font-weight: 600;
-}
-.btn-available {
-    background-color: #28f06a;
+    text-transform:uppercase; 
+    background-color: #30eb17;
     color: #040e0a;
     transition: 0.5s ease;
 }
+
 .btn-available:hover {
     box-shadow: #151b19 2px 2px;
     cursor:pointer;
 }
-.btn-notAvailable {
-    background-color:red;
+.interested p {
+    font-size: 0.9rem;
+    font-weight: 100;
 }

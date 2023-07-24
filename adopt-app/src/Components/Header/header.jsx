@@ -8,19 +8,19 @@ const Header = () => {
             <nav id="nav" className="main-nav">
             <ul className="nav-links">
                 <li>
-                    <Link to='/'><img src="../../../Img/logo.svg.svg" className="logo" alt=""></img> </Link>
+                    <Link to='/'><img src="../../../Img/logo.jpg" className="logo" alt=""></img> </Link>
                 </li>
                 <li className="link-item" data-submenu="true">
-                    <Link to='/adopciones'>Adopciones</Link>
+                    <Link to='/adopciones'>Adoptar</Link>
                 </li>
                 <li className="link-item" data-submenu="true">
-                    <Link to='/denuncias'>Denuncias</Link>
+                    <Link to='/denuncias'>Denunciar</Link>
                 </li>
                 <li  className="link-item" data-submenu="true">
                     <Link to='/informaciongeneral'>Información general</Link>
                 </li>
                 <li className="link-item">
-                    <Link to='/donaciones'>Donaciones</Link>
+                    <Link to='/donaciones'>ayudar</Link>
                 </li>
                 <li className="link-item">
                 <Link to='/contacto'>Contacto</Link>

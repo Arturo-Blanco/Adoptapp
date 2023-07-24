@@ -30,15 +30,14 @@ const CardAdopt = ({filters,pageNumber}) => {
                     <div className='datos'>
                         <div className='div-item'> 
                         <div className='pet-name'> {pet.name}</div>{pet.gender === 'Macho' ? <img className='img-sex' src="../../../Img/simbolMale.png" alt="male"/>  : <img className='img-sex' src="../../../Img/simbolFemale.webp" alt="female"/> }</div>
-                        {/*<div className='div-item'>{pet.breed}</div>*/}
                         <div className='div-item'>{pet.age} años</div>
                         <div className='div-item'>{pet.description}</div>
                         <div className='div-item'>{pet.location}</div>
-                        {pet.state ==='Disponible' ? (
-                        <button className='btn-available' value={pet.id} onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1(); }}> Adoptar </button> ) : (
-                        <button className='btn-notAvailable' value={pet.id}disabled> Reservado </button> )}
+                        <button className='btn-available' value={pet.id} onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1(); }}> Quiero adoptar </button>
+                        <div className='div-item interested'>{pet.interested > 0 ? (<p>{pet.interested} interesados</p>
+                        ) : (<p>No hay interesados </p>)}</div>
                         <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
-                            <p>Decidio adoptar a {selectPetName}.</p>
+                            <p>Le interesa adoptar a {selectPetName}.</p>
                             <p>Complete el formulario con sus datos y nos comunicaremos a la brevedad.</p>
                             <Formulario petId={selectPetId} updateCard={setUpdateCard} closeModal1={closeModal1}></Formulario>
                         </Modal>

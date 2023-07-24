@@ -3,11 +3,11 @@ import './cardHome.css';
 
 const CardHome = (props) => {
     return (
-        <div className="card-adopt">
-            <div className="card-image"></div>
-                <div className="card-text">
-                    <h3 className="card-name"> {props.name} </h3>
-                    <p className="card-info">{props.info}</p>
+        <div className="home-card">
+            <div className="home-card-img"></div>
+                <div className="home-card-text">
+                    <h3 className="home-card-title"> {props.title} </h3>
+                    <p className="home-card-info">{props.info}</p>
                 </div>
         </div>
     )
