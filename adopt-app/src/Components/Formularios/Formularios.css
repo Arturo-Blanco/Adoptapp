@@ -3,11 +3,11 @@
     margin: 15px;
     filter: none;
 }
-.label {
+.form-label {
     display: block;
     font-weight: 700;
     text-align: start;
-    padding:1rem 0px 0 2rem;
+    padding:2rem 0px 0 4.6rem;
     min-height: 40px;
     color: black;
 }
@@ -15,7 +15,7 @@
     position: relative;
     z-index: 90;
 }
-.input{
+.form-input{
     background: #fff;
     border-radius: 3px;
     line-height: 45px;
@@ -24,7 +24,7 @@
     border: 2px solid #000;
     color: #000;
 }
-.input:focus {
+.form-input:focus {
         border: 3px solid;
         outline: none;
         box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
@@ -46,7 +46,7 @@
     align-items: center;
     grid-column: span 2;
 }
-.boton{
+.form-button{
     margin-top: 2rem;
     cursor: pointer;
     color: #000;

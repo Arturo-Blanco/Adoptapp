@@ -100,7 +100,7 @@ const Formulario = ({ petId, updateCard, closeModal1 }) => {
           label="Acepto los terminos y condiciones"
           id="terminos" />
         <div className="contenedorBotonCentrado">
-          <button className='boton' type='submit'>Enviar</button>
+          <button className='form-button' type='submit'>Enviar</button>
         </div>
       </form>
       <Modal isOpen={isOpenModal2} closeModal={() => {

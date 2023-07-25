@@ -13,17 +13,14 @@
 }
 .modal.is-open{
     display: flex;
-    height: 100vh;
-    
 }
 .modal-container{
     position: relative;
-    padding: 3rem;
     min-width: 320px;
     max-width: 480px;
     overflow-y: auto;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: #d1e4ba;
     animation: slideleft 1s forwards;
 }
 .modal-close{

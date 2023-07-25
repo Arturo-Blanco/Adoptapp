@@ -37,8 +37,8 @@ const CardAdopt = ({filters,pageNumber}) => {
                         <div className='div-item interested'>{pet.interested > 0 ? (<p>{pet.interested} interesados</p>
                         ) : (<p>No hay interesados </p>)}</div>
                         <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
-                            <p>Le interesa adoptar a {selectPetName}.</p>
-                            <p>Complete el formulario con sus datos y nos comunicaremos a la brevedad.</p>
+                            <p className='card-adopt-pet'>Le interesa adoptar a {selectPetName}.</p>
+                            <p className='card-adopt-pet'>Complete el formulario con sus datos y nos comunicaremos a la brevedad.</p>
                             <Formulario petId={selectPetId} updateCard={setUpdateCard} closeModal1={closeModal1}></Formulario>
                         </Modal>
                     </div>
