@@ -34,7 +34,7 @@
 .contenedorTerminos{
     grid-column: span 2;
 }
-.contenedorTerminos, .label, .input{
+.contenedorTerminos, .form-label, .form-input{
     margin-right: 10px;
 }
     
