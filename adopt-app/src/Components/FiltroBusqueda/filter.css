@@ -14,12 +14,16 @@
 .filter-title {
     font-size: 1.3rem;
     text-align: start;
+    color: #000;
+
 }
 .filter-label{
     text-align: start;
     font-size: 1.2rem;
     margin-top: 3px;
     opacity: 0.7;
+    color: #000;
+
 }
 .filter-label:hover{
     opacity: 0.9;
@@ -44,4 +48,5 @@
 .preferences{
     border-bottom: 1px solid black;
     margin: auto;
+    color: #000;
 }

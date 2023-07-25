@@ -13,6 +13,7 @@ const Formulario = ({ petId, updateCard, closeModal1 }) => {
   const [formData, setFormData] = useState({
     fullname:'',
     address:'',
+    location:'',
     email:'',
     phoneNumber:'',
   });
@@ -72,6 +73,14 @@ const Formulario = ({ petId, updateCard, closeModal1 }) => {
           id="domicilio"
           name="address"
           value={formData.address}
+          onChange={handleInputChange}
+          />
+          <ComponenteInput 
+          label="Localidad"
+          placeholder="Ciudad"
+          id="localidad"
+          name="location"
+          value={formData.location}
           onChange={handleInputChange}
           />
         <ComponenteInput 

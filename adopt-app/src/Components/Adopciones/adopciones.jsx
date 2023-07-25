@@ -76,7 +76,7 @@ const Adopciones = () => {
     return (
         
         <div className='adopciones'>
-            <h2>Encontra a un amigo</h2>
+            <h2>Un amigo te esta esperando</h2>
             <Filter filter={filter} setFilters={setFilters}></Filter>
             <CardAdopt pageNumber={pageNumber} filters={values}/>
             <div className='pagination-container'>

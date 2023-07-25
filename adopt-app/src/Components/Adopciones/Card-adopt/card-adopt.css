@@ -79,6 +79,16 @@
     cursor:pointer;
 }
 .interested p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 100;
+    color: rgb(255, 55, 0);
+
+}
+
+.form-adopt{
+    padding-top: 36px;
+}
+
+.card-adopt-pet{
+    color: #000;
 }

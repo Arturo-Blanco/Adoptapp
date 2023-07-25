@@ -4,7 +4,7 @@
     filter: none;
 }
 .form-label {
-    display: block;
+    display: table-row;
     font-weight: 700;
     text-align: start;
     padding:2rem 0px 0 4.6rem;
