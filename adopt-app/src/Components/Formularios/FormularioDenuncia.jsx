@@ -19,17 +19,15 @@ const FormularioDenuncias = () => {
           label="Ciudad"
           placeholder="Ingrese ciudad"
           id="ciudad"/>
-        <ComponenteInput 
-          label="Deje su comentario o denuncia"
-          placeholder="Escriba aqui"
-          type="text"
-          id="text"/>
+          <label className='form-label' htmlFor="Nombre">Denuncias y/o comentarios</label>
+        <textarea className='form-input coment' placeholder="Dejanos tu comentario" name="denuncia" id="denuncia" cols="26" rows="5">
+        </textarea>
         <ComponenteTerminos
         label="Acepto los terminos y condiciones"
         id="terminos"
         />
         <div className="contenedorBotonCentrado">
-            <button className="boton" type='submit'>Enviar</button>
+            <button className="form-button" type='submit'>Enviar</button>
         </div>
     </form>
     );
