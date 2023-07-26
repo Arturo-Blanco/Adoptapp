@@ -1,8 +1,7 @@
 .modal{
     position: fixed;
     z-index: 999;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
     top: 0;
     height: 49rem;
     background-color: rgba(0, 0, 0, 0.384);
