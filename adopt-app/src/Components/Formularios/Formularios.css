@@ -5,18 +5,23 @@
 }
 .form-label-terminos, .form-label-input {
     font-weight: 700;
-    text-align: start;
-    padding:2rem 0px 0 4.6rem;
+    text-align: center;
     min-height: 40px;
     color: black;
 }
 .form-label-input {
-    padding:2rem 0px 0 4.8rem;
+    margin: 0 0 10px 0;
 }
+
+.form-label-terminos{
+    padding:2rem 0px 0 4.6rem;
+
+}
+
 .grupoInput{
     position: relative;
     z-index: 90;
-    margin: 0px 0px 0.6rem 4.8rem;
+    margin: 0px 0px 0.6rem 0.8rem;
 }
 .form-input{
     background: #fff;
@@ -36,6 +41,7 @@
     
 .contenedorTerminos{
     grid-column: span 2;
+    text-align: start;
 }
 .contenedorTerminos, .form-label, .form-input{
     margin-right: 10px;

@@ -106,6 +106,19 @@ const Adopciones = () => {
                 text="Siguiente >"
             />
             </div>
+            <div className='row'>
+                <div className='col-1'>
+                    imagen
+                </div>
+                <div className='col-2'>
+                    <p>Requisitos para adoptar</p>
+                    <div className='requisitos'>
+                        <span className='count-punto'>1
+                        </span>
+                        <p className='texto-req'>Ser mayor de 18 años</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };

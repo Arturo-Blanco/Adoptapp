@@ -20,3 +20,57 @@
 .active-page {
     background-color: rgb(37, 248, 37);
 }
+
+.row{
+    background-color: burlywood;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.col-1{
+    background-color: chocolate;
+}
+
+.col-2{
+    background-color: crimson;
+}
+
+.row, .col-1, .col-2{
+    width: 100%;
+    padding: 10px;
+}
+
+.row > .col-1 {
+    margin-right: 20px;
+}
+
+.count-punto{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    background: #055895;
+    color: white;
+    font-size: 1em;
+    width: 1.6em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.requisitos{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    align-items: center
+}
+
+.texto-req{
+    color: #625A58;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    line-height: 1.5em;
+}
