@@ -20,63 +20,45 @@
     background-color: rgb(37, 248, 37);
 }
 
-.row{
-    background-color: #ecf3f0;
-    display: -ms-flex;
-    display: -webkit-flex;
+.container-title{
+    width: 90%;
+    height: 10vh;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    background-color: #ecf3f081;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.div-container-title{
     display: flex;
-    border-radius: 27px;
-}
-
-.col-1{
-    background: url(https://i.pinimg.com/564x/3b/0b/cb/3b0bcb6f89f34a6b4a7a4ff1eb1b6140.jpg);
-    background-size: cover;
-    background-position: 0 50%;
-}
-
-.col-2{
-    background-color: rgb(190 240 125);
-}
-
-.row, .col-1, .col-2{
-    width: 100%;
-    padding: 10px;
-}
-
-.row > .col-1 {
-    margin-right: 20px;
-}
-
-.count-punto{
-    font-weight: 700;
-    background: #055895;
-    color: white;
-    font-size: 1em;
-    width: 1.6em;
-    height: 1.5em;
-    border-radius: 50%;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin: auto;
 }
 
-.requisitos{
-    display: flex;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    align-items: center
+.text-requisito{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 200%;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: #0d0909;
 }
 
-.titulo-requisito{
-    color: #000;
-    font-weight: 700;
+.link-requisitos{
+    height: 6vh;
+    width: 15vw;
+    border-radius: 20px;
+    background-color: rgb(37, 248, 37);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid black;
 }
-
-.texto-req{
-    color: #625A58;
-    width: 100%;
-    line-height: 1.5em;
+.link-requisitos h4{
+    font-size: 3vh;
+    font-family: 'Luckiest Guy', cursive;
+    margin: auto;
+    color: #0d0909;
 }
