@@ -14,17 +14,19 @@
 .modal.is-open{
     display: flex;
     height: 100vh;
-    
 }
 .modal-container{
+    height: 100vh;
     position: relative;
-    padding: 3rem;
-    min-width: 320px;
-    max-width: 480px;
+    padding: 2rem;
+    max-width: 600px;
     overflow-y: auto;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: #fff;
     animation: slideleft 1s forwards;
+    background-image: url("https://media.istockphoto.com/id/522134752/es/foto/perros-y-gatos-sosteniendo-un-marco-en-sus-patas.jpg?s=170667a&w=0&k=20&c=bwALnGmDq_mO1aF7EKfaJ_-Am2sFytKAhVD1hSY2DCQ=");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .modal-close{
     position: absolute;
@@ -41,4 +43,8 @@
 }
 .modal-close:hover{
     cursor: pointer;
+}
+.modal-title{
+    width: 90%;
+    margin: auto;
 }

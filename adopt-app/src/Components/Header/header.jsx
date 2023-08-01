@@ -11,7 +11,7 @@ const Header = () => {
                     <Link to='/'><img src="../../../Img/logo.jpg" className="logo" alt=""></img> </Link>
                 </li>
                 <li className="link-item" data-submenu="true">
-                    <Link to='/adopciones'>Adoptar</Link>
+                    <Link to='/adopciones/mascotas'>Adoptar</Link>
                 </li>
                 <li className="link-item" data-submenu="true">
                     <Link to='/denuncias'>Denunciar</Link>

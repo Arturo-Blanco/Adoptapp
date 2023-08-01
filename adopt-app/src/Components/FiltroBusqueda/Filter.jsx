@@ -1,83 +1,82 @@
 import FilterBox from "./FilterBox/FilterBox";
-import FilterCheckbox from "./FilterCheckbox/FilterCheckbox";
+import InputCheckbox from "./InputCheckbox/FilterCheckbox";
 import './filter.css'
 
 const Filter = ({setFilters}) => {
 
     const handleStateChange = (event) => {
         //Se desestructura los valores del checkbox al ocurrir el evento. Extrayendo los valores 'name' y checked
-        const {name, checked} = event.target
+        const {name, checked, value} = event.target
     setFilters((prevFilter) => ({
         ...prevFilter, // se crea una copia del objeto prevFilter para mantener todos los filtros seleccionados
-        [name] : checked ? name : undefined // se verifica si el check es true se retorna el name del mismo sino se devuelve undefined
+        [name] : checked ? value : undefined // se verifica si el check es true se retorna el name del mismo sino se devuelve undefined
     }));
     }
-
     return (
         <aside className="filter-container">
             <h3 className="preferences">¿Que estas buscando?</h3>
             <FilterBox
             title="Especie">
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="perro"
             text="Perro"
-            value="perro"
-            name="perro"
+            value="Perro"
+            name="specie"
             onChange={handleStateChange}
             />
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="gato"
             text="Gato"
-            value="gato"
-            name="gato"
+            value="Gato"
+            name="specie"
             onChange={handleStateChange}
             />
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="otros"
             text="Otros"
-            value="otros"
-            name="otros"
+            value="Otros"
+            name="specie"
             onChange={handleStateChange}
             />
             </FilterBox>
             <FilterBox
             title="Sexo">
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="macho"
             text="Macho"
-            value="macho"
-            name="macho"
+            value="Macho"
+            name="sex"
             onChange={handleStateChange}
             />
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="hembra"
             text="Hembra"
-            value="hembra"
-            name="hembra"
+            value="Hembra"
+            name="sex"
             onChange={handleStateChange}
             />
             </FilterBox>
             <FilterBox
             title="Ubicacion">
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="Ushuaia"
             text="Ushuaia"
-            value="Ushuaia"
-            name="Ushuaia"
+            value= "1"
+            name="location"
             onChange={handleStateChange}
             />
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="RioGrande"
             text="Rio Grande"
-            value="Rio Grande"
-            name="Rio Grande"
+            value="3"
+            name="location"
             onChange={handleStateChange}
             />
-            <FilterCheckbox
+            <InputCheckbox
             htmlFor="Tolhuin"
             text="Tolhuin"
-            value="Tolhuin"
-            name="Tolhuin"
+            value="2"
+            name="location"
             onChange={handleStateChange}
             />
             </FilterBox>

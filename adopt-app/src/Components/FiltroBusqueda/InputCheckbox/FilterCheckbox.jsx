@@ -1,5 +1,5 @@
 
-const FilterCheckbox = (props) => {
+const InputCheckbox = (props) => {
     return (
         <>
         <label className="filter-label" htmlFor={props.value}>
@@ -9,4 +9,4 @@ const FilterCheckbox = (props) => {
         </>
     )
 }
-export default FilterCheckbox;
+export default InputCheckbox;

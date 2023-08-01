@@ -7,23 +7,22 @@ import axios from 'axios';
 import { baseUrl } from '../../Apis/getMascotas.mjs';
 
 const Adopciones = () => {
-
     const [filter, setFilters] = useState({})
     const [pageNumber, setPageNumber] = useState(1);
     const [totalCount, setTotalCount] = useState(0);
-    const [values, setValues] = useState();
+    const [param, setParam] = useState();
 
     useEffect(() => {
-        const selectValues = Object.values(filter).filter((value) => 
-            value !== undefined
-        )
-        console.log(selectValues)
-        if(selectValues.length > 0){
-        setValues(selectValues.toString());
-        } else {
-            setValues('$')
-        }
-    }, [filter])
+        if(filter){
+            const query = new URLSearchParams({
+                specie: filter.specie || "",
+                sex: filter.sex || "",
+                location: filter.location || ""
+            }).toString();
+                //console.log(filter)
+            setParam(query)
+        }   
+    },[filter])
 
     useEffect(() => {
         const getLenght = async() => {
@@ -37,7 +36,6 @@ const Adopciones = () => {
         }
         getLenght();
     }, [])
-
     const previousPage = () => {
         if(pageNumber > 1) {
             setPageNumber((prevPag) => prevPag - 1);
@@ -78,7 +76,7 @@ const Adopciones = () => {
         <div className='adopciones'>
             <h2>Encontra a un amigo</h2>
             <Filter filter={filter} setFilters={setFilters}></Filter>
-            <CardAdopt pageNumber={pageNumber} filters={values}/>
+            <CardAdopt pageNumber={pageNumber} params={param}/>
             <div className='pagination-container'>
             <PaginationButton
                 className="pagination-btn"
