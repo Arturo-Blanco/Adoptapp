@@ -78,12 +78,7 @@ const Adopciones = () => {
         <div className='adopciones'>
             <article className='container-title'>
                 <div className='div-container-title'>
-                <h3 className='text-requisito'>Un amigo te esta esperando</h3>
-                <a href="/informaciongeneral">
-                    <div className='link-requisitos'>
-                    <h4>Ver requisitos</h4>
-                    </div>
-                </a>
+                <h3 className='title-adopciones'>Un amigo te esta esperando</h3>
                 </div>
             </article>
             <Filter filter={filter} setFilters={setFilters}></Filter>

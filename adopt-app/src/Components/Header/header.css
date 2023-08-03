@@ -58,3 +58,31 @@ header{
 .nav-icons{
 	display: none;
 }
+
+.container-title{
+    width: 90%;
+    height: 10vh;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    background-color: #ecf3f081;
+    border: 1px solid white;
+    border-radius: 5px;
+	justify-content: center;
+}
+
+.div-container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.title-adopciones{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 200%;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: #0d0909;
+}

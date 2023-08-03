@@ -1,10 +1,11 @@
+import ComponenteTitle from '../Header/title';
 import './contacto.css';
 
 const Contacto = () => {
     return (
         <div>
-            <h2>Aca va la página de Contacto</h2>
-
+            <ComponenteTitle
+            h3="Comunicate con nosotros"/>
         </div>
     )
 };

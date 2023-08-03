@@ -1,9 +1,11 @@
 import './donaciones.css';
+import ComponenteTitle from '../Header/title';
 
 const Donaciones = () => {
     return (
         <div>
-            <h2>Aca va la página de Donaciones</h2>
+            <ComponenteTitle
+            h3="Ayudas y donaciones"/>
 
         </div>
     )
