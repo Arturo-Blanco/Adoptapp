@@ -27,7 +27,7 @@ const Home = () => {
         <article className='home-adopt-container'>
             <div className='home-adopt-div'>
                 <h3 className='home-adopt-text'>Quiero adoptar</h3>
-                <Link to="/adopciones"><div className='home-adopt-link'><h3>Ver mascotas</h3></div></Link>
+                <Link to="/adopciones/mascotas"><div className='home-adopt-link'><h3>Ver mascotas</h3></div></Link>
             </div>
         </article>
         <article className="home-card-content">

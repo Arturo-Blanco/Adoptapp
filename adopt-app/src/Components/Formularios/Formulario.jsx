@@ -25,24 +25,31 @@ const Formulario = ({ petId, updateCard, closeModal1 }) => {
   });
   
   const adoptFunction = async(petId, data) => {
-      const interestedIn = petId
-    try{
-      const userData = {
-        ...data,
-        interestedIn
-      }        
-      const responsePet = await axios.put(baseUrl+`pets/addInterested/${petId}`,{ 
-        headers: { 'Content-Type': 'application/json' },
-    });
-    const responseUser = await axios.post(baseUrl + `user/addUser`, userData );
-    console.log(responseUser.data);
-    setAdoptionMesage(responsePet.data.mesage);
-    setOpenModal2(true);
-    updateCard(responsePet.data.mesage);
-    }
-      catch(error) {
-        console.error(error);
-    }
+      const interestedIn = petId;
+      try {
+        const userData = {
+            ...data,
+            interestedIn
+        };
+        const responseUser = await axios.post(baseUrl + `user/addUser`, userData);
+
+        if (responseUser.data.success) {
+            const responsePet = await axios.put(baseUrl + `pets/addInterested/${petId}`, {
+                headers: { 'Content-Type': 'application/json' },
+            });
+              setAdoptionMesage(responsePet.data.message);
+              setOpenModal2(true);
+              updateCard(responsePet.data.message);
+        } else {
+            console.error('Error al agregar el usuario:', responseUser.data.message);
+        }
+      } catch (error) {
+          if(error.response.status === 409) {
+              alert(`Este mail ya se encuentra registrado para adoptar una mascota, aguarde a que sus datos sean confirmados o solicite reemplazar la mascota por la cual esta interesado/a.`)
+          } else {
+              alert(`Error inesperado del sistema.`)
+          }
+      }
   }
   /*const addUser = async(data) => {
       const interestedIn = petId
@@ -63,12 +70,10 @@ const Formulario = ({ petId, updateCard, closeModal1 }) => {
       ...formData,
       [event.target.name]: event.target.value
     });
-    console.log(formData)
   };
   const handleSubmit = (event) => {
     event.preventDefault();
     adoptFunction(petId, formData);
-    console.log(formData)
   }
     return(
       <>

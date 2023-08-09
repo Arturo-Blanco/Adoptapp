@@ -34,13 +34,14 @@ const CardAdopt = ({pageNumber,params}) => {
                         <div className='div-item'>{pet.age} años</div>
                         <div className='div-item-details'>
                             <ul>
-                                {pet.description.castrado ? <li>Castrado</li>: ""}
-                                {pet.description.desparacitado ? <li>Desparacitado</li>: ""}
-                                {pet.description.cariñoso ? <li>Cariñoso</li>: ""}
+                                {pet.attributes.map((attribut) => (
+                                    <li key={attribut.attribut.id}>{attribut.attribut.attribut}</li>
+                                ))}
                             </ul>
                         </div>
-                        <div className='div-item'>{pet.cityId === 1 ? "Ushuaia" : pet.cityId === 2 ? "Tolhuin" : "Rio Grande"} </div>
-                        <button className='btn-available' value={pet.id} onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1(); }}> Quiero adoptar </button>
+                        {/*<p>{pet.description}</p>*/}
+                        <div className='div-item'>{pet.city} </div>
+                        <button className='btn-adopt' value={pet.id} onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1(); }}> Quiero adoptar </button>
                         <div className='div-item interested'>{pet.interested > 0 ? (<p>{pet.interested} interesados</p>
                         ) : (<p>No hay interesados </p>)}</div>
                         <Modal isOpen={isOpenModal1} closeModal={closeModal1}>

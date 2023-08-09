@@ -80,24 +80,7 @@ const Filter = ({setFilters}) => {
             onChange={handleStateChange}
             />
             </FilterBox>
-            {/*<FilterBox
-            title="Estado">
-            <FilterCheckbox
-            htmlFor="disponible"
-            text="Disponible"
-            value="disponible"
-            name="disponible"
-            onChange={handleStateChange}
-            />
-            <FilterCheckbox
-            htmlFor="reservado"
-            text="Reservado"
-            value="reservado"
-            name="reservado"
-            onChange={handleStateChange}
-            />
-    </FilterBox>*/}
         </aside>
     )
 }
-export default Filter
+export default Filter;
