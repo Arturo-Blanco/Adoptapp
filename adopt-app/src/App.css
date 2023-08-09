@@ -1,22 +1,22 @@
+:root {
+	--btn-colour-green:#6abf84;
+}
 *{
+	font-family: 'Luckiest Guy', cursive;
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
 	text-decoration: none;
 	text-align: center;
-	color: white;
 	letter-spacing: 2px;
-}
-
-*, p{
-	color: #000;
 }
 li {
 	list-style: none;
 }
 body {
-	background: linear-gradient(120deg,#00a4b2,#00b269,#057e58);
+	/*background: linear-gradient(120deg,#00a4b2,#00b269,#057e58);*/
+	background: linear-gradient(to bottom, #327B50, #4CAF6A, #6BD28D);
 }
 .container{
 	width: 98%;
