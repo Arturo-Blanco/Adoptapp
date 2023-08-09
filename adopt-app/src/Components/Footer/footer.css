@@ -1,9 +1,10 @@
    /* ------   FOOTER STYLES  -----*/
-   footer{
+footer{
 	margin: 10% 0 0 0;
 	width: 100%;
 	padding-top: 2%;
-	background:#136c44;
+	background:linear-gradient(190deg,rgb(6, 8, 6), rgba(100, 92, 92, 0.822));
+	color: white;
 }
 .footer-content{
 	display: flex;

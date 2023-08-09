@@ -35,7 +35,7 @@ header{
 	left: 0;
 	width: 0;
 	height: 3px;
-	background-color: #1eeaad;
+	background-color: #6abf84; 
 	transition: width 0.5s ease; /* Transición del ancho */
 }
 .link-item > a:hover::after{
@@ -45,7 +45,7 @@ header{
 	display: none;
 }
 .link-item a:hover{
-	color: #1eeaad;
+	color: #6abf84; 
 }
 .link-item a {
 	color: white;
