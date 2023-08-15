@@ -58,7 +58,6 @@
 	margin: auto;
 	text-transform: uppercase;
 	background-color: #849232;
-	border: 1px solid white;
 	border-radius: 5px;
 }
 .home-adopt-div{
@@ -82,7 +81,7 @@
 .home-adopt-link h3 {
 	font-size: 3vh;
 	font-family: 'Luckiest Guy', cursive;
-	margin: auto;
+	margin-top: 5px;
 	color:#0d0909;
 }
 .home-adopt-text{
@@ -141,7 +140,7 @@
 
 .count-punto{
     font-weight: 700;
-    background: #055895;
+    background: #f39d25c7;
     color: white;
     font-size: 1em;
     width: 1.6em;
