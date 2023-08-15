@@ -9,27 +9,28 @@ const Home = () => {
         <article className="adopt-reason-container">
             <div className="adopt-reason">
                 <div className='adopt-reason-text'>
-                <div className='adopt-reason-title'>
-                <h2>¿Buscando un nuevo compañero?</h2>
-                </div>
-                <h2>Antes tienes que saber:</h2>
+                    <div className='adopt-reason-title'>
+                    <h2>¿Buscando un nuevo compañero?</h2>
+                    </div>
+                <h3>Antes tienes que saber:</h3>
                 <ul className='adopt-reason-list'>
-                <li>Debes ser mayor de 18 años.</li>
                 <li>Adoptar una mascota es una responsabilidad, por ello primero debes asegurarte que estas listo para esta tarea.</li>
                 <li>Una mascota requiere cuidado, atencion y cariño.</li>
                 <li>Te solicitaremos informacion para que un profesional verifique y apruebe tu peticion.</li>
             </ul>
-            </div>
+                </div>
         </div>
         <div className="adopt-reason-img">
             </div> 
         </article>
-        <article>
-        <div className='row'>
-                <div className='col-1'>
+
+        <article className="adopt-reason-container">
+            <div className="adopt-reason-img1">
+            </div>
+            <div className="adopt-reason">
+                <div className='adopt-reason-title'>
+                    <h2 className='titulo-requisito'>Requisitos para adoptar</h2>
                 </div>
-                <div className='col-2'>
-                    <h3 className='titulo-requisito'>Requisitos para adoptar</h3>
                     <div className='requisitos'>
                         <span className='count-punto'>1
                         </span>
@@ -49,7 +50,6 @@ const Home = () => {
                         <p className='texto-req'>Comprometerse con el cuidado, la salud y la castración de la mascota.</p>
                     </div>
                 </div>
-            </div>
         </article>
         <article className='home-adopt-container'>
             <div className='home-adopt-div'>

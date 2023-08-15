@@ -3,7 +3,7 @@
 	margin: 10% 0 0 0;
 	width: 100%;
 	padding-top: 2%;
-	background:#136c44;
+	background:#849232;
 }
 .footer-content{
 	display: flex;
@@ -60,7 +60,7 @@ footer p{
 }
 .icon{
 	display: flex;
-	width: 100%;
+	width: 60%;
 	margin: auto;
 }
 footer .icon li{
