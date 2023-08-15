@@ -24,6 +24,13 @@ const Home = () => {
             </div> 
         </article>
 
+        <article className='home-adopt-container'>
+            <div className='home-adopt-div'>
+                <h3 className='home-adopt-text'>Quiero adoptar</h3>
+                <Link to="/adopciones"><div className='home-adopt-link'><h3>Ver mascotas</h3></div></Link>
+            </div>
+        </article>
+
         <article className="adopt-reason-container">
             <div className="adopt-reason-img1">
             </div>
@@ -51,12 +58,13 @@ const Home = () => {
                     </div>
                 </div>
         </article>
+        
         <article className='home-adopt-container'>
             <div className='home-adopt-div'>
-                <h3 className='home-adopt-text'>Quiero adoptar</h3>
-                <Link to="/adopciones"><div className='home-adopt-link'><h3>Ver mascotas</h3></div></Link>
+                <h2 className='home-adopt-text1'>Estos son los miembros mas nuevos de nuestra familia</h2>
             </div>
         </article>
+
         <article className="home-card-content">
             <CardHome
                 title="Adoptar"
