@@ -90,8 +90,15 @@
 	font-weight: 400;
 	letter-spacing: 10px;
 	color:#0d0909;
-
 }
+
+.home-adopt-text h2{
+	font-family: 'Luckiest Guy', cursive;
+	font-weight: 400;
+	letter-spacing: 10px;
+	color:#0d0909;
+}
+
 
 .adopt-reason-img1{
     background: url("https://i.pinimg.com/564x/3b/0b/cb/3b0bcb6f89f34a6b4a7a4ff1eb1b6140.jpg");

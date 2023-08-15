@@ -1,5 +1,5 @@
-   /* ------   FOOTER STYLES  -----*/
-   footer{
+/* ------   FOOTER STYLES  -----*/
+footer{
 	margin: 10% 0 0 0;
 	width: 100%;
 	padding-top: 2%;
@@ -19,8 +19,6 @@
 }
 .footer-menu{
 	display: flex;
-	width: 30%;
-	min-width: 400px;
 	margin: auto;
 }
 footer .menu li{
@@ -42,6 +40,7 @@ footer p{
 	flex-direction: column;
 	width: max-content;
 	margin: auto;
+	font-size: 1.2rem;
 }
 .newsleatter{
 	width: 80%;
