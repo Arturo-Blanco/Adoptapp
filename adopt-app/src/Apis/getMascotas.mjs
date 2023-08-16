@@ -1,10 +1,10 @@
 import axios from "axios";
+export const baseUrl = 'http://localhost:3001/';
 
-export const getMascotas = async () => {
+export const getMascotas = async (pageNumber) => {
   try {
-    const response = await axios.get('http://localhost:3000/pets');
+    const response = await axios.get(baseUrl+`pets/filter__${pageNumber}`);
     const data = response.data;
-    console.log(data);
     return data;
   } catch (error) {
     console.log('Error:', error);

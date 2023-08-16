@@ -8,26 +8,26 @@ const Header = () => {
             <nav id="nav" className="main-nav">
             <ul className="nav-links">
                 <li>
-                    <Link to='/'><img src="../../../Img/logo.svg.svg" className="logo" alt=""></img> </Link>
+                    <Link to='/'><img src="../../../Img/logo.jpg" className="logo" alt=""></img> </Link>
                 </li>
                 <li className="link-item" data-submenu="true">
-                    <Link to='/adopciones'>Adopciones</Link>
+                    <Link to='/adopciones/mascotas'>Adoptar</Link>
                 </li>
                 <li className="link-item" data-submenu="true">
-                    <Link to='/denuncias'>Denuncias</Link>
+                    <Link to='/denuncias'>Denunciar</Link>
                 </li>
                 <li  className="link-item" data-submenu="true">
                     <Link to='/informaciongeneral'>Información general</Link>
                 </li>
                 <li className="link-item">
-                    <Link to='/donaciones'>Donaciones</Link>
+                    <Link to='/donaciones'>ayudar</Link>
                 </li>
                 <li className="link-item">
-                <Link to='/contactos'>Contactos</Link>
+                <Link to='/contacto'>Contacto</Link>
                     <ul className="nav-icons">
-                        <li><i class="fa-brands fa-whatsapp"></i></li>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i className="fa-brands fa-whatsapp"></i></li>
+                        <li><i className="fa-brands fa-facebook-f"></i></li>
+                        <li><i className="fa-brands fa-instagram"></i></li>
                     </ul>
                 </li>
             </ul>

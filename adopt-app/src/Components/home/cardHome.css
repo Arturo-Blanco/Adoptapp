@@ -1,0 +1,33 @@
+.home-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    animation: slideleft 1s forwards;
+    width: 90%;
+    margin: 60px auto;
+    justify-content: space-between;
+}
+.home-card {
+    display: flex;
+    height: 35vh;
+    width: 48%;
+    margin: 20px 0;
+    opacity: 0.9;
+    transition: 0.6s ease all;
+    background-color: #ecf3f081;
+    min-width: 250px;
+    border-radius: 5px;
+}
+.home-card-img{
+	height: 100%;
+	width: 50%;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmnHDRRFKYi-7S87SgyU8u4QygUuy8Z-yZuA&usqp=CAU");
+	background-size: cover;
+	background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.home-card-title, .home-card-title{
+	color: #0d0909;
+}
+.home-card-text{
+    width: 50%;
+}

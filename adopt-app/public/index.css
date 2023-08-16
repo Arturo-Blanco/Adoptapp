@@ -1,4 +1,4 @@
-*{
+/**{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -58,7 +58,7 @@ header{
 	height: 3px;
 	background-color: #1eeaad;
 	transition: width 0.5s ease; /* Transición del ancho */
-}
+/*}
 .link-item > a:hover::after{
 	width: 100%;
 }
@@ -198,6 +198,7 @@ header{
 	height: 40px;
 }
     /* ------   FOOTER STYLES  -----*/
+	/*
 footer{
 	margin: 10% 0 0 0;
 	width: 100%;
@@ -328,7 +329,7 @@ footer .icon li:hover{
 		height: 3px;
 		background-color: #1eeaad;
 		transition: width 0.5s ease; /* Transición del ancho */
-	}
+	/*}
 	.link-item > a{
 		color: white;
 		width: 100%;
@@ -438,3 +439,4 @@ footer .icon li:hover{
 		margin: auto;
 	}
 }
+*/
