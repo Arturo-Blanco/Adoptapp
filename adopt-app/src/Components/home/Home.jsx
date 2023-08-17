@@ -83,6 +83,26 @@ const Home = () => {
                 info="efefefefe"
             />
     </article> 
+
+    <article className='home-adopt-container'>
+            <div className='home-adopt-div'>
+                <h2 className='home-adopt-text1'>Ya hicieron match</h2>
+            </div>
+        </article>
+
+        <article className="adopt-reason-container">
+            <div className="adopt-reason">
+                <div className='adopt-reason-text'>
+                    <div className='adopt-reason-title'>
+                    <h3>Ellos ya encontraron un hogar donde les brinden amor</h3> 
+                    <p>¡Sumate vos tambien a esta familia y dales una oportunidad!</p>
+                    </div>
+                </div>
+        </div>
+        <div className="adopt-reason-img2">
+            <p>Insertar carrusel</p>
+            </div> 
+        </article>
         </section>
     </main>
     )
