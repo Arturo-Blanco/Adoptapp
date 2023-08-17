@@ -85,11 +85,10 @@
 	color:#0d0909;
 }
 .home-adopt-text{
-	font-family: 'Luckiest Guy', cursive;
 	font-size: 200%;
-	font-weight: 400;
 	letter-spacing: 10px;
 	color:#0d0909;
+	margin: inherit;
 }
 
 .home-adopt-text h2{
