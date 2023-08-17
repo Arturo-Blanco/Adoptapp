@@ -21,6 +21,7 @@
 	background: url("https://i.pinimg.com/564x/77/b8/32/77b8327aa8daa81122e1ce732d6834ca.jpg");
 	width: 40%;
 	background-size: cover;
+	background-position: 50%;
 	border-radius: 0 30px 30px 0;
 }
 
