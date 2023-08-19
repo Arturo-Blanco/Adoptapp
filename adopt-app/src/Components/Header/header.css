@@ -1,32 +1,45 @@
 header{
 	height: 50vh;
-	background-image: url("../../../public/Img/header.webp");
+	background-image: url("../../assets/header.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 45%;
 	border-radius: 0 0 20px 20px;
 	opacity: 0.9;
 }
-.main-nav{
-	height: 25%;
-	width: 100%;
-	background:linear-gradient(190deg,rgb(6, 8, 6), rgba(100, 92, 92, 0.822));
+nav {
+    position: sticky;
+    top:0;
+    z-index: 998;
 }
-.nav-links{
+.logo-div {
+	width: 5%;
+	margin: auto;
+}
+.logo-link {
+	display: block;
+	background-color: white;
+	margin: auto;
+	width: 80%;
+}
+.main-nav {
+	display: flex;
+	justify-content: space-around;
+	height: 15%;
+	min-height: 70px;
+	width: 100%;
+	background:linear-gradient(190deg,rgb(81, 90, 81), rgb(51, 42, 42));
+}
+.nav-links {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 80%;
 }
-.link-item a{
+.link-item a {
 	font-size: 1rem;
-	text-transform: uppercase;
+	font-weight: 400;
 	transition: opacity 0.3s ease;
-}
-.logo{
-	border-radius: 50px;
-	width: 70px;
-	height: auto;
-	margin-top: 5px;
 }
 .link-item > a::after{
 	content: "";
@@ -48,7 +61,7 @@ header{
 	color: #6abf84; 
 }
 .link-item a {
-	color: white;
+	color: rgb(240, 230, 230);
 }
 .nav-links li{
 	position: relative;

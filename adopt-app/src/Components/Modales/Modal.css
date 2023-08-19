@@ -34,12 +34,12 @@
     right: 1rem;
     height: 30px;
     width: 30px;
-    background-image: url('../../../public/Img/cerrar.png');
+    /*background-image: url('../../../public/Img/cerrar.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
-    border: none;
+    border: none;*/
 }
 .modal-close:hover{
     cursor: pointer;

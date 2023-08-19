@@ -1,7 +1,7 @@
 import Filter from '../FiltroBusqueda/Filter';
-import CardAdopt from './Card-adopt/card-adopt';
+import AdoptCards from './AdoptCards/AdoptCards';
 import PaginationButton from './PaginationComponents/PaginationButton';
-import './adopciones.css';
+import './adoptionPage.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { baseUrl } from '../../Apis/getMascotas.mjs';
@@ -76,7 +76,7 @@ const Adopciones = () => {
         <div className='adopciones'>
             <h2>Encontra a un amigo</h2>
             <Filter filter={filter} setFilters={setFilters}></Filter>
-            <CardAdopt pageNumber={pageNumber} params={param}/>
+            <AdoptCards pageNumber={pageNumber} params={param}/>
             <div className='pagination-container'>
             <PaginationButton
                 className="pagination-btn"
