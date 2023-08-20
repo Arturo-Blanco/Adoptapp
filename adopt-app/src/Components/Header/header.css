@@ -1,5 +1,5 @@
 header{
-	height: 50vh;
+	height: 40vh;
 	background-image: url("../../assets/header.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -37,18 +37,17 @@ nav {
 	width: 80%;
 }
 .link-item a {
-	font-size: 1rem;
-	font-weight: 400;
-	transition: opacity 0.3s ease;
+	color: white;
+	font-size: 1.2rem;
 }
 .link-item > a::after{
 	content: "";
 	position: absolute;
-	bottom: -15px;
+	bottom: -10px;
 	left: 0;
 	width: 0;
 	height: 3px;
-	background-color: #6abf84; 
+	background-color: var(--main-bg-color); 
 	transition: width 0.5s ease; /* Transición del ancho */
 }
 .link-item > a:hover::after{
@@ -58,10 +57,7 @@ nav {
 	display: none;
 }
 .link-item a:hover{
-	color: #6abf84; 
-}
-.link-item a {
-	color: rgb(240, 230, 230);
+	color: var(--main-bg-color); 
 }
 .nav-links li{
 	position: relative;

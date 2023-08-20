@@ -13,7 +13,7 @@ const Filter = ({setFilters}) => {
     }));
     }
     return (
-        <aside className="filter-container">
+        <>
             <h3 className="preferences">¿Que estas buscando?</h3>
             <FilterBox
             title="Especie">
@@ -80,7 +80,7 @@ const Filter = ({setFilters}) => {
             onChange={handleStateChange}
             />
             </FilterBox>
-        </aside>
+        </>
     )
 }
 export default Filter;

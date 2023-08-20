@@ -12,13 +12,13 @@ const Header = () => {
                 </Link>
                     </div> 
                 <ul className="nav-links">
-                    <li className="link-item" data-submenu="true">
+                    <li className="link-item">
                         <Link to='/adopciones/mascotas'>Adoptar</Link>
                     </li>
-                    <li className="link-item" data-submenu="true">
+                    <li className="link-item">
                         <Link to='/denuncias'>Denunciar</Link>
                     </li>
-                    <li className="link-item" data-submenu="true">
+                    <li className="link-item">
                         <Link to='/informacion'>Información</Link>
                     </li>
                     <li className="link-item">

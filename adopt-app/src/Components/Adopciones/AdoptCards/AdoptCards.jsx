@@ -23,11 +23,10 @@ const AdoptCards = ({pageNumber,params}) => {
         }
         getPets();
     }, 
-    [pageNumber,updateCard,params]
-    );
-    return(
-        
-        <div className='adopt-card-content'>
+    [pageNumber,updateCard,params] );
+
+    return (
+            <>
             {petList.map(pet =>(
                 <Card 
                 id= {pet.id}
@@ -43,7 +42,7 @@ const AdoptCards = ({pageNumber,params}) => {
                 location = {pet.city}
                 onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1() }}
                 interested = {pet.interested > 0 ? `${pet.interested} interesados`
-                    : 'No hay interesados' }
+                    : '0 interesados' }
                 >
                 </Card>
                 
@@ -55,7 +54,7 @@ const AdoptCards = ({pageNumber,params}) => {
                             </div>
                             <Formulario petId={selectPetId} updateCard={setUpdateCard} closeModal1={closeModal1}></Formulario>
                     </Modal>
-            </div>
+        </>
         
            /*
                 <div className='adopt-card-content'>
@@ -88,7 +87,7 @@ const AdoptCards = ({pageNumber,params}) => {
                             <Formulario petId={selectPetId} updateCard={setUpdateCard} closeModal1={closeModal1}></Formulario>
                         </Modal>
             </div> */
-        )
+    )
 };
 
 export default AdoptCards;

@@ -54,10 +54,6 @@
     flex-direction: column;
     font-size: 0.8rem;
 }
-label div {
-    width: 10px;
-    height: 10px;
-}
 .pet-name {
     font-size: 1.5rem;
 }

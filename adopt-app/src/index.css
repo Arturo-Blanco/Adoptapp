@@ -100,10 +100,10 @@ meter {
     all: revert;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :root {
-  --main-bg-color : #6ee615;
-  --contrast-color: #fef7e1;
+    --main-bg-color : #009929;
+    --contrast-color: #5ccb5f;
 }
