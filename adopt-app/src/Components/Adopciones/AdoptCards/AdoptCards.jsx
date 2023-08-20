@@ -26,13 +26,14 @@ const AdoptCards = ({pageNumber,params}) => {
     [pageNumber,updateCard,params]
     );
     return(
-
+        
         <div className='adopt-card-content'>
             {petList.map(pet =>(
                 <Card 
                 id= {pet.id}
                 key={pet.id}
                 petImg = {pet.urlImg}
+                description = {pet.description}
                 name = {pet.name}
                 sexImg = {pet.sex === 'Macho' ? MaleImg : FemaleImg }
                 age = {pet.age}
@@ -44,20 +45,21 @@ const AdoptCards = ({pageNumber,params}) => {
                 interested = {pet.interested > 0 ? `${pet.interested} interesados`
                     : 'No hay interesados' }
                 >
-                <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
+                </Card>
+                
+            ))}
+            <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
                             <div className='modal-title'>
                             <p>Le interesa adoptar a {selectPetName}.</p>
                             <p>Complete el formulario con sus datos y nos comunicaremos a la brevedad.</p>
                             </div>
                             <Formulario petId={selectPetId} updateCard={setUpdateCard} closeModal1={closeModal1}></Formulario>
-                        </Modal>
-                    </Card>
-            ))}
+                    </Modal>
             </div>
-
-
-
-/*
+        
+           /*
+                <div className='adopt-card-content'>
+                {petList.map(pet =>(
                 <div className='pet-card' key={pet.id} >
                     <img className='pet-img' src={pet.urlImg} alt='imagen'></img>
                     <div className='datos'>
@@ -75,6 +77,9 @@ const AdoptCards = ({pageNumber,params}) => {
                         <button className='btn-adopt' value={pet.id} onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1() }}> Quiero adoptar </button>
                         <div className='div-item interested'>{pet.interested > 0 ? (<p>{pet.interested} interesados</p>
                         ) : (<p>No hay interesados </p>)}</div>
+                        </div>
+                        </div>
+                        ))}
                         <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
                             <div className='modal-title'>
                             <p>Le interesa adoptar a {selectPetName}.</p>
@@ -82,12 +87,8 @@ const AdoptCards = ({pageNumber,params}) => {
                             </div>
                             <Formulario petId={selectPetId} updateCard={setUpdateCard} closeModal1={closeModal1}></Formulario>
                         </Modal>
-                    </div>
-                </div>
-            ))}
-        </div>
-        */
-    ) 
+            </div> */
+        )
 };
 
 export default AdoptCards;

@@ -1,4 +1,5 @@
 import React from "react";
+import './card.css';
 
 const Card = (props) => {
 
@@ -15,10 +16,10 @@ const Card = (props) => {
                 </div>
                 <p className='pet-age'>{props.age} años</p>
                 <ul className="attributes-list">
-                    {props.atrribute}
+                    {props.attribute}
                 </ul>
                 <p className='pet-location'>{props.location}</p>
-                <button className='adopt-btn' value={props.id} onClick={props.onClick}>
+                <button className='adopt-btn' type='button' value={props.id} onClick={props.onClick}>
                     Quiero adoptar
                 </button>
                 <p className="pet-interested"> {props.interested}</p>
