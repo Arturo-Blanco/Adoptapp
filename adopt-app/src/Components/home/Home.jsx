@@ -24,13 +24,6 @@ const Home = () => {
             </div> 
         </article>
 
-        <article className='home-adopt-container'>
-            <div className='home-adopt-div'>
-                <h3 className='home-adopt-text'>Quiero adoptar</h3>
-                <Link to="/adopciones"><div className='home-adopt-link'><h3>Ver mascotas</h3></div></Link>
-            </div>
-        </article>
-
         <article className="adopt-reason-container">
             <div className="adopt-reason-img1">
             </div>
@@ -67,14 +60,6 @@ const Home = () => {
 
         <article className="home-card-content">
             <CardHome
-                title="Adoptar"
-                info="efefefefe"
-            />
-            <CardHome
-                title="Adoptar"
-                info="efefefefe"
-            />
-            <CardHome
                 name="Adoptar"
                 info="efefefefe"
             />
@@ -83,6 +68,28 @@ const Home = () => {
                 info="efefefefe"
             />
     </article> 
+
+    <article>
+            <div className='home-adopt-div'>
+                <Link to="/adopciones"><div className='home-adopt-link'><h3>Ver mascotas</h3></div></Link>
+            </div>
+    </article>
+
+    <article className='home-adopt-container'>
+            <div className='home-adopt-div'>
+                <h2 className='home-adopt-text1'>Informacion</h2>
+            </div>
+        </article>
+
+        <article className="adopt-reason-container">
+            <div className="adopt-reason-img1">
+            </div>
+            <div className="adopt-reason">
+                <div className='adopt-reason-title'>
+                    <h2 className='titulo-requisito'>Requisitos para adoptar</h2>
+                </div>
+            </div>
+        </article>
 
     <article className='home-adopt-container'>
             <div className='home-adopt-div'>
@@ -99,8 +106,10 @@ const Home = () => {
                     </div>
                 </div>
         </div>
-        <div className="adopt-reason-img2">
-            <p>Insertar carrusel</p>
+        <div className="carrusel-container">
+            <img className="carrusel-item" src="https://i.pinimg.com/564x/60/2f/15/602f1592b2ab6f76cce5d6d494b2acdf.jpg" alt="" />
+            <img className="carrusel-item" src="https://i.pinimg.com/564x/18/41/f2/1841f2c427ecbd2c23ebb7836254ed12.jpg" alt="" />
+            <img className="carrusel-item" src="https://i.pinimg.com/564x/42/04/8e/42048e1ef351f0c6e990e5f449d05baf.jpg" alt="" />
             </div> 
         </article>
         </section>

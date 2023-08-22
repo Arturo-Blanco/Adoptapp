@@ -1,35 +1,18 @@
 /* ------   FOOTER STYLES  -----*/
 footer{
-	margin: 10% 0 0 0;
-	width: 100%;
-	padding-top: 2%;
 	background:#849232;
 }
 .footer-content{
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 }
 .footer-text{
-	font-size: 1.2rem;
 	font-weight: 600;
+	width: 30%;
 	margin: auto 20px;
-	width: 40%;
 	min-width: 400px;
 }
-.footer-menu{
-	display: flex;
-	margin: auto;
-}
-footer .menu li{
-	font-size: 1.5em;
-	margin: 0 10px;
-	cursor: pointer;
-	margin:25px auto;
-}
-footer .menu li:hover{
-	opacity: 0.7;
-}
+
 footer p{
 	margin-top: 15px;
 	margin-bottom: 10px;
@@ -41,8 +24,9 @@ footer p{
 	width: max-content;
 	margin: auto;
 	font-size: 1.2rem;
+	position: relative;
 }
-.newsleatter{
+.newsletter{
 	width: 80%;
 	height: 30px;
 	border-radius: 10px;
@@ -50,9 +34,14 @@ footer p{
 	margin: 20px auto;
 }
 .footer-icon{
-	width: 25%;
-	min-width: 300px;
-	margin: auto;
+	position: absolute;
+	top: 46%;
+	right: 0%;
+	
+}
+.botonFooter{
+	border-radius: 10px;
+	height: 30px;
 }
 .icon{
 	display: flex;

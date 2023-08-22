@@ -17,12 +17,20 @@
 	border-radius: 0 30px 30px 0;
 }
 
-.adopt-reason-img2{
-	background: url("https://i.pinimg.com/564x/77/b8/32/77b8327aa8daa81122e1ce732d6834ca.jpg");
+.carrusel-container{
+	display: flex;
 	width: 40%;
-	background-size: cover;
-	background-position: 50%;
+	height: 60vh;
+	overflow-x: scroll;
 	border-radius: 0 30px 30px 0;
+	scroll-snap-type: x mandatory;
+}
+
+.carrusel-container img{
+	flex: 0 0 100%;
+	object-fit: cover;
+	width: 100%;
+	scroll-snap-align: center;
 }
 
 .adopt-reason{
@@ -87,6 +95,7 @@
 	margin: auto;
 	
 }
+
 .home-adopt-link{
 	height: 6vh;
 	width: 15vw;
@@ -95,6 +104,7 @@
 	text-transform: uppercase;
 	cursor: pointer;
 	border: 2px solid black;
+	margin-bottom: 50px;
 }
 .home-adopt-link h3 {
 	font-size: 3vh;
