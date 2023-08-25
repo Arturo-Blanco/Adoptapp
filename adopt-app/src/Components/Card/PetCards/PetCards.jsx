@@ -12,30 +12,25 @@ const PetCards = ({ petList }) => {
 
     return (
         <>
-            {petList.length > 0 ? (
-                (petList.map(pet => (
-                    <Card
-                        id={pet.id}
-                        key={pet.id}
-                        petImg={pet.urlImg}
-                        description={pet.description}
-                        name={pet.name}
-                        sex={pet.sex}
-                        age={pet.age}
-                        attribute={pet.attributes.map((attribut) => (
-                            <li key={attribut.attribut.id}>{attribut.attribut.attribut}</li>
-                        ))}
-                        location={pet.city}
-                        onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1() }}
-                        interested={pet.interested > 0 ? `${pet.interested} interesados`
-                            : '0 interesados'}
-                    >
-                    </Card>
-                ))
-                )) : ( 
-                <h3> No se encontraron mascotas. </h3> 
-                )
-            }
+            {petList.map(pet => (
+                <Card
+                    id={pet.id}
+                    key={pet.id}
+                    petImg={pet.urlImg}
+                    description={pet.description}
+                    name={pet.name}
+                    sex={pet.sex}
+                    age={pet.age}
+                    attribute={pet.attributes.map((attribut) => (
+                        <li key={attribut.attribut.id}>{attribut.attribut.attribut}</li>
+                    ))}
+                    location={pet.city}
+                    onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1() }}
+                    interested={pet.interested > 0 ? `${pet.interested} interesados`
+                        : '0 interesados'}
+                >
+                </Card>
+            ))}
             <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
                 <div className='modal-title'>
                     <p>Le interesa adoptar a {selectPetName}.</p>

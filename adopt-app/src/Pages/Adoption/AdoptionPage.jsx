@@ -1,10 +1,9 @@
-
 import './adoptionPage.css';
 import { getMascotas } from '../../Apis/getMascotas.mjs';
 import { scrollToTop } from '../../functions.mjs';
 import Filter from '../../Components/FiltroBusqueda/Filter';
 import PetCards from '../../Components/Card/PetCards/PetCards';
-import PaginationButton from '../../Components/Adopciones/PaginationComponents/PaginationButton';
+import PaginationButton from '../../Components/PaginationComponents/PaginationButton';
 import TitleBlock from '../../Components/Blocks/TitleBlock/TitleBlock';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -18,25 +17,35 @@ const AdoptPage = () => {
     const [pageNumber, setPageNumber] = useState(1);
     const [totalCount, setTotalCount] = useState(0);
     const [param, setParam] = useState();
+    const [loadingPage, setLoadingPage] = useState(true);
 
     useEffect(() => {
-        const getPets = async () => {
-            const data = await getMascotas(pageNumber + `?${param}`);
-            setPetList(data);
-        }
-        getPets();
-    },
-        [pageNumber, param]
-    );
+        // Comienza el llamado y la carga
+        const getPetsData = async () => {
+            try {
+                if (param) {
+                    const data = await getMascotas(pageNumber + `?${param}`);
+                    setPetList(data);
+                    setLoadingPage(false); // Finalizó el llamado y la carga
+                }
+            } catch (error) {
+                console.error(error);
+                setLoadingPage(false); // Finalizó el llamado aunque haya ocurrido un error
+            }
+        };
+        getPetsData(); // Llamamos a la función directamente aquí
+
+    }, [pageNumber, param]);
 
     useEffect(() => {
         if (filter) {
-            const query = new URLSearchParams({
+            const queryParams = {
                 specie: filter.specie || "",
                 sex: filter.sex || "",
                 location: filter.location || ""
-            }).toString();
+            };
             //console.log(filter)
+            const query = new URLSearchParams(queryParams).toString();
             setParam(query)
         }
     }, [filter])
@@ -76,20 +85,24 @@ const AdoptPage = () => {
     const activePage = (page) => {
         return page === pageNumber ? 'active-page' : 'disable-page';
     }
-
+    console.log(loadingPage)
     return (
         <main className='adoption-main'>
             <TitleBlock
                 title="Ellos te esperan" />
-            {petList && petList.length > 0 ? (
+            {!loadingPage && petList ? (
                 <>
                     <aside className='filter-container'>
                         <Filter filter={filter} setFilters={setFilters}></Filter>
                     </aside>
                     <div className='cards-container'>
-                        <PetCards petList={petList} />
+                        {!loadingPage && petList.length > 0 ? (
+                            <PetCards petList={petList} />
+                        ) : (
+                            <h3 className='not-found-title'> No hay resultados con sus preferencias de búsqueda.</h3>
+                        )}
                     </div>
-                    <section className='pagination-container'>
+                    <div className='pagination-container'>
                         <PaginationButton
                             className='pagination-btn'
                             id='previous-btn'
@@ -115,15 +128,14 @@ const AdoptPage = () => {
                             onClick={nextPage}
                             text="Siguiente >"
                         />
-                    </section>
+                    </div>
                 </>
             ) : (
-                <>  <img className='not-found-img' src={NotFoundImg} alt='not-found'></img>
+                <>
+                    <img className='not-found-img' src={NotFoundImg} alt='not-found'></img>
                     <h3 className='not-found-title'> Un momento por favor, estamos buscando a las mascotas.</h3>
                 </>
-            )
-            }
-
+            )}
         </main>
     )
 };

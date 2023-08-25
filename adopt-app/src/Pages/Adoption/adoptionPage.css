@@ -10,9 +10,11 @@
 .filter-container{
     width: 15%;
     margin: 20px auto;
-    border-radius: 5px;
+    border-radius: 20px;
     height: max-content;
     background-color:var(--main-bg-color);
+    color: white;
+    font-family: var(--p-font);
 }
 .cards-container {
     display: flex;
@@ -28,5 +30,5 @@
     height: max-content;
 }
 .active-page {
-    background-color: rgba(236, 243, 240, 0.69);
+    background-color: var(--background-card-color);
 }
