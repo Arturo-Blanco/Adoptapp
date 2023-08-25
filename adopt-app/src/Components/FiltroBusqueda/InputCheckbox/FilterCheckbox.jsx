@@ -1,10 +1,11 @@
 
 const InputCheckbox = (props) => {
+    const {name, value, id, text, onChange } = props;
     return (
         <>
-        <label className="filter-label" htmlFor={props.value}>
-            <input className="filter-checkbox" type="checkbox" value={props.value} name={props.name} onChange={props.onChange}/>
-        {props.text}
+        <label className="filter-label" htmlFor={id}>
+            <input className="filter-checkbox" type="checkbox" id={`${name}${value}`}value={value} name={name} onChange={onChange}/>
+        {text}
         </label>
         </>
     )

@@ -14,7 +14,7 @@ const Filter = ({setFilters}) => {
     }
     return (
         <>
-            <h3 className="preferences">¿Que estas buscando?</h3>
+            <h3 className="preferences">¿Qué estás buscando?</h3>
             <FilterBox
             title="Especie">
             <InputCheckbox
