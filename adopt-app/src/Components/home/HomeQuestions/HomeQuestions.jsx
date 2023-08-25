@@ -22,7 +22,7 @@ const HomeQuestions = () => {
         <div className='questions-container'>
             <ContentBlock
                 className="questions"
-                title="¿Querés adoptar pero tenes dudas?"
+                title="¿Querés adoptar pero tenés dudas?"
                 url={img}>
                 <li className='question-1' onClick={() => toggleAnswer(1)}
                     selected={selectedQuestion === 1}>

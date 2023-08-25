@@ -1,6 +1,7 @@
 import './header.css';
 import { Link } from 'react-router-dom';
 import  Logo  from '../../../src/assets/logo.svg'
+import { scrollToTop } from '../../functions.mjs';
 
 const Header = () => {
     return (
@@ -8,21 +9,21 @@ const Header = () => {
             <nav id="nav" className="main-nav">
             <div className='logo-div'>
                 <Link to='/' className='logo-link'>
-                    <img className='logo' src={Logo} alt="logo" />
+                    <img className='logo' src={Logo} alt="logo" onClick={scrollToTop}/>
                 </Link>
                     </div> 
                 <ul className="nav-links">
                     <li className="link-item">
-                        <Link to='/adopciones/mascotas'>Adoptar</Link>
+                        <Link to='/adopciones/mascotas' onClick={scrollToTop}>Adoptar</Link>
                     </li>
                     <li className="link-item">
-                        <Link to='/denuncias'>Denunciar</Link>
+                        <Link to='/denuncias' onClick={scrollToTop} >Denunciar</Link>
                     </li>
                     <li className="link-item">
-                        <Link to='/informacion'>Información</Link>
+                        <Link to='/informacion' onClick={scrollToTop} >Información</Link>
                     </li>
                     <li className="link-item">
-                        <Link to='/donaciones'>Ayudar</Link>
+                        <Link to='/donaciones' onClick={scrollToTop} >Ayudar</Link>
                     </li>
                     <li className="link-item">
                         <a href='#footer'>Contacto</a>

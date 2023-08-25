@@ -2,7 +2,7 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <footer id="footer">
+        <footer className="footer" id="footer">
             <div className="footer-content">
                 <div className="footer-text">
                     <p>Adoptapp nacio de la idea de ayudar a las mascotas sin hogar, mejorar la vida de los animales de la zona, informar a la poblacion sobre campañas de zoonosis, apoyar a las organizaciones locales y brindar cualquier tipo de contencion para nuestros amigos de cuatro patas.
