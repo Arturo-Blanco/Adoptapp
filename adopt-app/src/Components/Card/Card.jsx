@@ -1,5 +1,7 @@
 import React from "react";
 import './card.css';
+import MaleImg from '../../assets/masculino.svg';
+import FemaleImg from '../../assets/femenino.svg';
 
 const Card = (props) => {
 
@@ -12,7 +14,7 @@ const Card = (props) => {
             <div className='card-content'>
                 <div className='card-title'>
                     <div className='pet-name'> {props.name}</div>
-                    <img className='img-sex' src={props.sexImg} alt="Imagen sexo" />
+                    <img className='img-sex' src={props.sex === 'Macho' ? MaleImg : FemaleImg} alt="Imagen sexo" />
                 </div>
                 <p className='pet-age'>{props.age} años</p>
                 <ul className="attributes-list">

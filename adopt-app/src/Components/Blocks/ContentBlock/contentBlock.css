@@ -3,8 +3,9 @@
 .block-container {
     display: flex;
     width: 80%;
-    height: max-content;
-    margin: auto;
+    height: 400px;
+    margin: 20px auto auto auto;
+    background-color: var(--main-bg-color);
 }
 .block-img-container {
     width: 50%;
@@ -14,10 +15,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 80%;
     margin: auto;
+    color: white;
 }
 .block-img {
     width: 100%;
+    height: 100%;
+}
+.block-title {
+    height: 20%;
+    font-size: 2rem;
+    font-family: 'Gilroy-Medium', sans-serif;
 }

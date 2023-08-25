@@ -1,6 +1,7 @@
 import TitleBlock from "../../../Blocks/TitleBlock/TitleBlock";
 import SectionStructure from "../SectionStructure/SectionStructure";
 import ContentBlock from '../../../Blocks/ContentBlock/ContentBlock';
+import './informationSection.css';
 
 const InformationSection = () => {
     return (

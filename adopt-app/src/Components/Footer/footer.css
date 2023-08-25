@@ -1,9 +1,12 @@
 /* ------   FOOTER STYLES  -----*/
 footer{
+	margin-top: 20px;
 	width: 100%;
 	max-height: 250px;
-	background:linear-gradient(190deg,rgb(81, 90, 81), rgb(51, 42, 42));
+	/*background:linear-gradient(190deg,rgb(81, 90, 81), rgb(51, 42, 42));*/
 	color: white;
+	background-color: var(--main-bg-color);
+	font-family: 'Gilroy-Regular', sans-serif;
 }
 .footer-content{
 	display: flex;
@@ -14,7 +17,6 @@ footer{
 }
 .footer-text{
 	font-size: 1.2rem;
-	font-weight: 600;
 	margin: auto 20px;
 	width: 40%;
 	min-width: 400px;

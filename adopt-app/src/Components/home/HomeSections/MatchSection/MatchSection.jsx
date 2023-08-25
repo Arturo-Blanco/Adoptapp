@@ -1,6 +1,7 @@
 import TitleBlock from '../../../Blocks/TitleBlock/TitleBlock';
 import ContentBlock from '../../../Blocks/ContentBlock/ContentBlock';
 import SectionStructure from '../SectionStructure/SectionStructure';
+import './matchSection.css';
 
 const MatchSection = () => {
     return (
