@@ -27,7 +27,7 @@ a, button {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+ol, ul, menu, li {
     list-style: none;
 }
 
@@ -104,6 +104,10 @@ html {
 }
 
 :root {
-    --main-bg-color : #009929;
-    --contrast-color: #5ccb5f;
+    --main-bg-color : #149d4f;
+    --background-color: #c9c9cc;
+    --background-card-color: rgba(154, 155, 156, 0.384);
+    --btn-bg-color: #fea31b;
+    --title-font: 'Mona-Sans', sans-serif;
+    --p-font: 'Gilroy-Regular', sans-serif;
 }
