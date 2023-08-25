@@ -5,7 +5,7 @@
     width: 80%;
     height: 400px;
     margin: 20px auto auto auto;
-    background-color: var(--main-bg-color);
+    background-color: var(--background-card-color);
 }
 .block-img-container {
     width: 50%;
@@ -18,7 +18,7 @@
     justify-content: space-between;
     height: 80%;
     margin: auto;
-    color: white;
+    color: black;
 }
 .block-img {
     width: 100%;
@@ -28,4 +28,5 @@
     height: 20%;
     font-size: 2rem;
     font-family: 'Gilroy-Medium', sans-serif;
+    border-bottom: 1px solid var(--main-bg-color);
 }

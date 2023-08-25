@@ -9,7 +9,6 @@
     transition: 0.5s ease all;
     opacity: 0.9;
     font-family: 'Gilroy-Regular', sans-serif;
-    border: 1px solid var(--main-bg-color);
 }
 .pet-card:hover {
     box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5) ;
