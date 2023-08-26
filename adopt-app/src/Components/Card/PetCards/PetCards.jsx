@@ -1,8 +1,8 @@
 import { React, useState } from 'react';
-import { useModal } from '../../Modales/useModal';
-import Modal from '../../Modales/Modal'
-import Formulario from '../../Formularios/Formulario';
-import Card from '../Card';
+import { useModal } from 'Components/Modales/useModal';
+import Modal from 'Components/Modales/Modal'
+import Formulario from 'Components/Formularios/Formulario';
+import Card from 'Components/Card/Card';
 
 const PetCards = ({ petList }) => {
 

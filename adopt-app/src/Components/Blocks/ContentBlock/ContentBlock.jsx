@@ -2,13 +2,16 @@ import './contentBlock.css'
 
 const ContentBlock = (props) => {
 
-    const { className, title, children, url, alt} = props
+    const { className, title, subtitle, children, url, alt} = props
 
     return (
             <div className={`${className} block-container`}>
                 <div className={`${className} block-text`}>
                     <h3 className={`${className} block-title`}>
                         {title}
+                    </h3>
+                    <h3 className={`${className} block-subtitle`}>
+                        {subtitle}
                     </h3>
                     {children}
                 </div>

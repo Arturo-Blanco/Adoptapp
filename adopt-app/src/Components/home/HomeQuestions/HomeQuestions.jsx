@@ -1,5 +1,5 @@
-import ContentBlock from "../../Blocks/ContentBlock/ContentBlock";
-import img from '../../../assets/img-home.jpg';
+import ContentBlock from "Components/Blocks/ContentBlock/ContentBlock";
+import img from 'assets/img-home.jpg';
 import { useState } from "react";
 import './homeQuestions.css'
 
@@ -23,8 +23,9 @@ const HomeQuestions = () => {
             <ContentBlock
                 className="questions"
                 title="¿Querés adoptar pero tenés dudas?"
+                subtitle="Te compartimos las dudas más frecuentes"
                 url={img}>
-                <li className='question-1' onClick={() => toggleAnswer(1)}
+                <li className='question' onClick={() => toggleAnswer(1)}
                     selected={selectedQuestion === 1}>
                     <div className="question-div">
                         <div className="toggle-icon">
@@ -35,7 +36,7 @@ const HomeQuestions = () => {
                     <p className={`${selectedQuestion === 1 ? 'show-answer' : 'answer'}`} >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
                     </p>
                 </li>
-                <li className='question-2' onClick={() => toggleAnswer(2)}
+                <li className='question' onClick={() => toggleAnswer(2)}
                     selected={selectedQuestion === 2}>
                     <div className="question-div">
                         <div className="toggle-icon">
@@ -46,7 +47,7 @@ const HomeQuestions = () => {
                     <p className={`${selectedQuestion === 2 ? 'show-answer' : 'answer'}`} >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
                     </p>
                 </li>
-                <li className='question-3' onClick={() => toggleAnswer(3)}
+                <li className='question' onClick={() => toggleAnswer(3)}
                     selected={selectedQuestion === 3}>
                     <div className="question-div">
                         <div className="toggle-icon">
@@ -57,7 +58,7 @@ const HomeQuestions = () => {
                     <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
                     </p>
                 </li>
-                <li className='question-4' onClick={() => toggleAnswer(4)}
+                <li className='question' onClick={() => toggleAnswer(4)}
                     selected={selectedQuestion === 4}>
                     <div className="question-div">
                         <div className="toggle-icon">

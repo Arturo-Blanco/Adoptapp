@@ -1,6 +1,6 @@
-import TitleBlock from '../../../Blocks/TitleBlock/TitleBlock';
-import ContentBlock from '../../../Blocks/ContentBlock/ContentBlock';
-import SectionStructure from '../SectionStructure/SectionStructure';
+import TitleBlock from 'Components/Blocks/TitleBlock/TitleBlock';
+import ContentBlock from 'Components/Blocks/ContentBlock/ContentBlock';
+import SectionStructure from 'Components/home/HomeSections/SectionStructure/SectionStructure';
 import './matchSection.css';
 
 const MatchSection = () => {
@@ -11,8 +11,9 @@ const MatchSection = () => {
             title='Ya hicieron match'/>
             <ContentBlock
             className="match"
-            title="¿Buscando un nuevo compañero?"
-            url="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/02/08/16443364419282.jpg"/>
+            title="Ellos ya encontraron un hogar donde le brinden amor."
+            subtitle="¡Sumate vos también a ésta familia y dales una oportunidad!"
+            url="https://img.freepik.com/foto-gratis/hombre-abrazando-su-amigable-pitbull_23-2149131399.jpg"/>
         </SectionStructure>
     )
 }

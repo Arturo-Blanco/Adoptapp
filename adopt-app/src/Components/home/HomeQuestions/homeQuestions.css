@@ -4,10 +4,7 @@
 .questions.block-img, .questions.block-container {
     border-radius: 20px 0 0 20px;
 }
-.question-1,
-.question-2,
-.question-3,
-.question-4 {
+.question {
     width: 80%;
     margin: auto;
     font-family: var(--p-font);

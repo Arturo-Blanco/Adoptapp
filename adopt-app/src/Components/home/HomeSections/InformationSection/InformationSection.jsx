@@ -1,6 +1,6 @@
-import TitleBlock from "../../../Blocks/TitleBlock/TitleBlock";
-import SectionStructure from "../SectionStructure/SectionStructure";
-import ContentBlock from '../../../Blocks/ContentBlock/ContentBlock';
+import TitleBlock from "Components/Blocks/TitleBlock/TitleBlock";
+import SectionStructure from "Components/home/HomeSections/SectionStructure/SectionStructure";
+import ContentBlock from 'Components/Blocks/ContentBlock/ContentBlock';
 import './informationSection.css';
 
 const InformationSection = () => {
@@ -11,8 +11,12 @@ const InformationSection = () => {
             title='Información'/>
             <ContentBlock 
             className="information"
-            title="¿Buscando un nuevo compañero?"
-            url="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/02/08/16443364419282.jpg"/>
+            title="Campaña de vacunación antirrábica"
+            url="https://www.zooplus.es/magazine/wp-content/uploads/2019/02/vacunas-para-perros-768x512.jpg">
+                <p className="information-text">
+                El departamento de zoonosis de la ciudad de Ushuaia se encontrara realizando una nueva jornada de vacunación antirrabica este proximo Sabado 20 y Domingo 21...
+            </p>
+            </ContentBlock>
         </SectionStructure>
     )
 }

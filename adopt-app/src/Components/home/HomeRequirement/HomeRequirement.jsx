@@ -7,9 +7,15 @@ const HomeRequirement = () => {
             <ContentBlock
                 className="requirement"
                 title="¿Buscando un nuevo compañero?"
+                subtitle="Antes tenés que saber:"
                 url="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/02/08/16443364419282.jpg"
             >
-                <p className="requirement-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime provident ipsa magni ducimus quod? Necessitatibus molestias suscipit, aperiam sit, amet maxime hic cum saepe iste doloribus consectetur voluptatem adipisci illo!</p>
+                <ul className="requirement-list">
+                    <li className="requirement-li">Debes ser mayor de 21 años.</li>
+                    <li className="requirement-li">Una mascota requiere tiempo y atención.</li>
+                    <li className="requirement-li">La seguridad de las mascotas es nuestra prioridad.</li>
+                    <li className="requirement-li">Cada solicitud es evaluada por especialistas para garantizar una adopción segura y responsable.</li>
+                </ul>
                 </ContentBlock>
         </div>
     )

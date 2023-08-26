@@ -1,14 +1,13 @@
 import './adoptionPage.css';
-import { getMascotas } from '../../Apis/getMascotas.mjs';
-import { scrollToTop } from '../../functions.mjs';
-import Filter from '../../Components/FiltroBusqueda/Filter';
-import PetCards from '../../Components/Card/PetCards/PetCards';
-import PaginationButton from '../../Components/PaginationComponents/PaginationButton';
-import TitleBlock from '../../Components/Blocks/TitleBlock/TitleBlock';
+import { getMascotas, baseUrl } from 'Apis/getMascotas.mjs';
+import { scrollToTop } from 'functions.mjs';
+import Filter from 'Components/FiltroBusqueda/Filter';
+import PetCards from 'Components/Card/PetCards/PetCards';
+import PaginationButton from 'Components/Adopciones/PaginationComponents/PaginationButton';
+import TitleBlock from 'Components/Blocks/TitleBlock/TitleBlock';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { baseUrl } from '../../Apis/getMascotas.mjs';
-import NotFoundImg from '../../assets/not-found.svg';
+import NotFoundImg from 'assets/not-found.svg';
 
 const AdoptPage = () => {
 

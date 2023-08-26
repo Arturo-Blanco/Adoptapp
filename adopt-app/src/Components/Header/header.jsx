@@ -40,7 +40,7 @@ const Header = () => {
                 <span className="lines"></span>
                 <span className="lines"></span>
             </button>
-            <header id="home">
+            <header className="header" id="home">
         </header>
         </>
     );

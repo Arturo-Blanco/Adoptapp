@@ -1,28 +1,30 @@
-import TitleBlock from '../../../Blocks/TitleBlock/TitleBlock';
-import SectionStructure from '../SectionStructure/SectionStructure';
-import './newPetsSection.css';
+import TitleBlock from 'Components/Blocks/TitleBlock/TitleBlock';
+import SectionStructure from 'Components/home/HomeSections/SectionStructure/SectionStructure';
+import PetCards from 'Components/Card/PetCards/PetCards';
+import NotFoundImg from 'assets/not-found.svg'
 import { Link } from 'react-router-dom';
-import { getNewPets } from '../../../../Apis/getMascotas.mjs';
-import { useEffect, useState, useRef } from 'react';
-import PetCards from '../../../Card/PetCards/PetCards';
-import NotFoundImg from '../../../../assets/not-found.svg'
-import { scrollToTop } from '../../../../functions.mjs';
+import { getNewPets } from 'Apis/getMascotas.mjs';
+import { useEffect, useState, useRef, useCallback } from 'react';
+import { scrollToTop } from 'functions.mjs';
+import './newPetsSection.css';
 
 const NewPetsSection = () => {
 
     const [petList, setPetList] = useState([]);
     const slider = useRef(null);
+    const sliderInterval = useRef(null);
 
+    // Llamado de mascotas de la api
     useEffect(() => {
         const getPets = async () => {
             const data = await getNewPets();
             setPetList(data);
         }
-        getPets()
+        getPets();
     }, []);
 
-    const nextImg = () => {
-        if (slider.current.children && petList.length > 0) {
+    const nextImg = useCallback(() => {
+        if (slider.current && slider.current.children && petList.length > 0) {
             const firsElement = slider.current.children[0];
             // Se define el movimiento de translacion la longitud de cada card sumado la distancia del margin
             const offset = firsElement.offsetWidth + 10;
@@ -37,41 +39,50 @@ const NewPetsSection = () => {
                 slider.current.appendChild(firsElement);
                 slider.current.removeEventListener('transitionend', resetOffset);
             };
-
             slider.current.addEventListener('transitionend', resetOffset);
         }
-    }
-    const previousImg = () => {
+    }, [petList]);
+
+    const previousImg = useCallback(() => {
         if (slider.current.children.length > 0) {
             // Se toma el ultimo elemento de la coleccion de elementos
             const lastElement = slider.current.children[petList.length - 1];
             // Se toma el ultimo elemento y se inserta al inicio
             slider.current.insertBefore(lastElement, slider.current.firstChild);
             const offset = lastElement.offsetWidth + 10;
-
+            //se elimina los estilos de transicion y se aplica la translacion por el eje x
             slider.current.style.transition = 'none';
             slider.current.style.transform = `translateX(-${offset}px)`;
-
+            // se utiliza un setTimeOut para que los anteriores estilos se apliquen antes de aplicar los nuevos
             setTimeout(() => {
                 slider.current.style.transition = `400ms ease-out all`;
                 slider.current.style.transform = `translateX(0)`;
-
-            }, 30);
+            }, 10);
         }
-    }
+    }, [petList]);
+
+    //Funcionalidades de tiempo para el slider
     useEffect(() => {
-        let intervalId;
-
-        if (petList) {
-            intervalId = setInterval(() => {
+        if (petList && slider.current) {
+            sliderInterval.current = setInterval(() => {
                 nextImg();
-            }, 4000);
+            }, 7000);
+            // Se detiene el interval si se posiciona el mouse sobre el slider
+            slider.current.addEventListener('mouseenter', () => {
+                clearInterval(sliderInterval.current);
+            });
+            // Se reanuda el interval si se quita el mouse sobre el slider
+            slider.current.addEventListener('mouseleave', () => {
+                sliderInterval.current = setInterval(() => {
+                    nextImg();
+                }, 7000);
+            });
+            return () => {
+                clearInterval(sliderInterval.current);
+            }
         }
+    }, [petList, nextImg]);
 
-        return () => {
-            clearInterval(intervalId);
-        };
-    });
     return (
         <SectionStructure
             className='new-pets'>
