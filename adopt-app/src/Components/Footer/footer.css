@@ -1,5 +1,5 @@
 /* Importar el archivo CSS principal */
-@import '../../index.css';
+@import 'index.css';
 
 .footer {
     display: flex;

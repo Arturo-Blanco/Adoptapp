@@ -1,11 +1,9 @@
 @import './index.css';
 
 body {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 	background-color: rgb(241, 241, 237);
 }
+
 @keyframes slideleft{
 	0%{
 		transform: translate(100px);

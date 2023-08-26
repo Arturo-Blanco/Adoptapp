@@ -8,6 +8,7 @@ import TitleBlock from 'Components/Blocks/TitleBlock/TitleBlock';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import NotFoundImg from 'assets/not-found.svg';
+import NotResultImg from 'assets/not-result.svg';
 
 const AdoptPage = () => {
 
@@ -84,7 +85,7 @@ const AdoptPage = () => {
     const activePage = (page) => {
         return page === pageNumber ? 'active-page' : 'disable-page';
     }
-    console.log(loadingPage)
+
     return (
         <main className='adoption-main'>
             <TitleBlock
@@ -98,7 +99,10 @@ const AdoptPage = () => {
                         {!loadingPage && petList.length > 0 ? (
                             <PetCards petList={petList} />
                         ) : (
-                            <h3 className='not-found-title'> No hay resultados con sus preferencias de búsqueda.</h3>
+                            <div className='not-result-div'>  
+                                <h3 className='not-result-title'>Disculpe, no hay resultados con sus preferencias de búsqueda.</h3>
+                                <img className='not-result-img' src={NotResultImg} alt="not-result" />
+                            </div>
                         )}
                     </div>
                     <div className='pagination-container'>

@@ -1,4 +1,4 @@
-@import '../../index.css';
+@import 'index.css';
 
 .adoption-main {
     display: flex;
@@ -31,4 +31,19 @@
 }
 .active-page {
     background-color: var(--background-card-color);
+}
+.not-result-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 80%;
+}
+.not-result-title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.not-result-img {
+    width: 40%;
 }

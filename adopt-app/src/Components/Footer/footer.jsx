@@ -20,7 +20,7 @@ const Footer = () => {
                         <li><i className="fa-brands fa-facebook-f"></i></li>
                         <li><i className="fa-brands fa-instagram"></i></li>
                     </ul>
-                </div>x
+                </div>
                 <div className="footer-section">
                     <form className="form-newsletter" action="">
                     <label htmlFor="newsletter">Newsletter</label>
