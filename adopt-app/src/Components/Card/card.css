@@ -13,6 +13,15 @@
 .pet-card:hover {
     box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5) ;
     opacity: 1;
+    .description-btn {
+        opacity: 1;
+        transition: 0.5s ease all;
+    }
+}
+.img-description-container {
+    width: 60%;
+    height: 100%;
+    position: relative;
 }
 .card-title {
     display: flex;
@@ -22,7 +31,6 @@
     font-weight: 600;
 }
 .card-img {
-    width: 60%; 
     height: 100%;
     border-radius: 5px;
 }
@@ -58,6 +66,36 @@
 .pet-interested{
     font-size: 1rem
 }
-.pet-description {
+.div-description {
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 100%;
+    top: 0;
+    position: absolute;
+    height: max-content;
+}
+
+.ocult {
+    height: 0;
+    overflow: hidden;
     display: none;
+}
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+}
+.description-btn {
+    background-color: var(--main-bg-color);
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    border-radius: 0 0 2px 2px;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(240, 240, 247);
+    opacity: 0;
 }
