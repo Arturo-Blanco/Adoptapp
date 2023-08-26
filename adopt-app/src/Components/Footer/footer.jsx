@@ -2,31 +2,31 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <footer className="footer" id="footer">
+        <footer className='footer' id='footer'>
             <div className="footer-content">
-                <div className="footer-text">
-                    <p>Adoptapp nacio de la idea de ayudar a las mascotas sin hogar, mejorar la vida de los animales de la zona, informar a la poblacion sobre campañas de zoonosis, apoyar a las organizaciones locales y brindar cualquier tipo de contencion para nuestros amigos de cuatro patas.
-                    </p>
-                </div>
-                <div className='footer-contact'>
-                    <ul>
-                        <li> Teléfono</li>
-                        <li> 2901xxxxx</li>
-                        <li> Email </li>
-                        <li> adoptapp@tdf.gob.ar </li>
+                <div className="footer-section">
+                    <h3 className='contact-title'>Contacto</h3>
+                    <ul className='contact-list'>
+                        <li className='contact-item'>Teléfono</li>
+                        <li className='contact-value'>2901-512505</li>
+                        <li className='contact-item'>Email</li>
+                        <li className='contact-value'>adoptapp@gmail.com</li>
                     </ul>
-                <div className="footer-icon">
-                        <h4>Nuestras redes sociales</h4>
-                        <ul className="icon">
-                            <li><i className="fa-brands fa-whatsapp"></i></li>
-                            <li><i className="fa-brands fa-facebook-f"></i></li>
-                            <li><i className="fa-brands fa-instagram"></i></li>
-                        </ul>
-                    </div>
                 </div>
-                <div className="footer-info">
-                    <label htmlFor="newsleatter">Newsletter</label>
-                    <input className="newsleatter" type="email" placeholder="Ingresa tu email" />
+                <div className="footer-section">
+                    <h3>Nuestras redes sociales</h3>
+                    <ul className="icon-list">
+                        <li><i className="fa-brands fa-whatsapp"></i></li>
+                        <li><i className="fa-brands fa-facebook-f"></i></li>
+                        <li><i className="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </div>x
+                <div className="footer-section">
+                    <form className="form-newsletter" action="">
+                    <label htmlFor="newsletter">Newsletter</label>
+                    <input className="newsletter" id="newsletter" type="email" placeholder="Ingresa tu email" />
+                    <button className='newsletter-btn'>Enviar</button>
+                    </form>
                 </div>
             </div>
             <div className="copyright">

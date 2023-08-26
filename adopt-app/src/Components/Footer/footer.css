@@ -1,97 +1,107 @@
-/* ------   FOOTER STYLES  -----*/
+/* Importar el archivo CSS principal */
+@import '../../index.css';
+
 .footer {
-	margin-top: 20px;
-	width: 100%;
-	max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
 	/*background:linear-gradient(190deg,rgb(81, 90, 81), rgb(51, 42, 42));*/
-	color: white;
-	background-color: var(--main-bg-color);
-	font-family: 'Gilroy-Regular', sans-serif;
+    margin-top: 3%;
+    font-family: var(--p-font);
+    color: white;
 }
+
 .footer-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	height: 90%;
-	margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
 }
-.footer-text {
-	font-size: 1.2rem;
-	margin: auto 20px;
-	width: 40%;
-	min-width: 400px;
-}
-.footer-menu {
-	display: flex;
-	width: 30%;
-	min-width: 400px;
-	margin: auto;
-}
-.menu {
-	width: 100%;
-}
-.footer .menu li {
-	font-size: 1rem;
-	margin: 0 10px;
-	cursor: pointer;
-	margin:25px auto;
-}
-.footer .menu li:hover{
-	opacity: 0.7;
-}
-.footer p{
-	margin-top: 15px;
-	font-size: 1rem;
-}
-.footer-info{
+
+.footer-section {
 	display: flex;
 	flex-direction: column;
-	width: 30%;
-	margin: auto;
+	align-items: center;
+	justify-content: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 30%; 
+    margin: 10px auto;
+    text-align: center;
 }
-.footer-link a {
-	color: white;
+
+.contact-title {
+    font-size: 1.5rem;
 }
-.newsleatter{
-	width: 80%;
-	height: 30px;
-	border-radius: 10px;
-	text-align: start;
-	margin: 20px auto;
+.contact-list li {
+	margin-top: 10px;
 }
-.footer-icon{
-	width: 25%;
-	min-width: 300px;
-	margin: auto;
+.footer-icon {
+    margin-top: 10px;
 }
-.icon{
-	display: flex;
-	width: 100%;
-	margin: auto;
+
+.icon-list {
+    display: flex;
+    justify-content: space-around;
+	width: 60%;
+	margin: 25px auto;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.footer .icon li{
-	font-size: 2em;
-	cursor: pointer;
-	transition: 0.5s;
-	margin:25px auto;
+
+.icon-list li:hover {
+    transform: translateY(-5px);
+    opacity: 1;
 }
-.footer .icon li:hover{
-	transform: translateY( -10px);
-	opacity: 1;
-}
+
 .fa-whatsapp:hover {
     color: rgb(108, 233, 108);
 }
+
 .fa-facebook-f:hover {
     color: blue;
 }
+
 .fa-instagram:hover {
     color: rgb(255, 55, 0);
 }
-.copyright{
-	background-color: #111;
-	width: 100%;
+
+.form-newsletter {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
 }
-.copyright > p {
-	color: white;
+
+.newsletter {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    text-align: start;
+    background-color: white;
+    color: black;
+    padding-left: 15px;
+	margin-top: 15px;
+}
+
+.newsletter-btn {
+    position: absolute;
+    top: 50%;
+    right: 3px; 
+    transform: translateY(8%);
+    background-color: var(--main-bg-color);
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 3rem;
+    border-top: 1px solid white;
+    width: 95%;
+    color: black;
 }
