@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <form className="form-newsletter" action="">
-                    <label htmlFor="newsletter">Newsletter</label>
+                    <label className='newsletter-label' htmlFor="newsletter">Newsletter</label>
                     <input className="newsletter" id="newsletter" type="email" placeholder="Ingresa tu email" />
                     <button className='newsletter-btn'>Enviar</button>
                     </form>
