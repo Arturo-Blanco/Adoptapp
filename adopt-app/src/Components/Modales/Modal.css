@@ -54,9 +54,8 @@
     cursor: pointer;
     width: 20px;
     height: 20px;
+    border-radius: 50%;
 }
 .modal-close-btn:hover {
-    width: 22px;
-    height: 22px;
-    filter: drop-shadow(1px 1px 5px grey);
+   background-color: rgb(247, 163, 163);
 }

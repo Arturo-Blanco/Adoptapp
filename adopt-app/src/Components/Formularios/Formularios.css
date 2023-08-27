@@ -1,7 +1,7 @@
 /* Estilos para componente Input */
 .adoption-form{
     margin: auto;
-    height: max-content;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +10,7 @@
     display: block;
     font-weight: 600;
     text-align: start;
-    padding: 5% 0px 0 5%;
+    margin: 3%;
     min-height: 10px;
 }
 .grupoInput{
