@@ -2,8 +2,8 @@ import './titleBlock.css';
 
 const TitleBlock = (props) => {
     return (
-        <div className="title-container">
-            <h3 className="title-block">
+        <div className="title-section-container">
+            <h3 className="title-section-block">
                 {props.title}
             </h3>
         </div>
