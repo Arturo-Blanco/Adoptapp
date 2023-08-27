@@ -1,0 +1,75 @@
+.card-content{
+    display:flex;
+    flex-wrap: wrap;
+}
+.card-animal{
+    background-color: #ecf3f0b0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    height: 250px;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgba(128, 122, 122, 0.877) ;
+}
+.img-animal{
+    width: 60%; 
+    height: 100%;          
+    border-radius: 20px;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: auto;
+    width: max-content;
+    border-radius: 20px;
+}
+.img-sex{
+    width: 2rem;
+    border: none;
+    align-items: end;
+}
+.div-item{
+    margin: auto;    
+    width: 100%;
+    padding: auto;
+    color: black
+}
+.div-item:first-child {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+   
+}
+.pet-name{
+    font-size: 2rem;
+    color:black;
+    font-weight: 600;
+}
+.btn-available{
+    width: max-content;
+    padding: 12px;
+    margin: auto;
+    background-color: #28f06a;
+    border: 0.1px black solid;
+    border-radius: 20px;
+    color: #040e0a;
+    transition: 0.5s ease;
+    font-size: 1rem;
+}
+.btn-available:hover{
+    box-shadow: #151b19 2px 2px;
+    cursor:cell;
+}
+.btn-notAvailable {
+    background-color:red;
+    width: max-content;
+    padding: 12px;
+    margin: auto;
+    border: 0.1px black solid;
+    border-radius: 20px;
+    font-size: 1rem;
+}

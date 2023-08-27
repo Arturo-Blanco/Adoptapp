@@ -1,0 +1,49 @@
+.containerDenuncia{
+    background-color: rgb(190, 240, 125);
+    width: 500px;
+    border: 3px solid #000;
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+}
+h2{
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+.denContainer{
+    display: flex;
+    width: 90vw;
+    height: 50vh;
+    margin-left: 30px;
+    margin-top: 50px;
+    border-color: 4px solid #000;
+}
+.denDiv1{
+    width: 60vw;
+    height: 40vh;
+    background-color: #045a30cd;
+    border-radius: 20px 0 0 20px;
+}
+.denH3{
+    font-size: 1.5em;
+    margin: 20px;
+}
+.denP{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px;
+}
+.denA{
+    margin-top: 20px;
+    border-bottom: 2px solid #000;
+}
+.denDiv2{
+    background: url('https://media.istockphoto.com/id/992637094/es/foto/gato-brit%C3%A1nico-de-pelo-corto-y-el-golden-retriever.jpg?s=612x612&w=0&k=20&c=50RH7ZyohewBSzhY_j_Xw1hBguooSle2U0YpkKlVlQs=');
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    border-radius: 0 20px 20px 0;
+    opacity: 0.9;
+}

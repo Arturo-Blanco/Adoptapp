@@ -1,0 +1,18 @@
+@import './index.css';
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: var(--contrast-color);
+}
+@keyframes slideleft{
+	0%{
+		transform: translate(100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px);
+		opacity: 1;
+	}
+} 

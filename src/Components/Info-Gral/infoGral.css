@@ -1,0 +1,42 @@
+h2{
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+.infContainer{
+    display: flex;
+    width: 90vw;
+    height: 50vh;
+    margin-left: 30px;
+    margin-top: 50px;
+    border-color: 4px solid #000;
+}
+.infDiv1{
+    width: 60vw;
+    height: 40vh;
+    background-color: #045a30cd;
+    border-radius: 20px 0 0 20px;
+}
+.infH3{
+    font-size: 1.5em;
+    margin: 20px;
+}
+.infP{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px;
+}
+.infA{
+    margin-top: 20px;
+    border-bottom: 2px solid #000;
+}
+.infDiv2{
+    background: url('https://images.pexels.com/photos/3791641/pexels-photo-3791641.jpeg?auto=compress&cs=tinysrgb&w=400');
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    border-radius: 0 20px 20px 0;
+    opacity: 0.9;
+}
+

@@ -1,0 +1,109 @@
+.conContainer{
+    display: flex;
+    width: 90vw;
+    height: 50vh;
+    margin: 50px 0 0 30px;
+    border-color: 4px solid #000;
+}
+.conDiv1{
+    width: 60vw;
+    height: 40vh;
+    background-color: #045a30cd;
+    border-radius: 20px 0 0 20px;
+}
+.conH3{
+    font-size: 1.5em;
+    margin: 20px;
+}
+.conP{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px;
+}
+.conA{
+    margin-top: 20px;
+    border-bottom: 2px solid #000;
+}
+.conDiv2{
+    background: url('https://media.istockphoto.com/id/621138854/es/foto/perro-en-el-tel%C3%A9fono.jpg?s=612x612&w=0&k=20&c=4u73c7YAeu_-zg_W6jaKwXwy2PwjGWJq-NJssRCINUk=');
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    border-radius: 0 20px 20px 0;
+    opacity: 0.9;
+}
+.con-form__section{
+	color: white;        
+}
+.con-flex-container{
+    width: 90vw;
+    margin-left: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background:  #045a30cd;
+	border-radius: 20px;
+}
+.con-form{
+	min-width: 400px;
+	flex: 1;
+	text-align: center;
+	padding: 30px;
+	color: white; 
+	order: 5;
+}
+.con-form__input{
+	width: 100%;
+	padding: 7px;
+	margin: 6px 0;
+	border: none;
+	border-bottom: 3px solid #bc1;
+	background: transparent;
+    color: white;
+	font-size: 1.25em;
+}
+.con-form__input:focus{
+	border-bottom: 3px solid white;
+}
+.con-form textarea{
+	min-height: 140px;
+	resize: none;
+	color: white;
+	font-size: 1.25em;
+}
+.con-form-img{
+	flex: 1;
+	padding: 5px;
+	display: flex;
+	min-width: 300px;
+	max-width: 400px;
+	order: 2;
+}
+.con-form-img div{
+	padding: 5px;
+}
+.con-img-container{
+	padding: 20px;	
+}
+.con-img-container div{
+    background-color: #045a30cd ;
+	border-radius: 20px;
+    padding: 45px;
+    text-align: center;
+}
+.con-form-img img{
+	width: 90%;
+    border-radius: 50%;
+    margin: auto;
+}
+.con-form__input[type="submit"]{
+	background-color: #bc1;
+    border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+.con-form__input[type="submit"]:hover{
+	background-color:  rgb(67, 144, 76);
+}

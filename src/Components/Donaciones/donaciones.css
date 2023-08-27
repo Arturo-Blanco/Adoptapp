@@ -1,0 +1,41 @@
+h2{
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+.donContainer{
+    display: flex;
+    width: 90vw;
+    height: 50vh;
+    margin-left: 30px;
+    margin-top: 50px;
+    border-color: 4px solid #000;
+}
+.donDiv1{
+    width: 60vw;
+    height: 40vh;
+    background-color: #045a30cd;
+    border-radius: 20px 0 0 20px;
+}
+.donH3{
+    font-size: 1.5em;
+    margin: 20px;
+}
+.donP{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 30px;
+}
+.donA{
+    margin-top: 20px;
+    border-bottom: 2px solid #000;
+}
+.donDiv2{
+    background: url('https://media.istockphoto.com/id/1363631921/es/foto/punto-de-vista-un-hombre-entrega-un-taz%C3%B3n-de-comida-seca-a-una-mascota.jpg?s=612x612&w=0&k=20&c=JLP0M-72AZRtI32tqjMyPRHaf_Hk5W95rDSIW5A148M=');
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    border-radius: 0 20px 20px 0;
+    opacity: 0.9;
+}

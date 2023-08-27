@@ -1,0 +1,50 @@
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: slideleft 1s forwards;
+}
+.modal.is-open{
+    display: flex;
+    height: 100vh;
+}
+.modal-container{
+    height: 100vh;
+    position: relative;
+    padding: 2rem;
+    max-width: 600px;
+    overflow-y: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    animation: slideleft 1s forwards;
+    background-image: url("https://media.istockphoto.com/id/522134752/es/foto/perros-y-gatos-sosteniendo-un-marco-en-sus-patas.jpg?s=170667a&w=0&k=20&c=bwALnGmDq_mO1aF7EKfaJ_-Am2sFytKAhVD1hSY2DCQ=");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 30px;
+    width: 30px;
+    /*background-image: url('../../../public/Img/cerrar.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: none;*/
+}
+.modal-close:hover{
+    cursor: pointer;
+}
+.modal-title{
+    width: 90%;
+    margin: auto;
+}
