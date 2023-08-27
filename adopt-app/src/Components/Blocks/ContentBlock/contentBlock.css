@@ -36,11 +36,12 @@
 .subtitle-block {
     width: 90%;
     text-align: center;
-    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: var(--title-font);
 }
 
 .title-block {
     font-size: 1.8rem;
+    margin-bottom: 2%;
 }
 
 .subtitle-block {
@@ -54,7 +55,8 @@
     align-items: center;
     margin: auto;
     width: 90%;
-    height: 20%;
+    height: max-content;
+    border-bottom: 1.5px solid var(--main-bg-color);
 }
 
 .children-block {

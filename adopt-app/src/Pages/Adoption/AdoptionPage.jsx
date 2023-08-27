@@ -106,12 +106,13 @@ const AdoptPage = () => {
                         )}
                     </div>
                     <div className='pagination-container'>
+                        <div className='buttons-pagination'>
                         <PaginationButton
                             className='pagination-btn'
                             id='previous-btn'
                             value='previous-btn'
                             onClick={previousPage}
-                            text='< Anterior'
+                            text='Anterior'
                         />
                         {/*Se crea un array declarando una longitud de totalCount, luego se itera en el mismo. Se utiliza '_' ya que no se requiere extraer valor, pero si el index para crear los botones */}
                         {Array.from({ length: totalCount }).map((_, index) => (
@@ -129,8 +130,9 @@ const AdoptPage = () => {
                             className="pagination-btn"
                             value="next-btn"
                             onClick={nextPage}
-                            text="Siguiente >"
+                            text="Siguiente"
                         />
+                    </div>
                     </div>
                 </>
             ) : (
