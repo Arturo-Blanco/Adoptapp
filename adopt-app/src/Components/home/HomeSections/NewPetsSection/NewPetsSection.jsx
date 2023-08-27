@@ -24,6 +24,7 @@ const NewPetsSection = () => {
     }, []);
 
     const nextImg = useCallback(() => {
+        console.log('Hola')
         if (slider.current && slider.current.children && petList.length > 0) {
             const firsElement = slider.current.children[0];
             // Se define el movimiento de translacion la longitud de cada card sumado la distancia del margin
@@ -64,21 +65,31 @@ const NewPetsSection = () => {
     //Funcionalidades de tiempo para el slider
     useEffect(() => {
         if (petList && slider.current) {
+            const sliderElement = slider.current; // se crea una referencia a slider para evitar problemas con las renderizaciones
             sliderInterval.current = setInterval(() => {
                 nextImg();
             }, 7000);
             // Se detiene el interval si se posiciona el mouse sobre el slider
-            slider.current.addEventListener('mouseenter', () => {
+            const handleMouseOver = () => {
                 clearInterval(sliderInterval.current);
-            });
-            // Se reanuda el interval si se quita el mouse sobre el slider
-            slider.current.addEventListener('mouseleave', () => {
+                console.log('Estoy aca 1')
+            };
+            // Se reinicia el interval si se quita el mouse sobre el slider
+            const handleMouseLeave = () => {
+                clearInterval(sliderInterval.current);
                 sliderInterval.current = setInterval(() => {
                     nextImg();
                 }, 7000);
-            });
+                console.log('Estoy aca 2')
+            };
+            // Se llama las funciones mouseover y mouseleave para manejar el comportamiento sobre el slider
+            sliderElement.addEventListener('mouseenter', handleMouseOver); 
+            sliderElement.addEventListener('mouseleave', handleMouseLeave);
+            // se limpian los intervalos y se remueven los listener cuando el elemento es desmontado para evitar fugas de memoria
             return () => {
                 clearInterval(sliderInterval.current);
+                sliderElement.removeEventListener('mouseenter', handleMouseOver);
+                sliderElement.removeEventListener('mouseleave', handleMouseLeave);
             }
         }
     }, [petList, nextImg]);
@@ -92,7 +103,7 @@ const NewPetsSection = () => {
                 {petList && petList.length > 0 ? (
                     <>
                         <button className='previous-btn'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" onClick={previousImg}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" onClick={() => previousImg}>
                                 <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
                             </svg></button>
                         <div className='home-pet-cards' >
@@ -102,7 +113,7 @@ const NewPetsSection = () => {
                                 ))}
                             </div>
                         </div>
-                        <button className='next-btn'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" onClick={nextImg}>
+                        <button className='next-btn'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" onClick={() => nextImg()}>
                             <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                         </svg></button>
 
