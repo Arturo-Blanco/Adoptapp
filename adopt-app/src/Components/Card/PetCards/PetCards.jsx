@@ -31,11 +31,7 @@ const PetCards = ({ petList }) => {
                 >
                 </Card>
             ))}
-            <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
-                <div className='modal-title'>
-                    <p>Le interesa adoptar a {selectPetName}.</p>
-                    <p>Complete el formulario con sus datos y nos comunicaremos a la brevedad.</p>
-                </div>
+            <Modal isOpen={isOpenModal1} closeModal={closeModal1} selectPetName={selectPetName}>
                 <Formulario petId={selectPetId} closeModal1={closeModal1}></Formulario>
             </Modal>
         </>

@@ -9,6 +9,7 @@
     transition: 0.5s ease all;
     opacity: 0.9;
     font-family: 'Gilroy-Regular', sans-serif;
+    overflow: hidden;
 }
 .pet-card:hover {
     box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5) ;
@@ -22,6 +23,7 @@
     width: 60%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .card-title {
     display: flex;
@@ -32,7 +34,8 @@
 }
 .card-img {
     height: 100%;
-    border-radius: 5px;
+    object-fit: cover;
+    object-position: center center;
 }
 .card-content {
     display: flex;

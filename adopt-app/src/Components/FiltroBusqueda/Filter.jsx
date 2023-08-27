@@ -1,23 +1,23 @@
 import FilterBox from "./FilterBox/FilterBox";
-import InputCheckbox from "./InputCheckbox/FilterCheckbox";
+import InputCheckbox from "./InputCheckbox/InputCheckbox";
 import './filter.css'
 import { useState } from "react";
 
 const Filter = ({ setFilters }) => {
 
     const specieOptions = [
-        { htmlFor: "perro", text: "Perro", value: "Perro", name: "specie" },
-        { htmlFor: "gato",  text: "Gato",  value: "Gato",  name: "specie" },
-        { htmlFor: "otros", text: "Otros", value: "Otros", name: "specie" }
+        {text: "Perro", value: "Perro", name: "specie" },
+        {text: "Gato",  value: "Gato",  name: "specie" },
+        {text: "Otros", value: "Otros", name: "specie" }
     ];
     const sexOptions = [
-        { htmlFor: "macho",  text: "Macho",  value: "Macho",  name: "sex" },
-        { htmlFor: "hembra", text: "Hembra", value: "Hembra", name: "sex" }
+        {text: "Macho",  value: "Macho",  name: "sex" },
+        {text: "Hembra", value: "Hembra", name: "sex" }
     ];
     const locationOptions = [
-        { htmlFor: "Ushuaia",    text: "Ushuaia",    value: "1", name: "location" },
-        { htmlFor: "Tolhuin",    text: "Tolhuin",    value: "2", name: "location" },
-        { htmlFor: "Rio Grande", text: "Rio Grande", value: "3", name: "location" }
+        {text: "Ushuaia",    value: "1", name: "location" },
+        {text: "Tolhuin",    value: "2", name: "location" },
+        {text: "Rio Grande", value: "3", name: "location" }
     ];
 
     const [selectedOptions, setSelectedOptions] = useState({
@@ -48,7 +48,7 @@ const Filter = ({ setFilters }) => {
                 {specieOptions.map((option, index) => (
                     <InputCheckbox
                         key={index}
-                        htmlFor={option.htmlFor}
+                        type="checkbox"
                         text={option.text}
                         value={option.value}
                         name={option.name}
@@ -62,7 +62,7 @@ const Filter = ({ setFilters }) => {
                 {sexOptions.map((option, index) => (
                     <InputCheckbox
                         key={index}
-                        htmlFor={option.htmlFor}
+                        type="checkbox"
                         text={option.text}
                         value={option.value}
                         name={option.name}
@@ -76,7 +76,7 @@ const Filter = ({ setFilters }) => {
                 {locationOptions.map((option, index) => (
                     <InputCheckbox
                         key={index}
-                        htmlFor={option.htmlFor}
+                        type="checkbox"
                         text={option.text}
                         value={option.value}
                         name={option.name}
