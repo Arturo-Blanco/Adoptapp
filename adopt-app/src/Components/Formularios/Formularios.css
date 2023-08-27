@@ -10,7 +10,7 @@
     display: block;
     font-weight: 600;
     text-align: start;
-    padding: 5% 0px 0 5%;
+    margin: 3%;
     min-height: 10px;
 }
 .grupoInput{
@@ -42,11 +42,11 @@
     background-color: var(--main-bg-color);
     color:#fff;
 }
-.checkbox-form{
+.checkbox-form {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 15px auto;
+    margin: 5% auto;
 }
 .checkbox-form .filter-box{
     margin: 3px;

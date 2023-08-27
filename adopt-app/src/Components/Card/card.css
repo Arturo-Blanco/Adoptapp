@@ -11,66 +11,94 @@
     font-family: 'Gilroy-Regular', sans-serif;
     overflow: hidden;
 }
+
 .pet-card:hover {
-    box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5) ;
+    box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5);
     opacity: 1;
+
     .description-btn {
         opacity: 1;
         transition: 0.5s ease all;
     }
 }
+
 .img-description-container {
     width: 60%;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
+.card-content {
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
 .card-title {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    height: 15%;
 }
+
 .pet-name {
     font-size: 1.5rem;
     font-weight: 600;
+    width: 80%;
+    text-align: center;
+}
+.pet-description {
+    font-size: 1.2rem;
 }
 .card-img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center center;
 }
-.card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 90%;
-    margin: auto;
+.img-sex-div {
+    top: 0;
+    right: 8px;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
 }
 .img-sex {
-    width: 2rem;
-    border: none;
-    align-items: end;
+    width: 100%;
+    height: 100%;
 }
+
 .attributes-list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 35%;
 }
+
 .adopt-btn {
     display: inline-block;
     padding: 10px 15px;
     font-size: 14px;
-    text-align: center;
-    border: none;
-    border-radius: 30px; 
+    border-radius: 30px;
     background-color: var(--main-bg-color);
     color: white;
-    cursor: pointer; 
+    cursor: pointer;
+    margin: 5%;
 }
-.pet-interested{
+
+.pet-interested {
     font-size: 1rem
 }
+
 .div-description {
-    background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(232, 243, 221, 0.932);
     width: 100%;
     top: 0;
     position: absolute;
@@ -82,6 +110,7 @@
     overflow: hidden;
     display: none;
 }
+
 .show {
     display: flex;
     justify-content: center;
@@ -91,12 +120,13 @@
     height: 150px;
     overflow: hidden;
 }
+
 .description-btn {
     background-color: var(--main-bg-color);
     position: absolute;
     bottom: -20px;
     right: 0;
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 5px 5px;
     padding: 2px;
     cursor: pointer;
     color: rgb(240, 240, 247);

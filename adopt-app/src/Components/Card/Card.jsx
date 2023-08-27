@@ -12,9 +12,9 @@ const Card = (props) => {
         setShowDescription(!showDescription);
     }
     //Se aplica el evento mouseleave para ocultar automaticamente la descripcion si se saca el click de la card
-    
+
     useEffect(() => {
-        if(showDescription) {
+        if (showDescription) {
             isShowDescription.current.addEventListener('mouseleave', () => {
                 setShowDescription(!showDescription);
             })
@@ -25,15 +25,17 @@ const Card = (props) => {
         <div className='pet-card' ref={isShowDescription}>
             <div className='img-description-container'>
                 <img className='card-img' src={petImg} alt='Mascota'></img>
-                <div className={`div-description ${showDescription ? 'height' : null}`}>
+                <div className='div-description'>
                     <p className={`pet-description ${!showDescription ? 'ocult' : 'show'}`}> {description} </p>
-                    <button className='description-btn' onClick={handleClick}> {!showDescription ? 'Más información' : 'Ocultar' } </button>
+                    <button className='description-btn' onClick={handleClick}> {!showDescription ? 'Más información' : 'Ocultar'} </button>
                 </div>
             </div>
             <div className='card-content'>
                 <div className='card-title'>
-                    <div className='pet-name'> {name}</div>
-                    <img className='img-sex' src={sex === 'Macho' ? MaleImg : FemaleImg} alt="Imagen sexo" />
+                    <h4 className='pet-name'> {name}</h4>
+                    <div className='img-sex-div'>
+                        <img className='img-sex' src={sex === 'Macho' ? MaleImg : FemaleImg} alt="Imagen sexo" />
+                    </div>
                 </div>
                 <p className='pet-age'>{age} años</p>
                 <ul className="attributes-list">

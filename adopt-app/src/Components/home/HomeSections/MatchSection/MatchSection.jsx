@@ -12,8 +12,9 @@ const MatchSection = () => {
             <ContentBlock
             className="match"
             title="Ellos ya encontraron un hogar donde le brinden amor."
-            subtitle="¡Sumate vos también a ésta familia y dales una oportunidad!"
-            url="https://img.freepik.com/foto-gratis/hombre-abrazando-su-amigable-pitbull_23-2149131399.jpg"/>
+            url="https://img.freepik.com/foto-gratis/hombre-abrazando-su-amigable-pitbull_23-2149131399.jpg">
+            <p className='match-text'>¡Sumate vos también a ésta familia y dales una oportunidad!</p>
+            </ContentBlock>
         </SectionStructure>
     )
 }

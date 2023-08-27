@@ -1,6 +1,6 @@
-@import '../../../index.css';
+@import 'index.css';
 
-.title-container {
+.title-section-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     background-color: var(--main-bg-color);
     border-radius: 10px;
 }
-.title-block {
+.title-section-block {
     font-size: 3rem;
     font-family: var(--title-font);
     color: white;

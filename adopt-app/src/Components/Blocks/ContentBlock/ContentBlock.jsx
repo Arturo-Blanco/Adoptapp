@@ -2,23 +2,27 @@ import './contentBlock.css'
 
 const ContentBlock = (props) => {
 
-    const { className, title, subtitle, children, url, alt} = props
+    const { className, title, subtitle, children, url, alt } = props
 
     return (
-            <div className={`${className} block-container`}>
-                <div className={`${className} block-text`}>
-                    <h3 className={`${className} block-title`}>
+        <article className={`${className} container-block`}>
+            <div className={`${className} text-block`}>
+                <header className={`${className} header-block`}>
+                    <h3 className={`${className} title-block`}>
                         {title}
                     </h3>
-                    <h3 className={`${className} block-subtitle`}>
+                    <h3 className={`${className} subtitle-block`}>
                         {subtitle}
                     </h3>
-                    {children}
-                </div>
-                <div className={`${className} block-img-container`}>
-                    <img className={`${className} block-img`}src={url} alt={alt} />
+                </header>
+                <div className={`${className} children-block`}>
+                {children}
                 </div>
             </div>
+            <div className={`${className} img-container-block`}>
+                <img className={`${className} img-block`} src={url} alt={alt} />
+            </div>
+        </article>
     )
 }
 export default ContentBlock;

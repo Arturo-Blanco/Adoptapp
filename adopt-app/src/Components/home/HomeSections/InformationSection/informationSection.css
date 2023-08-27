@@ -1,10 +1,9 @@
 @import 'index.css';
 
-.information.block-img, .information.block-container {
+.information.container-block {
     border-radius: 0 20px 20px 0;
+    overflow: hidden;
 }
 .information-text {
-    font-family: var(--p-font);
     font-size: 1.2rem;
-    text-align: center;
 }
