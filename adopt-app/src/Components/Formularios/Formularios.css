@@ -1,8 +1,7 @@
 /* Estilos para componente Input */
 .adoption-form{
-    margin: 170px auto auto;
-    filter: none;
-    height: 60%;
+    margin: auto;
+    height: max-content;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -11,48 +10,37 @@
     display: block;
     font-weight: 600;
     text-align: start;
-    padding: 20px 0px 0 10px;
-    min-height: 40px;
-    color: black;
+    padding: 5% 0px 0 5%;
+    min-height: 10px;
 }
 .grupoInput{
     position: relative;
-    z-index: 90;
     width: 45%;
     margin: auto;
 }
-.input{
-    background: #fff;
+.form-input{
     border-radius: 15px;
-    line-height: 35px;
-    transition: .3s ease all;
-    border: 2px solid #000;
-    color: #000;
+    line-height: 4vh;
+    border: 1px solid #000;
     width: 100%;
-}
-.input:focus {
-        border: 3px solid;
-        outline: none;
-        box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+    padding-left: 15px;
+    max-height: 35px;
 }
 /* Estilos para componente Terminos */
     
     /* Estilos para boton */
 
 .contenedorBotonCentrado{
+    display:flex;
     width: 100%;
 }
 .btn-adopt-form{
-    display: inline-block;
     padding: 10px 20px;
     font-size: 14px;
-    text-align: center;
-    border: none;
     border-radius: 30px; /* Da una forma redondeada */
-    color: #220303;
-    background-color: #6abf84; /* Color verde suave */
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: auto;
+    background-color: var(--main-bg-color);
+    color:#fff;
 }
 .checkbox-form{
     display: flex;
@@ -61,9 +49,9 @@
     margin: 15px auto;
 }
 .checkbox-form .filter-box{
-    margin: 5px;
+    margin: 3px;
 }
 .checkbox-form .filter-box .filter-title{
     font-size: 1rem;
+    font-weight: 600;
 }
-

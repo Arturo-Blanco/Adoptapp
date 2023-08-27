@@ -5,7 +5,7 @@ import axios from 'axios';
 import  Modal from '../Modales/Modal';
 import React, { useState } from 'react';
 import { baseUrl } from '../../Apis/getMascotas.mjs';
-import InputCheckbox from '../FiltroBusqueda/InputCheckbox/FilterCheckbox';
+import InputCheckbox from '../FiltroBusqueda/InputCheckbox/InputCheckbox';
 import FilterBox from '../FiltroBusqueda/FilterBox/FilterBox';
 
 const Formulario = ({ petId, closeModal1 }) => {
@@ -63,7 +63,8 @@ const Formulario = ({ petId, closeModal1 }) => {
     return(
       <>
         <form className='adoption-form' onSubmit={handleSubmit}> 
-        <ComponenteInput 
+        <ComponenteInput
+          className='form' 
           label="Nombre"
           placeholder="Nombre Completo"
           id="nombre"
@@ -72,6 +73,7 @@ const Formulario = ({ petId, closeModal1 }) => {
           onChange={handleInputChange}
           />
         <ComponenteInput 
+          className='form'
           label="Apellido"
           placeholder="Apellido"
           id="apellido"
@@ -80,6 +82,7 @@ const Formulario = ({ petId, closeModal1 }) => {
           onChange={handleInputChange}
         />
         <ComponenteInput 
+          className='form'
           label="Edad"
           placeholder="Ingrese su edad"
           id="edad"
@@ -87,7 +90,8 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.age}
           onChange={handleInputChange}
         />
-        <ComponenteInput 
+        <ComponenteInput
+          className='form'
           label="Domicilio"
           placeholder="Ingrese su domicilio"
           id="domicilio"
@@ -95,7 +99,8 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.address}
           onChange={handleInputChange}
         />
-        <ComponenteInput 
+        <ComponenteInput
+          className='form' 
           label="Email"
           placeholder="email@correo.com"
           type="email"
@@ -104,7 +109,8 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.email}
           onChange={handleInputChange}
           />
-        <ComponenteInput 
+        <ComponenteInput
+          className='form' 
           label="Numero de telefono"
           placeholder="2901xxxxxx"
           type="number"
@@ -118,38 +124,38 @@ const Formulario = ({ petId, closeModal1 }) => {
         <FilterBox
           title="Localidad">
         <InputCheckbox
-          htmlFor="Ushuaia"
+          type="radio"
           text="Ushuaia"
-          value={1}
+          value='1'
           name="cityId"
           onChange={handleInputChange}
         />
         <InputCheckbox
-          htmlFor="Tolhuin"
+          type="radio"
           text="Tolhuin"
-          value={2}
+          value='2'
           name="cityId"
           onChange={handleInputChange}
         />
         <InputCheckbox
-          htmlFor="Rio Grande"
+          type="radio"
           text="Rio Grande"
-          value={3}
+          value='3'
           name="cityId"
           onChange={handleInputChange}
         />
         </FilterBox>
         <FilterBox
-          title="Donde vive?">
+          title="¿Dónde vive?">
         <InputCheckbox
-          htmlFor="casa"
+          type="radio"
           text="Casa"
           value="casa"
           name="livingPlace"
           onChange={handleInputChange}
         />
         <InputCheckbox
-          htmlFor="Departamento"
+          type="radio"
           text="Departamento"
           value="departamento"
           name="livingPlace"
@@ -157,18 +163,18 @@ const Formulario = ({ petId, closeModal1 }) => {
         />
         </FilterBox>
         <FilterBox
-          title="Tiene mascota?">
+          title="¿Tiene mascota?">
         <InputCheckbox
-          htmlFor=""
+          type="radio"
           text="Si"
-          value={1}
+          value='1'
           name="hasPet"
           onChange={handleInputChange}
         />
         <InputCheckbox
-          htmlFor=""
+          type="radio"
           text="No"
-          value={0}
+          value='0'
           name="hasPet"
           onChange={handleInputChange}
         />
