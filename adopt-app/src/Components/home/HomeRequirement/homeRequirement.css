@@ -1,0 +1,11 @@
+.requirement.block-img, .requirement.block-container {
+    border-radius: 0 20px 20px 0;
+}
+.requirement-list {
+    font-size: 1.2rem;
+    font-family: var(--p-font);
+    width: 80%;
+}
+.requirement-li {
+    list-style: disc;
+}

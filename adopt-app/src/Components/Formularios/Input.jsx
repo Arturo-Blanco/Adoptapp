@@ -1,10 +1,11 @@
 import './Formularios.css';
 
 const ComponenteInput = (props) =>{
+    const {id,className, label,type,placeholder,name,value,onChange} = props;
     return(
         <div className='grupoInput'>
-            <label className="label" htmlFor={props.id}>{props.label}</label>
-                <input className="input" type={props.type} placeholder={props.placeholder} id={props.id} name={props.name} value={props.value} onChange={props.onChange} required
+            <label className="label" htmlFor={id}>{label}</label>
+                <input className={`${className}-input`} type={type} placeholder={placeholder} id={id} name={name} value={value} onChange={onChange} required
                 />
         </div>
     );

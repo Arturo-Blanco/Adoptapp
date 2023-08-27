@@ -1,0 +1,20 @@
+import TitleBlock from 'Components/Blocks/TitleBlock/TitleBlock';
+import ContentBlock from 'Components/Blocks/ContentBlock/ContentBlock';
+import SectionStructure from 'Components/home/HomeSections/SectionStructure/SectionStructure';
+import './matchSection.css';
+
+const MatchSection = () => {
+    return (
+        <SectionStructure
+        className='match'>
+            <TitleBlock 
+            title='Ya hicieron match'/>
+            <ContentBlock
+            className="match"
+            title="Ellos ya encontraron un hogar donde le brinden amor."
+            subtitle="¡Sumate vos también a ésta familia y dales una oportunidad!"
+            url="https://img.freepik.com/foto-gratis/hombre-abrazando-su-amigable-pitbull_23-2149131399.jpg"/>
+        </SectionStructure>
+    )
+}
+export default MatchSection;

@@ -1,86 +1,91 @@
 import FilterBox from "./FilterBox/FilterBox";
-import InputCheckbox from "./InputCheckbox/FilterCheckbox";
+import InputCheckbox from "./InputCheckbox/InputCheckbox";
 import './filter.css'
+import { useState } from "react";
 
-const Filter = ({setFilters}) => {
+const Filter = ({ setFilters }) => {
+
+    const specieOptions = [
+        {text: "Perro", value: "Perro", name: "specie" },
+        {text: "Gato",  value: "Gato",  name: "specie" },
+        {text: "Otros", value: "Otros", name: "specie" }
+    ];
+    const sexOptions = [
+        {text: "Macho",  value: "Macho",  name: "sex" },
+        {text: "Hembra", value: "Hembra", name: "sex" }
+    ];
+    const locationOptions = [
+        {text: "Ushuaia",    value: "1", name: "location" },
+        {text: "Tolhuin",    value: "2", name: "location" },
+        {text: "Rio Grande", value: "3", name: "location" }
+    ];
+
+    const [selectedOptions, setSelectedOptions] = useState({
+        specie: undefined,
+        sex: undefined,
+        location: undefined
+    });
 
     const handleStateChange = (event) => {
         //Se desestructura los valores del checkbox al ocurrir el evento. Extrayendo los valores 'name' y checked
-        const {name, checked, value} = event.target
-    setFilters((prevFilter) => ({
-        ...prevFilter, // se crea una copia del objeto prevFilter para mantener todos los filtros seleccionados
-        [name] : checked ? value : undefined // se verifica si el check es true se retorna el name del mismo sino se devuelve undefined
-    }));
+        const { name, checked, value } = event.target;
+
+        setSelectedOptions((prevSelectedOptions) => ({
+            ...prevSelectedOptions,
+            [name]: checked ? value : undefined
+        }));
+
+        setFilters((prevFilter) => ({
+            ...prevFilter, // se crea una copia del objeto prevFilter para mantener todos los filtros seleccionados
+            [name]: checked ? value : undefined // se verifica si el check es true se retorna el name del mismo sino se devuelve undefined
+        }));
     }
     return (
-        <aside className="filter-container">
-            <h3 className="preferences">¿Que estas buscando?</h3>
+        <>
+            <h3 className="preferences">¿Qué estás buscando?</h3>
             <FilterBox
-            title="Especie">
-            <InputCheckbox
-            htmlFor="perro"
-            text="Perro"
-            value="Perro"
-            name="specie"
-            onChange={handleStateChange}
-            />
-            <InputCheckbox
-            htmlFor="gato"
-            text="Gato"
-            value="Gato"
-            name="specie"
-            onChange={handleStateChange}
-            />
-            <InputCheckbox
-            htmlFor="otros"
-            text="Otros"
-            value="Otros"
-            name="specie"
-            onChange={handleStateChange}
-            />
+                title="Especie">
+                {specieOptions.map((option, index) => (
+                    <InputCheckbox
+                        key={index}
+                        type="checkbox"
+                        text={option.text}
+                        value={option.value}
+                        name={option.name}
+                        onChange={handleStateChange}
+                        checked={selectedOptions.specie === option.value}
+                    />
+                ))}
             </FilterBox>
             <FilterBox
-            title="Sexo">
-            <InputCheckbox
-            htmlFor="macho"
-            text="Macho"
-            value="Macho"
-            name="sex"
-            onChange={handleStateChange}
-            />
-            <InputCheckbox
-            htmlFor="hembra"
-            text="Hembra"
-            value="Hembra"
-            name="sex"
-            onChange={handleStateChange}
-            />
+                title="Sexo">
+                {sexOptions.map((option, index) => (
+                    <InputCheckbox
+                        key={index}
+                        type="checkbox"
+                        text={option.text}
+                        value={option.value}
+                        name={option.name}
+                        onChange={handleStateChange}
+                        checked={selectedOptions.sex === option.value}
+                    />
+                ))}
             </FilterBox>
             <FilterBox
-            title="Ubicacion">
-            <InputCheckbox
-            htmlFor="Ushuaia"
-            text="Ushuaia"
-            value= "1"
-            name="location"
-            onChange={handleStateChange}
-            />
-            <InputCheckbox
-            htmlFor="RioGrande"
-            text="Rio Grande"
-            value="3"
-            name="location"
-            onChange={handleStateChange}
-            />
-            <InputCheckbox
-            htmlFor="Tolhuin"
-            text="Tolhuin"
-            value="2"
-            name="location"
-            onChange={handleStateChange}
-            />
+                title="Ubicacion">
+                {locationOptions.map((option, index) => (
+                    <InputCheckbox
+                        key={index}
+                        type="checkbox"
+                        text={option.text}
+                        value={option.value}
+                        name={option.name}
+                        onChange={handleStateChange}
+                        checked={selectedOptions.location === option.value}
+                    />
+                ))}
             </FilterBox>
-        </aside>
+        </>
     )
 }
 export default Filter;

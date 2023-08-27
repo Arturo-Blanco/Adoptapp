@@ -1,0 +1,49 @@
+@import 'index.css';
+
+.adoption-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: 20px auto;
+}
+.filter-container{
+    width: 15%;
+    margin: 20px auto;
+    border-radius: 20px;
+    height: max-content;
+    background-color:var(--main-bg-color);
+    color: white;
+    font-family: var(--p-font);
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+}
+.active-page {
+    background-color: var(--background-card-color);
+}
+.not-result-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 80%;
+}
+.not-result-title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.not-result-img {
+    width: 40%;
+}

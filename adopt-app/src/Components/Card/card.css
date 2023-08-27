@@ -1,0 +1,104 @@
+.pet-card {
+    background-color: var(--background-card-color);
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 230px;
+    margin: 20px auto;
+    border-radius: 5px;
+    transition: 0.5s ease all;
+    opacity: 0.9;
+    font-family: 'Gilroy-Regular', sans-serif;
+    overflow: hidden;
+}
+.pet-card:hover {
+    box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5) ;
+    opacity: 1;
+    .description-btn {
+        opacity: 1;
+        transition: 0.5s ease all;
+    }
+}
+.img-description-container {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.card-title {
+    display: flex;
+}
+.pet-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    margin: auto;
+}
+.img-sex {
+    width: 2rem;
+    border: none;
+    align-items: end;
+}
+.attributes-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adopt-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 30px; 
+    background-color: var(--main-bg-color);
+    color: white;
+    cursor: pointer; 
+}
+.pet-interested{
+    font-size: 1rem
+}
+.div-description {
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 100%;
+    top: 0;
+    position: absolute;
+    height: max-content;
+}
+
+.ocult {
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+}
+.description-btn {
+    background-color: var(--main-bg-color);
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    border-radius: 0 0 2px 2px;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(240, 240, 247);
+    opacity: 0;
+}

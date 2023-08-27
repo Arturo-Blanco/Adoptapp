@@ -1,41 +1,60 @@
-header{
-	height: 50vh;
-	background-image: url("../../../public/Img/header.webp");
+.header {
+	height: 40vh;
+	background-image: url("https://s2.ppllstatics.com/lasprovincias/www/multimedia/202204/07/media/cortadas/perro-gato-kldD-U1601598613822BNC-1248x770@Las%20Provincias.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0 45%;
+	background-position: 0 55%;
 	border-radius: 0 0 20px 20px;
 	opacity: 0.9;
 }
-.main-nav{
-	height: 25%;
-	width: 100%;
-	background:linear-gradient(190deg,rgb(6, 8, 6), rgba(100, 92, 92, 0.822));
+nav {
+    position: sticky;
+    top:0;
+    z-index: 998;
 }
-.nav-links{
+.logo-div {
+	width: 5%;
+	margin: auto;
+}
+.logo-link {
+	display: block;
+	margin: auto;
+	width: 90%;
+	background-color: white;
+	border-radius: 50%;
+	padding: 5px;
+}
+.main-nav {
+	display: flex;
+	justify-content: space-around;
+	height: 15%;
+	min-height: 70px;
+	width: 100%;
+	background:linear-gradient(190deg,rgb(81, 90, 81), rgb(51, 42, 42));
+}
+.nav-links {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 80%;
 }
-.link-item a{
+.link-item a {
+	color: white;
 	font-size: 1rem;
-	text-transform: uppercase;
-	transition: opacity 0.3s ease;
+	opacity: 0.8;
+	font-family: 'Gilroy-Regular', sans-serif;
 }
-.logo{
-	border-radius: 50px;
-	width: 70px;
-	height: auto;
-	margin-top: 5px;
+.link-item a:hover {
+	opacity: 1;
 }
 .link-item > a::after{
 	content: "";
 	position: absolute;
-	bottom: -15px;
+	bottom: -10px;
 	left: 0;
 	width: 0;
 	height: 3px;
-	background-color: #6abf84; 
+	background-color: white; 
 	transition: width 0.5s ease; /* Transición del ancho */
 }
 .link-item > a:hover::after{
@@ -43,12 +62,6 @@ header{
 }
 .button-menu{
 	display: none;
-}
-.link-item a:hover{
-	color: #6abf84; 
-}
-.link-item a {
-	color: white;
 }
 .nav-links li{
 	position: relative;
