@@ -1,7 +1,7 @@
 import './header.css';
 import { Link } from 'react-router-dom';
-import  Logo  from '../../../src/assets/logo.svg'
-import { scrollToTop } from '../../functions.mjs';
+import  Logo  from 'assets/logo.svg'
+import { scrollToTop } from 'functions.mjs';
 
 const Header = () => {
     return (

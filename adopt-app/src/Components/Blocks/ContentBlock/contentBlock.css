@@ -9,30 +9,34 @@
 }
 .block-img-container {
     width: 50%;
+    overflow: hidden;
+    height: 100%;
 }
 .block-text {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 80%;
+    justify-content: space-around;
+    height: 90%;
     margin: auto;
     color: black;
 }
 .block-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 .block-title, .block-subtitle {
-    width: 80%;
+    width: 90%;
     text-align: center;
     font-family: 'Gilroy-Medium', sans-serif;
 }
 .block-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .block-subtitle {
     margin-bottom: 3%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }

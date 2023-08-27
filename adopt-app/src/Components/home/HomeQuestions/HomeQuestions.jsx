@@ -1,5 +1,4 @@
 import ContentBlock from "Components/Blocks/ContentBlock/ContentBlock";
-import img from 'assets/img-home.jpg';
 import { useState } from "react";
 import './homeQuestions.css'
 
@@ -24,7 +23,8 @@ const HomeQuestions = () => {
                 className="questions"
                 title="¿Querés adoptar pero tenés dudas?"
                 subtitle="Te compartimos las dudas más frecuentes"
-                url={img}>
+                url='https://thumbs.dreamstime.com/b/el-gato-gris-est%C3%A1-leyendo-un-libro-76578319.jpg'>
+                <ul className="questions-list">
                 <li className='question' onClick={() => toggleAnswer(1)}
                     selected={selectedQuestion === 1}>
                     <div className="question-div">
@@ -69,6 +69,7 @@ const HomeQuestions = () => {
                     <p className={`${selectedQuestion === 4 ? 'show-answer' : 'answer'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
                     </p>
                 </li>
+                </ul>
             </ContentBlock>
         </div>
     )
