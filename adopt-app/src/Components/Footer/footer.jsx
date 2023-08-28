@@ -8,7 +8,7 @@ const Footer = () => {
                     <h3 className='contact-title'>Contacto</h3>
                     <ul className='contact-list'>
                         <li className='contact-value'>adoptapp@gmail.com</li>
-                        <li className='contact-item'>Atencion Telefonica:</li>
+                        <li className='contact-item'>Atención Telefónica:</li>
                         <li className='contact-value'>2901-512505</li>
                     </ul>
                 </div>
