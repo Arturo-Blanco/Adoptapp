@@ -4,7 +4,7 @@ import Header from './Components/Header/header.jsx';
 import Home from './Pages/Home/Home.jsx';
 import Denuncias from './Pages/Complaints/denuncias.jsx';
 import InfoGral from './Pages/Information/infoGral.jsx';
-import Donaciones from './Pages/Donations/donaciones.jsx';
+import Donaciones from './Pages/Donations/Donaciones.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AdoptPage from './Pages/Adoption/AdoptionPage';
 
