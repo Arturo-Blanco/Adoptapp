@@ -1,6 +1,6 @@
 @import 'index.css';
 
-.modal{
+.modal-1, .modal-2{
     position: fixed;
     z-index: 999;
     top: 0;
@@ -13,7 +13,7 @@
     align-items: center;
     animation: slideleft 1s forwards;
 }
-.modal.is-open{
+.modal-1.is-open, .modal-2.is-open{
     display: flex;
 }
 .modal-container{
@@ -58,5 +58,22 @@
     border-radius: 50%;
 }
 .modal-close-btn:hover {
-   background-color: rgb(247, 163, 163);
+    background-color: rgb(247, 163, 163);
+}
+.adoption-message {
+    font-family: var(--p-font);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 60%;
+}
+.adoption-message h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--main-bg-color);
+
 }

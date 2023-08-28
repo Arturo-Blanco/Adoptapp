@@ -41,6 +41,7 @@
     margin: auto;
     background-color: var(--main-bg-color);
     color:#fff;
+    cursor: pointer;
 }
 .checkbox-form {
     display: flex;
