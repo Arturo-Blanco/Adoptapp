@@ -33,7 +33,7 @@ const HomeQuestions = () => {
                         </div>
                         <p className="question-p">¿Es obligatorio completar el formulario de adopcion?</p>
                     </div>
-                    <p className={`${selectedQuestion === 1 ? 'show-answer' : 'answer'}`} >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
+                    <p className={`${selectedQuestion === 1 ? 'show-answer' : 'answer'}`} >Sí, es necesario y obligatorio. Adoptarlas es asumir un compromiso de por vida. Tenemos que asegurarnos que la mascota se adapta a las condiciones de vida de la nueva familia tanto como la familia a las características de las mascotas.
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(2)}
@@ -42,9 +42,9 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 2 ? plusIcon : lessIcon }
                         </div>
-                        <p className="question-p">¿Es obligatorio completar el formulario de adopcion?</p>
+                        <p className="question-p">¿Como me preparo para la llegada de mi mascota?</p>
                     </div>
-                    <p className={`${selectedQuestion === 2 ? 'show-answer' : 'answer'}`} >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
+                    <p className={`${selectedQuestion === 2 ? 'show-answer' : 'answer'}`} >Asegurate de contar con los elementos básicos para que esté cómoda: una cuchita o colchoneta donde dormir, un platito para comer y tomar agua, una chapita o collar con tus datos y su nombre, y, si es un gatito piedritas y litera.
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(3)}
@@ -53,20 +53,9 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 3 ? plusIcon : lessIcon }
                         </div>
-                        <p className="question-p">¿Es obligatorio completar el formulario de adopcion?</p>
+                        <p className="question-p">¿Cuales son los cuidados que debe recibir mi mascota?</p>
                     </div>
-                    <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
-                    </p>
-                </li>
-                <li className='question' onClick={() => toggleAnswer(4)}
-                    selected={selectedQuestion === 4}>
-                    <div className="question-div">
-                        <div className="toggle-icon">
-                            {selectedQuestion === 4 ? plusIcon : lessIcon }
-                        </div>
-                        <p className="question-p">¿Es obligatorio completar el formulario de adopcion?</p>
-                    </div>
-                    <p className={`${selectedQuestion === 4 ? 'show-answer' : 'answer'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
+                    <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Desparasitación, Vacunación, Alimentación. Es muy importante que te acerques a un veterinario que pueda recomendarte y enseñarte sobre las vacunas que necesita, cuándo aplicarlas, cómo realizar una correcta desparasitación, según peso, hábitos, edad, y qué alimento cubre las necesidades de tu mascota.
                     </p>
                 </li>
                 </ul>
