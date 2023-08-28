@@ -1,14 +1,14 @@
-import './adoptionPage.css';
 import { getMascotas, baseUrl } from 'Apis/getMascotas.mjs';
 import { scrollToTop } from 'functions.mjs';
-import Filter from 'Components/FiltroBusqueda/Filter';
-import PetCards from 'Components/Card/PetCards/PetCards';
-import PaginationButton from 'Components/Adopciones/PaginationComponents/PaginationButton';
 import { useEffect, useState } from 'react';
+import SearchFilter from 'Components/SearchFilter/SearchFilter';
+import PetCards from 'Components/Card/PetCards/PetCards';
+import PaginationButton from 'Components/PaginationButton/PaginationButton';
+import PageStructure from 'Components/PagesStructure/PagesStructure';
 import axios from 'axios';
 import NotFoundImg from 'assets/not-found.svg';
 import NotResultImg from 'assets/not-result.svg';
-import PageStructure from 'Components/PagesStructure/PagesStructure';
+import './adoptionPage.css';
 
 const AdoptionPage = () => {
 
@@ -90,7 +90,7 @@ const AdoptionPage = () => {
         <PageStructure
             classNamePage='adoption'
             titlePage='Ellos te esperan'
-            asidePage={!loadingPage && petList ? <Filter filter={filter} setFilters={setFilters}></Filter> : null}
+            asidePage={!loadingPage && petList ? <SearchFilter filter={filter} setFilters={setFilters}></SearchFilter> : null}
             sectionPage={!loadingPage && petList ? (
                 <>
                     {petList.length > 0 ? (

@@ -1,7 +1,5 @@
-import './Formularios.css';
+const TextInput = ({id, label,type,placeholder,name,value,onChange}) =>{
 
-const ComponenteInput = (props) =>{
-    const {id, label,type,placeholder,name,value,onChange} = props;
     return(
         <div className='grupoInput'>
             <label className="label" htmlFor={id}>{label}</label>
@@ -11,4 +9,4 @@ const ComponenteInput = (props) =>{
     );
 }
 
-export default ComponenteInput;
+export default TextInput;

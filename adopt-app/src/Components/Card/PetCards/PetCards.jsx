@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import Modal from 'Components/Modales/Modal'
-import Formulario from 'Components/Formularios/Formulario';
 import Card from 'Components/Card/Card';
+import AdoptionForm from 'Components/Forms/AdoptionForm/AdoptForm';
 
 const PetCards = ({ petList }) => {
 
@@ -34,7 +34,7 @@ const PetCards = ({ petList }) => {
                 closeModal={() => { setIsOpenModal1(false) }}
                 selectPetName={selectPetName}
                 modalNumber="1" >
-                <Formulario petId={selectPetId} closeModal1={() => { setIsOpenModal1(false) }}></Formulario>
+                <AdoptionForm petId={selectPetId} closeModal1={() => { setIsOpenModal1(false) }}></AdoptionForm>
             </Modal>
         </>
     )
