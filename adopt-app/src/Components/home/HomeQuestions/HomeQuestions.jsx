@@ -33,7 +33,7 @@ const HomeQuestions = () => {
                         </div>
                         <p className="question-p">¿Es obligatorio completar el formulario de adopcion?</p>
                     </div>
-                    <p className={`${selectedQuestion === 1 ? 'show-answer' : 'answer'}`} >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
+                    <p className={`${selectedQuestion === 1 ? 'show-answer' : 'answer'}`} >Sí, es necesario y obligatorio. Adoptarlas es asumir un compromiso de por vida. Tenemos que asegurarnos que la mascota se adapta a las condiciones de vida de la nueva familia tanto como la familia a las características de las mascotas.
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(2)}
