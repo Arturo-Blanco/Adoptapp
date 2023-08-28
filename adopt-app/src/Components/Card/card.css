@@ -88,7 +88,7 @@
     font-size: 14px;
     border-radius: 30px;
     background-color: var(--main-bg-color);
-    color: white;
+    color: var(--white-color);
     cursor: pointer;
     margin: 5%;
 }

@@ -8,7 +8,7 @@
 	/*background:linear-gradient(190deg,rgb(81, 90, 81), rgb(51, 42, 42));*/
     margin-top: 3%;
     font-family: var(--p-font);
-    color: white;
+    color: var(--white-color);
 }
 
 .footer-content {
@@ -79,14 +79,14 @@
     width: 75%;
     height: 30px;
     text-align: start;
-    background-color: white;
-    color: black;
+    background-color: var(--white-color);
+    color: var(--black-color);
     padding-left: 15px;
 	margin-top: 15px;
 }
 
 .newsletter-btn {
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     background-color: var(--background-card-color);
     width: 25%;
     cursor: pointer;
@@ -100,7 +100,7 @@
     justify-content: center;
     margin: auto;
     height: 3rem;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--white-color);
     width: 95%;
-    color: black;
+    color: var(--black-color);
 }

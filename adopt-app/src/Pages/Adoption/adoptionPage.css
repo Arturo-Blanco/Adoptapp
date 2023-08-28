@@ -1,27 +1,4 @@
 @import 'index.css';
-
-.adoption.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 95%;
-    margin: 20px auto;
-}
-.adoption.aside{
-    width: 15%;
-    margin: 20px auto;
-    border-radius: 20px;
-    height: max-content;
-    background-color:var(--main-bg-color);
-    color: white;
-    font-family: var(--p-font);
-}
-.adoption.content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 85%;
-    margin: auto;
-}
 .pagination-container {
     display: flex;
     align-items: center;

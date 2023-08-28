@@ -75,5 +75,8 @@
     font-size: 1.5rem;
     font-weight: 600;
     border-bottom: 1px solid var(--main-bg-color);
-
+}
+.modal-text {
+    margin-top: 2%;
+    text-align: center;
 }
