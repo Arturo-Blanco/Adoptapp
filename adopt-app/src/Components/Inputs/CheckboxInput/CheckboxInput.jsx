@@ -1,7 +1,7 @@
-import './inputCheckbox.css';
+import './checkboxInput.css';
 
-const InputCheckbox = (props) => {
-    const {name, value, id, text, type, checked, onChange } = props;
+const CheckboxInput = ({name, value, id, text, type, checked, onChange }) => {
+
     return (
         <>
         <label className="filter-label" htmlFor={id}>
@@ -11,4 +11,4 @@ const InputCheckbox = (props) => {
         </>
     )
 }
-export default InputCheckbox;
+export default CheckboxInput;

@@ -1,9 +1,9 @@
-import FilterBox from "./FilterBox/FilterBox";
-import InputCheckbox from "./InputCheckbox/InputCheckbox";
-import './filter.css'
+import InputsBox from "Components/Inputs/InputsBox/InputsBox";
+import CheckboxInput from "Components/Inputs/CheckboxInput/CheckboxInput";
+import './searchFilter.css'
 import { useState } from "react";
 
-const Filter = ({ setFilters }) => {
+const SearchFilter = ({ setFilters }) => {
 
     const specieOptions = [
         {text: "Perro", value: "Perro", name: "specie" },
@@ -43,10 +43,10 @@ const Filter = ({ setFilters }) => {
     return (
         <>
             <h3 className="preferences">¿Qué estás buscando?</h3>
-            <FilterBox
+            <InputsBox
                 title="Especie">
                 {specieOptions.map((option, index) => (
-                    <InputCheckbox
+                    <CheckboxInput
                         key={index}
                         type="checkbox"
                         text={option.text}
@@ -56,11 +56,11 @@ const Filter = ({ setFilters }) => {
                         checked={selectedOptions.specie === option.value}
                     />
                 ))}
-            </FilterBox>
-            <FilterBox
+            </InputsBox>
+            <InputsBox
                 title="Sexo">
                 {sexOptions.map((option, index) => (
-                    <InputCheckbox
+                    <CheckboxInput
                         key={index}
                         type="checkbox"
                         text={option.text}
@@ -70,11 +70,11 @@ const Filter = ({ setFilters }) => {
                         checked={selectedOptions.sex === option.value}
                     />
                 ))}
-            </FilterBox>
-            <FilterBox
+            </InputsBox>
+            <InputsBox
                 title="Ubicacion">
                 {locationOptions.map((option, index) => (
-                    <InputCheckbox
+                    <CheckboxInput
                         key={index}
                         type="checkbox"
                         text={option.text}
@@ -84,8 +84,8 @@ const Filter = ({ setFilters }) => {
                         checked={selectedOptions.location === option.value}
                     />
                 ))}
-            </FilterBox>
+            </InputsBox>
         </>
     )
 }
-export default Filter;
+export default SearchFilter;

@@ -16,12 +16,11 @@
 }
 .toggle-icon{
     display: flex;
-    margin: auto;
+    margin-right: 1%;
 }
 .question-div {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 .answer {
     text-align: center;

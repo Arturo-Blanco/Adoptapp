@@ -1,11 +1,9 @@
-import ComponenteInput from './Input'
-import './Formularios.css';
+import TextInput from 'Components/Inputs/TextInput/TextInput'
+import InputRadioGroup from 'Components/Inputs/InputRadioGroup/InputRadioGroup';
 import axios from 'axios';
 import Modal from 'Components/Modales/Modal';
 import React, { useState } from 'react';
 import { baseUrl } from 'Apis/getMascotas.mjs';
-import InputRadioGroup from './InputRadioGroup/InputRadioGroup';
-
 
 const locationOptions = [
   { text: 'Ushuaia',    value: '1' },
@@ -24,7 +22,7 @@ const hasPetOptions = [
 ];
 
 
-const Formulario = ({ petId, closeModal1 }) => {
+const AdoptionForm = ({ petId, closeModal1 }) => {
 
   const [isOpenModal2, setIsOpenModal2] = useState(false);
   const [adoptionMesage, setAdoptionMesage] = useState();
@@ -110,7 +108,7 @@ const Formulario = ({ petId, closeModal1 }) => {
   return (
     <>
       <form className='adoption-form' onSubmit={handleSubmit}>
-        <ComponenteInput
+        <TextInput
           label="Nombre"
           placeholder="Nombre Completo"
           id="nombre"
@@ -118,7 +116,7 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.name}
           onChange={handleInputChange}
         />
-        <ComponenteInput
+        <TextInput
           label="Apellido"
           placeholder="Apellido"
           id="apellido"
@@ -126,7 +124,7 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.surname}
           onChange={handleInputChange}
         />
-        <ComponenteInput
+        <TextInput
           label="Edad"
           placeholder="Ingrese su edad"
           id="edad"
@@ -134,7 +132,7 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.age}
           onChange={handleInputChange}
         />
-        <ComponenteInput
+        <TextInput
           label="Domicilio"
           placeholder="Ingrese su domicilio"
           id="domicilio"
@@ -142,7 +140,7 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.address}
           onChange={handleInputChange}
         />
-        <ComponenteInput
+        <TextInput
           label="Email"
           placeholder="email@correo.com"
           type="email"
@@ -151,7 +149,7 @@ const Formulario = ({ petId, closeModal1 }) => {
           value={formData.email}
           onChange={handleInputChange}
         />
-        <ComponenteInput
+        <TextInput
           label="Numero de telefono"
           placeholder="2901xxxxxx"
           type="number"
@@ -194,4 +192,4 @@ const Formulario = ({ petId, closeModal1 }) => {
   );
 }
 
-export default Formulario;
+export default AdoptionForm;

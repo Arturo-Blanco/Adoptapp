@@ -1,12 +1,12 @@
 import React from 'react';
-import InputCheckbox from 'Components/FiltroBusqueda/InputCheckbox/InputCheckbox';
-import FilterBox from 'Components/FiltroBusqueda/FilterBox/FilterBox';
+import InputsBox from '../InputsBox/InputsBox';
+import CheckboxInput from '../CheckboxInput/CheckboxInput';
 
 const InputRadioGroup = ({ title, options, name, onChange }) => {
     return (
-        <FilterBox title={title}>
+        <InputsBox title={title}>
             {options.map(option => (
-                <InputCheckbox
+                <CheckboxInput
                     key={option.value}
                     type="radio"
                     text={option.text}
@@ -15,7 +15,7 @@ const InputRadioGroup = ({ title, options, name, onChange }) => {
                     onChange={onChange}
                 />
             ))}
-        </FilterBox>
+        </InputsBox>
     );
 };
 

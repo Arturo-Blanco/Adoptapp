@@ -1,0 +1,101 @@
+.donacionMain {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    gap: 25px;
+    grid-template-areas: 
+    "header header"
+    "formContent sidebar"
+    "donadores sidebar"
+    ;
+    padding: 3rem;
+    font-family: var(--p-font);
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.titulo {
+    grid-area: header;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    font-family: var(--title-font);
+    color: white;
+    font-size: 3rem;
+    border-radius: 30px;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+}
+
+.formContainer {
+    grid-area: formContent;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "form info"
+    ;
+    background-color: var(--background-card-color);
+    border-radius: 30px;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+
+}
+
+.info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.form {
+    grid-area: form;
+    padding-bottom: 1rem;
+}
+
+.donadoresContainer {
+    grid-area: donadores;
+    background-color: var(--background-card-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 18rem;
+}
+
+.donadoresContainer div img {
+    padding-top: 3rem;
+    height: 15rem;
+}
+
+.donadoresContainer .text h2 {
+    font-size: 1.5rem;
+}
+
+.infoAside {
+    padding: 1rem;
+    padding-top: 2rem;
+    grid-area: sidebar;
+    background-color: var(--background-card-color);
+    border-radius: 30px;
+}
+
+.contenedorBotonCentrado {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorBotonCentrado .boton {
+    border-radius: 30px;
+    border-style: solid;
+    text-align: center;
+    height: 2rem;
+    width: 7rem;
+}
