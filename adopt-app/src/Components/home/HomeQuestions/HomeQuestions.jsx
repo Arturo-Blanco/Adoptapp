@@ -53,9 +53,9 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 3 ? plusIcon : lessIcon }
                         </div>
-                        <p className="question-p">¿Es obligatorio completar el formulario de adopcion?</p>
+                        <p className="question-p">¿Cuales son los cuidados que debe recibir mi mascota?</p>
                     </div>
-                    <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
+                    <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Desparasitación, Vacunación, Alimentación. Es muy importante que te acerques a un veterinario que pueda recomendarte y enseñarte sobre las vacunas que necesita, cuándo aplicarlas, cómo realizar una correcta desparasitación, según peso, hábitos, edad, y qué alimento cubre las necesidades de tu mascota.
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(4)}
