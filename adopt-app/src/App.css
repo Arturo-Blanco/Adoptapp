@@ -3,7 +3,9 @@
 body {
 	background-color: rgb(241, 241, 237);
 }
-
+button {
+	cursor: pointer;
+}
 @keyframes slideleft{
 	0%{
 		transform: translate(100px);
