@@ -2,7 +2,7 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <footer className='footer' id='footer'>
+        <footer className='footer' >
             <div className="footer-content">
                 <div className="footer-section">
                     <h3 className='contact-title'>Contacto</h3>
@@ -12,7 +12,7 @@ const Footer = () => {
                         <li className='contact-value'>2901-512505</li>
                     </ul>
                 </div>
-                <div className="footer-section">
+                <div className="footer-section" id='footer'>
                     <h3>Nuestras redes sociales</h3>
                     <ul className="icon-list">
                         <li><i className="fa-brands fa-whatsapp"></i></li>
