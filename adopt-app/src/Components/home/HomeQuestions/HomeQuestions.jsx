@@ -58,17 +58,6 @@ const HomeQuestions = () => {
                     <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Desparasitación, Vacunación, Alimentación. Es muy importante que te acerques a un veterinario que pueda recomendarte y enseñarte sobre las vacunas que necesita, cuándo aplicarlas, cómo realizar una correcta desparasitación, según peso, hábitos, edad, y qué alimento cubre las necesidades de tu mascota.
                     </p>
                 </li>
-                <li className='question' onClick={() => toggleAnswer(4)}
-                    selected={selectedQuestion === 4}>
-                    <div className="question-div">
-                        <div className="toggle-icon">
-                            {selectedQuestion === 4 ? plusIcon : lessIcon }
-                        </div>
-                        <p className="question-p">¿Es obligatorio completar el formulario de adopcion?</p>
-                    </div>
-                    <p className={`${selectedQuestion === 4 ? 'show-answer' : 'answer'}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur reiciendis officia perferendis tempora quaerat, eveniet eius, harum deleniti nisi velit maiores repellendus quam porro culpa! Unde architecto rem necessitatibus?
-                    </p>
-                </li>
                 </ul>
             </ContentBlock>
         </div>
