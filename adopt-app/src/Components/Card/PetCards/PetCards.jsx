@@ -1,12 +1,11 @@
 import { React, useState } from 'react';
-import { useModal } from 'Components/Modales/useModal';
 import Modal from 'Components/Modales/Modal'
-import Formulario from 'Components/Formularios/Formulario';
 import Card from 'Components/Card/Card';
+import AdoptionForm from 'Components/Forms/AdoptionForm/AdoptForm';
 
 const PetCards = ({ petList }) => {
 
-    const [isOpenModal1, openModal1, closeModal1] = useModal(false);
+    const [isOpenModal1, setIsOpenModal1] = useState(false);
     const [selectPetId, setSelectPetId] = useState(null);
     const [selectPetName, setSelectPetName] = useState(null);
 
@@ -25,14 +24,17 @@ const PetCards = ({ petList }) => {
                         <li key={attribut.attribut.id}>{attribut.attribut.attribut}</li>
                     ))}
                     location={pet.city}
-                    onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); openModal1() }}
+                    onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); setIsOpenModal1(true) }}
                     interested={pet.interested > 0 ? `${pet.interested} interesados`
                         : '0 interesados'}
                 >
                 </Card>
             ))}
-            <Modal isOpen={isOpenModal1} closeModal={closeModal1} selectPetName={selectPetName}>
-                <Formulario petId={selectPetId} closeModal1={closeModal1}></Formulario>
+            <Modal isOpen={isOpenModal1}
+                closeModal={() => { setIsOpenModal1(false) }}
+                selectPetName={selectPetName}
+                modalNumber="1" >
+                <AdoptionForm petId={selectPetId} closeModal1={() => { setIsOpenModal1(false) }}></AdoptionForm>
             </Modal>
         </>
     )

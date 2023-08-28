@@ -24,7 +24,6 @@ const NewPetsSection = () => {
     }, []);
 
     const nextImg = useCallback(() => {
-        console.log('Hola')
         if (slider.current && slider.current.children && petList.length > 0) {
             const firsElement = slider.current.children[0];
             // Se define el movimiento de translacion la longitud de cada card sumado la distancia del margin
@@ -72,7 +71,6 @@ const NewPetsSection = () => {
             // Se detiene el interval si se posiciona el mouse sobre el slider
             const handleMouseOver = () => {
                 clearInterval(sliderInterval.current);
-                console.log('Estoy aca 1')
             };
             // Se reinicia el interval si se quita el mouse sobre el slider
             const handleMouseLeave = () => {
@@ -80,7 +78,6 @@ const NewPetsSection = () => {
                 sliderInterval.current = setInterval(() => {
                     nextImg();
                 }, 7000);
-                console.log('Estoy aca 2')
             };
             // Se llama las funciones mouseover y mouseleave para manejar el comportamiento sobre el slider
             sliderElement.addEventListener('mouseenter', handleMouseOver); 

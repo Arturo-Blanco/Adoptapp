@@ -1,6 +1,6 @@
-import './infoGral.css';
+import './informationPage.css';
 
-const InfoGral = () => {
+const InformationPage = () => {
     return(
        <div>
         <h2>Acá va la página de Información General</h2>
@@ -8,4 +8,4 @@ const InfoGral = () => {
        </div>
     )
 };
-export default InfoGral;
+export default InformationPage;

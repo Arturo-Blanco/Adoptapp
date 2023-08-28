@@ -16,12 +16,11 @@
 }
 .toggle-icon{
     display: flex;
-    margin: auto;
+    margin-right: 1%;
 }
 .question-div {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 .answer {
     text-align: center;
@@ -36,14 +35,12 @@
     font-weight: 600
 }
 .show-answer {
-    text-align: center;
     display: block;
     transition: all .5s ease;
     margin: auto;
     height: 100%;
     opacity: 1;
     padding-top: 2%;
-    width: 90%;
     font-size: 1rem;
     font-weight: 600
 }

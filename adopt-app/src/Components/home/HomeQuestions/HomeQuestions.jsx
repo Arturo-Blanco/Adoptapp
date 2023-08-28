@@ -22,7 +22,7 @@ const HomeQuestions = () => {
             <ContentBlock
                 className="questions"
                 title="¿Querés adoptar pero tenés dudas?"
-                subtitle="Te compartimos las dudas más frecuentes"
+                subtitle="Te compartimos las preguntas más frecuentes"
                 url='https://thumbs.dreamstime.com/b/el-gato-gris-est%C3%A1-leyendo-un-libro-76578319.jpg'>
                 <ul className="questions-list">
                 <li className='question' onClick={() => toggleAnswer(1)}
@@ -55,7 +55,7 @@ const HomeQuestions = () => {
                         </div>
                         <p className="question-p">¿Cuales son los cuidados que debe recibir mi mascota?</p>
                     </div>
-                    <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Desparasitación, Vacunación, Alimentación. Es muy importante que te acerques a un veterinario que pueda recomendarte y enseñarte sobre las vacunas que necesita, cuándo aplicarlas, cómo realizar una correcta desparasitación, según peso, hábitos, edad, y qué alimento cubre las necesidades de tu mascota.
+                    <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Es muy importante que te acerques a un veterinario que pueda recomendarte y enseñarte sobre las vacunas que necesita, cuándo aplicarlas, cómo realizar una correcta desparasitación, según peso, hábitos, edad, y qué alimento cubre las necesidades de tu mascota.
                     </p>
                 </li>
                 </ul>
