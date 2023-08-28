@@ -1,13 +1,13 @@
 @import 'index.css';
 
-.adoption-main {
+.adoption.main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 95%;
     margin: 20px auto;
 }
-.filter-container{
+.adoption.aside{
     width: 15%;
     margin: 20px auto;
     border-radius: 20px;
@@ -16,7 +16,7 @@
     color: white;
     font-family: var(--p-font);
 }
-.cards-container {
+.adoption.content {
     display: flex;
     flex-wrap: wrap;
     width: 85%;
@@ -52,4 +52,13 @@
     display: flex;
     width: max-content;
     height: 3rem;
+}
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
 }
