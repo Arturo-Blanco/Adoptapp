@@ -36,14 +36,12 @@
     font-weight: 600
 }
 .show-answer {
-    text-align: center;
     display: block;
     transition: all .5s ease;
     margin: auto;
     height: 100%;
     opacity: 1;
     padding-top: 2%;
-    width: 90%;
     font-size: 1rem;
     font-weight: 600
 }
