@@ -4,15 +4,16 @@ import axios from 'axios';
 import Modal from 'Components/Modales/Modal';
 import React, { useState } from 'react';
 import { baseUrl } from 'Apis/getMascotas.mjs';
+import './adoptionForm.css'
 
 const locationOptions = [
-  { text: 'Ushuaia',    value: '1' },
-  { text: 'Tolhuin',    value: '2' },
+  { text: 'Ushuaia', value: '1' },
+  { text: 'Tolhuin', value: '2' },
   { text: 'Rio Grande', value: '3' },
 ];
 
 const livingPlaceOptions = [
-  { text: 'Casa',         value: 'casa' },
+  { text: 'Casa', value: 'casa' },
   { text: 'Departamento', value: 'departamento' },
 ];
 
@@ -108,78 +109,86 @@ const AdoptionForm = ({ petId, closeModal1 }) => {
   return (
     <>
       <form className='adoption-form' onSubmit={handleSubmit}>
-        <TextInput
-          label="Nombre"
-          placeholder="Nombre Completo"
-          id="nombre"
-          name="name"
-          value={formData.name}
-          onChange={handleInputChange}
-        />
-        <TextInput
-          label="Apellido"
-          placeholder="Apellido"
-          id="apellido"
-          name="surname"
-          value={formData.surname}
-          onChange={handleInputChange}
-        />
-        <TextInput
-          label="Edad"
-          placeholder="Ingrese su edad"
-          id="edad"
-          name="age"
-          value={formData.age}
-          onChange={handleInputChange}
-        />
-        <TextInput
-          label="Domicilio"
-          placeholder="Ingrese su domicilio"
-          id="domicilio"
-          name="address"
-          value={formData.address}
-          onChange={handleInputChange}
-        />
-        <TextInput
-          label="Email"
-          placeholder="email@correo.com"
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleInputChange}
-        />
-        <TextInput
-          label="Numero de telefono"
-          placeholder="2901xxxxxx"
-          type="number"
-          id="telefono"
-          name="phoneNumber"
-          min="8"
-          value={formData.phone}
-          onChange={handleInputChange}
-        />
-        <div className='checkbox-form'>
-          <InputRadioGroup
-              title="Localidad"
-              options={locationOptions}
-              name="cityId"
-              onChange={handleInputChange}
+        <div className='adoption-form-inputs'>
+          <TextInput
+            className='adoption'
+            label="Nombre"
+            placeholder="Nombre Completo"
+            id="nombre"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
           />
-          <InputRadioGroup
-              title="¿Dónde vive?"
-              options={livingPlaceOptions}
-              name="livingPlace"
-              onChange={handleInputChange}
-            />
-          <InputRadioGroup
-              title="¿Tiene mascota?"
-              options={hasPetOptions}
-              name="hasPet"
-              onChange={handleInputChange}
+          <TextInput
+            className='adoption'
+            label="Apellido"
+            placeholder="Apellido"
+            id="apellido"
+            name="surname"
+            value={formData.surname}
+            onChange={handleInputChange}
+          />
+          <TextInput
+            className='adoption'
+            label="Edad"
+            placeholder="Ingrese su edad"
+            id="edad"
+            name="age"
+            value={formData.age}
+            onChange={handleInputChange}
+          />
+          <TextInput
+            className='adoption'
+            label="Domicilio"
+            placeholder="Ingrese su domicilio"
+            id="domicilio"
+            name="address"
+            value={formData.address}
+            onChange={handleInputChange}
+          />
+          <TextInput
+            className='adoption'
+            label="Email"
+            placeholder="email@correo.com"
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+          />
+          <TextInput
+            className='adoption'
+            label="Numero de telefono"
+            placeholder="2901xxxxxx"
+            type="number"
+            id="telefono"
+            name="phoneNumber"
+            min="8"
+            value={formData.phone}
+            onChange={handleInputChange}
           />
         </div>
-        <div className="contenedorBotonCentrado">
+        <div className='checkbox-form'>
+          <InputRadioGroup
+            title="Localidad"
+            options={locationOptions}
+            name="cityId"
+            onChange={handleInputChange}
+          />
+          <InputRadioGroup
+            title="¿Dónde vive?"
+            options={livingPlaceOptions}
+            name="livingPlace"
+            onChange={handleInputChange}
+          />
+          <InputRadioGroup
+            title="¿Tiene mascota?"
+            options={hasPetOptions}
+            name="hasPet"
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="btn-form-div">
           <button className='btn-adopt-form' type='submit'>Enviar</button>
         </div>
       </form>

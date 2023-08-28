@@ -1,42 +1,40 @@
 import React from 'react'
 import TextInput from 'Components/Inputs/TextInput/TextInput'
+import './donationForm.css';
 //import ComponenteInputOpciones from './InputOpciones'
 
 export const DonationForm = () => {
   return (
     <>
-        <form className='form'>
-            {/* <ComponenteInputOpciones
-            label="Quiero colaborar con"
-            value=""
-            value1="Hogar transitorio"
-            value2="Alimento"
-            value3="Medicamento"
-            value4="Otros"
-            id="tipoColaboracion"
-            name="eleccion"/> */}
-            <TextInput
-            label="Quiero colaborar con"
-            placeholder="Hogar transitorio/Alimento/Medicamento/Otro"
-            id="tipoColaboracion"
-            name="tipoColaboracion"/>
-            <TextInput
-            label="Telefono de contacto"
-            placeholder="02901-xxxxxx "
-            type= "tel"
-            id="telefono"
-            name="telefono"/>
-            <TextInput
-            label="Mail"
-            placeholder="mail@ejemplo.com"
-            type="email"
-            id="mail"
-            name="mail"/>
-            {/* //componente Nuevo que aparece si se selecciona "otros" */}
-            <div className="contenedorBotonCentrado">
-                <button className="boton" type='submit'>Enviar</button>
-            </div>
-        </form>
+      <form className='donation-form'>
+        <div className='donation-options'>
+          <label className='label-options' htmlFor="donation">Quiero colaborar con:</label>
+          <select id='donation' name='donation'>
+            <option value="Alimento">Alimento</option>
+            <option value="Hogar">Hogar transitorio</option>
+            <option value="Medicamentos">Medicamentos</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <TextInput
+          className='donation'
+          label="Telefono de contacto"
+          placeholder="02901-xxxxxx "
+          type="number"
+          id="telefono"
+          name="telefono" />
+        <TextInput
+          className='donation'
+          label="Mail"
+          placeholder="mail@ejemplo.com"
+          type="email"
+          id="mail"
+          name="mail" />
+        {/* //componente Nuevo que aparece si se selecciona "otros" */}
+        <div className="btn-form-donation">
+          <button className="donation-btn" type='submit'>Enviar</button>
+        </div>
+      </form>
     </>
   )
 }

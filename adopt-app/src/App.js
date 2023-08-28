@@ -3,8 +3,8 @@ import Footer from './Components/Footer/footer.jsx';
 import Header from './Components/Header/header.jsx';
 import Home from './Pages/Home/Home.jsx';
 import AdoptPage from './Pages/Adoption/AdoptionPage';
-import InformationPage from 'Pages/Information/InformationPage';
 import ComplaintsPage from 'Pages/Complaints/ComplaintsPage';
+import InformationPage from 'Pages/Information/InformationPage';
 import DonationPage from 'Pages/Donations/DonationPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
