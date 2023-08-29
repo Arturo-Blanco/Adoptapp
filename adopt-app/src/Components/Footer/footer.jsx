@@ -1,8 +1,10 @@
+import ScrollToTop from 'react-scroll-to-top';
 import './footer.css'
 
 const Footer = () => {
     return (
         <footer className='footer' >
+            <ScrollToTop smooth top={1000} width='16px'/>
             <div className="footer-content">
                 <div className="footer-section">
                     <h3 className='contact-title'>Contacto</h3>
