@@ -1,20 +1,7 @@
 @import 'index.css';
 
 .donation.content-page {
-    flex-direction: column;
-    flex-wrap: nowrap;
     width: 75%;
-}
-
-.donation.aside-page {
-    position: absolute;
-    order: 2;
-    top: 80px;
-    right: 0;
-    padding: 3%;
-    font-size: 1.2rem;
-    /*background-color: var(--background-card-color);*/
-    height: 84%;
 }
 
 .donation-form-content {

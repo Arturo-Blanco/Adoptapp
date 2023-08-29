@@ -1,4 +1,5 @@
 @import 'index.css';
+
 .pagination-container {
     display: flex;
     align-items: center;
@@ -6,23 +7,23 @@
     width: 100%;
     height: max-content;
 }
+
 .adoption.aside-page {
     width: 16%;
     margin-right: auto;
     margin-left: 0;
 }
-.adoption.content-page{
+
+.adoption.content-page {
     margin-right: 0;
     width: 82%;
 }
-.adoption.content-page .pet-card {
-    width: 480px;
-    margin-right: 0;
-}
+
 .active-page {
     background-color: var(--main-bg-color);
     color: white;
 }
+
 .not-result-div {
     display: flex;
     align-items: center;
@@ -31,18 +32,22 @@
     margin: 50px auto;
     width: 80%;
 }
+
 .not-result-title {
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
+
 .not-result-img {
     width: 40%;
 }
+
 .buttons-pagination {
     display: flex;
     width: max-content;
     height: 3rem;
 }
+
 .page-not-found {
     display: flex;
     flex-direction: column;
