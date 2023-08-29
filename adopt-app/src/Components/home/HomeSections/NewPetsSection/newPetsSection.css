@@ -21,6 +21,7 @@
 .not-found-title {
     font-size: 2rem;
     margin: auto;
+    text-align: center;
 }
 .not-found-img {
     width: 50%;
