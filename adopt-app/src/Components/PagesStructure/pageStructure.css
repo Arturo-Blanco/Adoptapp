@@ -4,13 +4,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 95%;
+    width: 92%;
     margin: 2% auto;
     position: relative;
     height: max-content;
 }
 .aside-page {
-    width: 15%;
+    width: 20%;
     margin: 3% 0 3% auto ;
     border-radius: 20px;
     height: max-content;
@@ -21,6 +21,6 @@
 .content-page {
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
+    width: 80%;
     margin: 3% auto 3% 0;
 }

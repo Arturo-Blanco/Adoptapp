@@ -6,6 +6,7 @@
     height: 350px;
     margin: 2% auto auto auto;
     background-color: var(--background-card-color);
+    border-radius: 20px;
 }
 
 .img-container-block {

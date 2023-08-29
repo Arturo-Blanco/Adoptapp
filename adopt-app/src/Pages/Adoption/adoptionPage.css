@@ -6,6 +6,19 @@
     width: 100%;
     height: max-content;
 }
+.adoption.aside-page {
+    width: 16%;
+    margin-right: auto;
+    margin-left: 0;
+}
+.adoption.content-page{
+    margin-right: 0;
+    width: 82%;
+}
+.adoption.content-page .pet-card {
+    width: 480px;
+    margin-right: 0;
+}
 .active-page {
     background-color: var(--main-bg-color);
     color: white;
