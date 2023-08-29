@@ -43,3 +43,49 @@
     font-size: 1rem;
     font-weight: 600
 }
+/* Estilos para tablet */
+@media (max-width: 768px) {
+    .questions.container-block {
+        flex-direction: column;
+    }
+
+    .questions-list {
+        align-items: center;
+    }
+
+    .toggle-icon {
+        margin-right: 0;
+        margin-bottom: 1%;
+    }
+    .question {
+        font-size: 1rem;
+    }
+    .answer .show-answer{
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para teléfono móvil */
+@media (max-width: 480px) {
+    .questions.container-block {
+        flex-direction: column;
+    }
+
+    .questions-list {
+        align-items: center;
+        font-size: 0.5rem;
+    }
+
+    .toggle-icon {
+        margin-right: 0;
+        margin-bottom: 1%;
+    }
+
+    .answer {
+        font-size: 0.9rem;
+    }
+
+    .show-answer {
+        font-size: 0.9rem;
+    }
+}
