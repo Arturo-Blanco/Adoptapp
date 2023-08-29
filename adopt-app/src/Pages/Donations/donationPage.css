@@ -1,101 +1,76 @@
-.donacionMain {
-    display: grid;
-    grid-template-columns: 7fr 1fr;
-    gap: 25px;
-    grid-template-areas: 
-    "header header"
-    "formContent sidebar"
-    "donadores sidebar"
-    ;
-    padding: 3rem;
+@import 'index.css';
+
+.donation.content-page {
+    width: 75%;
+}
+
+.donation-form-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: max-content;
+    border-radius: 20px;
+    background-color: var(--background-card-color);
+    padding: 3%;
+    font-size: 1.2rem;
     font-family: var(--p-font);
 }
 
-h2 {
-    font-weight: bold;
-}
-
-.titulo {
-    grid-area: header;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;
-    background-color: var(--main-bg-color);
-    font-family: var(--title-font);
-    color: white;
-    font-size: 3rem;
-    border-radius: 30px;
-    padding-top: 1.5rem;
-    padding-right: 2rem;
-}
-
-.formContainer {
-    grid-area: formContent;
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "form info"
-    ;
-    background-color: var(--background-card-color);
-    border-radius: 30px;
-    padding-top: 1.5rem;
-    padding-right: 2rem;
-
-}
-
-.info {
-    grid-area: info;
+.form-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-bottom: 2rem;
+    width: 40%;
+    margin-left: 4%;
+    height: max-content;
 }
 
-.form {
-    grid-area: form;
-    padding-bottom: 1rem;
+.p-data-info {
+    margin-top: 5%;
 }
 
-.donadoresContainer {
-    grid-area: donadores;
+.colaborators {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
     background-color: var(--background-card-color);
-    border-radius: 30px;
+    margin-top: 4%;
+    overflow: hidden;
+}
+
+.colaborators-img {
+    height: 100%;
+    width: 60%;
+}
+
+.colaborator-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.colaborators-text {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 18rem;
-}
-
-.donadoresContainer div img {
-    padding-top: 3rem;
-    height: 15rem;
-}
-
-.donadoresContainer .text h2 {
-    font-size: 1.5rem;
-}
-
-.infoAside {
-    padding: 1rem;
-    padding-top: 2rem;
-    grid-area: sidebar;
-    background-color: var(--background-card-color);
-    border-radius: 30px;
-}
-
-.contenedorBotonCentrado {
-    padding-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedorBotonCentrado .boton {
-    border-radius: 30px;
-    border-style: solid;
+    justify-content: space-around;
+    padding: 3%;
     text-align: center;
-    height: 2rem;
-    width: 7rem;
+}
+.colaborators-title {
+    font-size: 2rem;
+    font-family: var(--title-font);
+    border-bottom: 1px solid var(--main-bg-color);
+    padding-bottom: 4%;
+}
+.colaborators-p {
+    font-family: var(--p-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.colaborators-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }

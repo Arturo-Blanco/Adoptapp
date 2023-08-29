@@ -1,0 +1,24 @@
+@import 'index.css';
+
+.main-page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: 2% auto;
+    height: max-content;
+}
+.aside-page {
+    width: 20%;
+    margin: 3% 0 3% auto ;
+    border-radius: 20px;
+    height: max-content;
+    background-color:var(--main-bg-color);
+    color: var(--white-color);
+    font-family: var(--p-font);
+}
+.content-page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3% auto 3% 0;
+}

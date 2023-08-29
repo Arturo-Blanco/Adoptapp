@@ -1,6 +1,5 @@
 .match.container-block {
     flex-direction: row-reverse;
-    border-radius: 20px 0 0 20px;
     overflow: hidden;
 }
 .match-text {

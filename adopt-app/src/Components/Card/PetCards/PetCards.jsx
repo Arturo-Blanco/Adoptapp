@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import Modal from 'Components/Modales/Modal'
 import Card from 'Components/Card/Card';
-import AdoptionForm from 'Components/Forms/AdoptionForm/AdoptForm';
+import AdoptionForm from 'Components/Forms/AdoptionForm/AdoptionForm';
 
 const PetCards = ({ petList }) => {
 

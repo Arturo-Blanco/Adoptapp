@@ -1,27 +1,5 @@
 @import 'index.css';
 
-.adoption.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 95%;
-    margin: 20px auto;
-}
-.adoption.aside{
-    width: 15%;
-    margin: 20px auto;
-    border-radius: 20px;
-    height: max-content;
-    background-color:var(--main-bg-color);
-    color: white;
-    font-family: var(--p-font);
-}
-.adoption.content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 85%;
-    margin: auto;
-}
 .pagination-container {
     display: flex;
     align-items: center;
@@ -29,10 +7,23 @@
     width: 100%;
     height: max-content;
 }
+
+.adoption.aside-page {
+    width: 16%;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.adoption.content-page {
+    margin-right: 0;
+    width: 82%;
+}
+
 .active-page {
     background-color: var(--main-bg-color);
     color: white;
 }
+
 .not-result-div {
     display: flex;
     align-items: center;
@@ -41,18 +32,23 @@
     margin: 50px auto;
     width: 80%;
 }
+
 .not-result-title {
     margin-bottom: 20px;
     font-size: 2.5rem;
+    text-align: center;
 }
+
 .not-result-img {
     width: 40%;
 }
+
 .buttons-pagination {
     display: flex;
     width: max-content;
     height: 3rem;
 }
+
 .page-not-found {
     display: flex;
     flex-direction: column;

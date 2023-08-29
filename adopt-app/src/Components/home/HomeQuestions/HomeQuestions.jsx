@@ -23,7 +23,7 @@ const HomeQuestions = () => {
                 className="questions"
                 title="¿Querés adoptar pero tenés dudas?"
                 subtitle="Te compartimos las preguntas más frecuentes"
-                url='https://thumbs.dreamstime.com/b/el-gato-gris-est%C3%A1-leyendo-un-libro-76578319.jpg'>
+                url='https://www.perrospedia.com/wp-content/uploads/2013/05/cachorro-leyendo.jpg'>
                 <ul className="questions-list">
                 <li className='question' onClick={() => toggleAnswer(1)}
                     selected={selectedQuestion === 1}>
