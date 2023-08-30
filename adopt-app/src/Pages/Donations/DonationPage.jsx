@@ -19,7 +19,7 @@ const DonationPage = () => {
                 <aside className='donation-aside'>
                     <p>Somos una organización sin fines de lucro enfocada en el cuidado, crianza y acompañamiento de todas las mascotas. Recordá que en caso de consultas o sugerencias podés comunicarte con nosotros a través de los contactos brindados en el pie de página. Tu ayuda siempre será agradecida.</p>
                 </aside>
-                <section>
+                <section className='donation-form-section'>
                     <div className='donation-form-content'>
                         <DonationForm />
                         <div className='form-info'>

@@ -15,7 +15,6 @@ const ComplaintsPage = () => {
         <main className='complaints-main-page'>
             <SectionStructure className='complaints'
                 sectionTitle="Ayudanos a proteger a los peluditos">
-                <>
                     <aside className='complaints-aside'>
                         <p>En Adoptapp nos comprometemos con la seguridad y proteccion de las mascotas es por  ello que disponemos de una sección exclusiva donde podrás reportar
                             abandonos, maltratos,
@@ -23,12 +22,11 @@ const ComplaintsPage = () => {
                             situación a las autoridades.
                         </p>
                     </aside>
-                    <section>
+                    <section className='complaints-form-section'>
                         <div className='complaints-form-content'>
                             <DonationForm />
                         </div>
                     </section>
-                </>
             </SectionStructure>
             <SectionStructure
                 sectionTitle="Hechos recientes">

@@ -42,7 +42,6 @@ const SearchFilter = ({ setFilters }) => {
     }
     return (
         <>
-            <h3 className="preferences">¿Qué estás buscando?</h3>
             <InputsBox
                 title="Especie">
                 {specieOptions.map((option, index) => (
