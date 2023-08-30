@@ -1,4 +1,3 @@
-import TitleBlock from "Components/Blocks/TitleBlock/TitleBlock";
 import SectionStructure from "Components/home/HomeSections/SectionStructure/SectionStructure";
 import ContentBlock from 'Components/Blocks/ContentBlock/ContentBlock';
 import './informationSection.css';
@@ -6,9 +5,8 @@ import './informationSection.css';
 const InformationSection = () => {
     return (
         <SectionStructure
-        className='information'>
-            <TitleBlock 
-            title='Información'/>
+        className='information'
+            sectionTitle='Información'>
             <ContentBlock 
             className="information"
             title="Campaña de vacunación antirrábica"

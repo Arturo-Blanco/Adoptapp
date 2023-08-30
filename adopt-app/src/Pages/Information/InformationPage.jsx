@@ -1,12 +1,13 @@
 import InformationCard from 'Components/Card/InformationCard/InformationCard';
-import PageStructure from 'Components/PagesStructure/PagesStructure';
 import './informationPage.css';
+import SectionStructure from 'Components/home/HomeSections/SectionStructure/SectionStructure';
 
 const InformationPage = () => {
     return (
-        <PageStructure classNamePage='information'
-            titlePage="Información General"
-            sectionPage={ <>
+        <main className='information-main-page'>
+        <SectionStructure 
+        className='information'
+        sectionTitle="Información General">
                 <InformationCard
                     title='Hiking con mascotas en el Lago Escondido'
                     imageUrl='https://media.istockphoto.com/id/1209875463/es/foto/hermosa-mujer-viajera-sube-cuesta-arriba-con-un-perro-sobre-un-fondo-de-vistas-a-la-monta%C3%B1a.jpg?s=612x612&w=0&k=20&c=hmf5kF434PChMqwownYDwY-ZwJA5PvsqNN5cvHZCe6M='
@@ -27,8 +28,8 @@ const InformationPage = () => {
                     imageUrl='https://media.istockphoto.com/id/534918347/es/foto/m%C3%A9dico-y-un-gato-brit%C3%A1nico-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=_iqWSW-y5hg7Nioqw9bPzyHYcv8KTl_Ybm7RpWF7ZS8='
                     body='Tenemos unos pequeños consejos para que tu gato tenga una mejor salud'
                 />
-                </> }
-        />
+                </SectionStructure>
+            </main>
     )
 };
 export default InformationPage;

@@ -2,9 +2,9 @@ import './donationCard.css';
 
 const DonationCard = ({ urlImg }) => {
     return (
-        <div className='donation-card'>
+        <article className='donation-card'>
             <img className='img-card-donation' src={urlImg} alt='donation-img'/>
-        </div>
+        </article>
     )
 }
 export default DonationCard;

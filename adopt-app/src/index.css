@@ -20,10 +20,8 @@
 *::after {
     box-sizing: border-box;
 }
-
-/* Reapply the pointer cursor for anchor tags */
-a, button {
-    cursor: revert;
+button, a {
+	cursor: pointer;
 }
 
 /* Remove list styles (bullets/numbers) */

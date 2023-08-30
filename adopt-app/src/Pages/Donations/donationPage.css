@@ -1,11 +1,8 @@
 @import 'index.css';
 
-.donation.content-page {
-    width: 75%;
-}
+
 .donation.aside-page {
     width: 22%;
-    padding: 2%;
     font-size: 1.2rem;
 }
 
@@ -16,7 +13,7 @@
     height: max-content;
     border-radius: 20px;
     background-color: var(--background-card-color);
-    padding: 3%;
+    padding: 20px;
     font-size: 1.2rem;
     font-family: var(--p-font);
 }

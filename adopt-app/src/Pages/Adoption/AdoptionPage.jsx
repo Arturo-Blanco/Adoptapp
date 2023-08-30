@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import SearchFilter from 'Components/SearchFilter/SearchFilter';
 import PetCards from 'Components/Card/PetCards/PetCards';
 import PaginationButton from 'Components/PaginationButton/PaginationButton';
-import PageStructure from 'Components/PagesStructure/PagesStructure';
+import SectionStructure from 'Components/home/HomeSections/SectionStructure/SectionStructure';
 import axios from 'axios';
 import NotFoundImg from 'assets/not-found.svg';
 import NotResultImg from 'assets/not-result.svg';
@@ -87,22 +87,24 @@ const AdoptionPage = () => {
     }
 
     return (
-        <PageStructure
-            classNamePage='adoption'
-            titlePage='Ellos te esperan'
-            asidePage={!loadingPage && petList ? <SearchFilter filter={filter} setFilters={setFilters}></SearchFilter> : null}
-            sectionPage={!loadingPage && petList ? (
-                <>
+        <main className='adoption-main-page'>
+            <SectionStructure
+            className='adoption'
+            sectionTitle='Ellos te esperan'>
+                {!loadingPage && petList ? ( <>
+                <aside className='adoption-filter'>
+                <SearchFilter filter={filter} setFilters={setFilters}></SearchFilter>
+                </aside>
                     {petList.length > 0 ? (
+                        <section className='adoption-cards-content'>
                         <PetCards petList={petList} />
+                        </section>
                     ) : (
-                        <div className='not-result-div'>
+                        <section className='not-result-div'>
                         <h3 className='not-result-title'>Disculpe, no hay resultados con sus preferencias de búsqueda.</h3>
                         <img className='not-result-img' src={NotResultImg} alt="not-result" />
-                        </div>
+                        </section>
                     )}
-                </> ) : null }
-            childrenPage={ !loadingPage && petList ? (
                 <div className='pagination-container'>
                     <div className='buttons-pagination'>
                     <PaginationButton
@@ -131,13 +133,15 @@ const AdoptionPage = () => {
                         text="Siguiente"
                     />
                 </div>
-            </div> ) : ( 
+            </div> 
+            </> ) : ( 
                 <div className='page-not-found'>
                     <h3 className='not-found-title'> Un momento por favor, estamos buscando a las mascotas.</h3>
                     <img className='not-found-img' src={NotFoundImg} alt='not-found'></img>
                 </div>
-            )}>
-        </PageStructure>
+            )}
+            </SectionStructure>
+        </main>
     )
 };
 

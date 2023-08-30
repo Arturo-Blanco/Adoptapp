@@ -1,8 +1,7 @@
-import PageStructure from "Components/PagesStructure/PagesStructure";
 import DonationForm from "Components/Forms/DonationForm/DonationForm";
-import TitleBlock from "Components/Blocks/TitleBlock/TitleBlock";
 import InformationCard from "Components/Card/InformationCard/InformationCard";
 import './complaintsPage.css';
+import SectionStructure from "Components/home/HomeSections/SectionStructure/SectionStructure";
 
 const ComplaintsPage = () => {
 
@@ -13,21 +12,27 @@ const ComplaintsPage = () => {
         { urlImg: 'https://images.hola.com/imagenes/estar-bien/20190115135374/california-ley-venta-mascotas-gt/0-634-831/perros-ley-california-t.jpg?tx=w_680', title: 'No al maltrato', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
     ]
     return (
-        <PageStructure classNamePage='complaints'
-            titlePage="Ayudanos a proteger a los peluditos"
-            asidePage={<p>En Adoptapp nos comprometemos con la seguridad y proteccion de las mascotas es por  ello que disponemos de una sección exclusiva donde podrás reportar
-                abandonos, maltratos,
-                extravíos, etc. Solo debes completar el formulario con el tipo de denuncia, un contacto para recibir información imagen y descripción del suceso y nuestro equipo informará la
-                situación a las autoridades.
-            </p>}
-            sectionPage={<>
-                <div className='complaints-form-content'>
-                    <DonationForm />
-                </div>
-            </>}
-            childrenPage={<>
-                <TitleBlock title="Hechos recientes" />
-                <div className='complaints-content'>
+        <main className='complaints-main-page'>
+            <SectionStructure className='complaints'
+                sectionTitle="Ayudanos a proteger a los peluditos">
+                <>
+                    <aside className='complaints-aside'>
+                        <p>En Adoptapp nos comprometemos con la seguridad y proteccion de las mascotas es por  ello que disponemos de una sección exclusiva donde podrás reportar
+                            abandonos, maltratos,
+                            extravíos, etc. Solo debes completar el formulario con el tipo de denuncia, un contacto para recibir información imagen y descripción del suceso y nuestro equipo informará la
+                            situación a las autoridades.
+                        </p>
+                    </aside>
+                    <section>
+                        <div className='complaints-form-content'>
+                            <DonationForm />
+                        </div>
+                    </section>
+                </>
+            </SectionStructure>
+            <SectionStructure
+                sectionTitle="Hechos recientes">
+                <section className='complaints-content'>
                     {complaints.map((complaint, index) => (
                         <InformationCard
                             key={index}
@@ -35,10 +40,9 @@ const ComplaintsPage = () => {
                             title={complaint.title}
                             body={complaint.content} />
                     ))}
-                </div>
-
-            </>}
-        />
+                </section>
+            </SectionStructure>
+        </main>
     )
 }
 export default ComplaintsPage;

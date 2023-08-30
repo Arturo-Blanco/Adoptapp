@@ -3,7 +3,7 @@ import './informationCard.css';
 
 const InformationCard = ({title,imageUrl,body}) =>  {
     return(
-        <div className="cardInfo-container">
+        <article className="cardInfo-container">
             <div className="image-container">
                 <img className='img-card-information'src={imageUrl} alt="" />
             </div>
@@ -22,7 +22,7 @@ const InformationCard = ({title,imageUrl,body}) =>  {
                     </a>
                 </button>
             </div>
-        </div>
+        </article>
     )
 }
 

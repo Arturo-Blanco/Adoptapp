@@ -2,24 +2,24 @@
     background-color: var(--background-card-color);
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    width: calc(50% - 20px);
     height: 230px;
-    margin: 0 auto 2% auto;
     border-radius: 20px;
     transition: 0.5s ease all;
     opacity: 0.9;
     font-family: 'Gilroy-Regular', sans-serif;
     overflow: hidden;
+    margin: auto;
 }
 
 .pet-card:hover {
     box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5);
     opacity: 1;
+}
 
-    .description-btn {
-        opacity: 1;
-        transition: 0.5s ease all;
-    }
+.pet-card:hover .description-btn {
+    opacity: 1;
+    transition: 0.5s ease all;
 }
 
 .img-description-container {
@@ -28,6 +28,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .card-content {
     height: 90%;
     width: 40%;
@@ -38,6 +39,7 @@
     margin: auto;
     position: relative;
 }
+
 .card-title {
     display: flex;
     align-items: center;
@@ -53,15 +55,18 @@
     width: 80%;
     text-align: center;
 }
+
 .pet-description {
     font-size: 1.2rem;
 }
+
 .card-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center center;
 }
+
 .img-sex-div {
     top: 0;
     right: 8px;
@@ -69,6 +74,7 @@
     height: 1.8rem;
     position: absolute;
 }
+
 .img-sex {
     width: 100%;
     height: 100%;
@@ -93,7 +99,7 @@
 }
 
 .pet-interested {
-    font-size: 1rem
+    font-size: 1rem;
 }
 
 .div-description {
@@ -128,6 +134,6 @@
     border-radius: 0 0 5px 5px;
     padding: 2px;
     cursor: pointer;
-    color: rgb(240, 240, 247);
+    color: var(--white-color);
     opacity: 0;
 }

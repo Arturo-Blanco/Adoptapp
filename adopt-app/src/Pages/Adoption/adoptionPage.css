@@ -8,14 +8,18 @@
     height: max-content;
 }
 
-.adoption.aside-page {
+.adoption-filter {
     width: 18%;
+    border-radius: 20px;
     background-color: var(--main-bg-color);
     color: var(--white-color);
 }
 
-.adoption.content-page {
-    width: 80%;
+.adoption-cards-content {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
 }
 
 .active-page {

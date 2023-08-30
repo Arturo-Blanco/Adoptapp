@@ -87,7 +87,6 @@
 
 .newsletter-btn {
     border: 1px solid var(--white-color);
-    background-color: var(--background-card-color);
     width: 25%;
     cursor: pointer;
     height: 30px;
