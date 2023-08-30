@@ -1,0 +1,54 @@
+.denuncias-list{
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* denuncias.css */
+
+.denuncias {
+    padding: 20px;
+  }
+  
+  .container-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .denuncias-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .containerInformation {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .containerFormDenuncia {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para la paginación */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .card-fixed-height {
+    height: 200px; /* Ajusta esta altura a tu preferencia */
+    overflow: hidden; /* Para recortar contenido si es necesario */
+  }
+  
