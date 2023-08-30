@@ -1,15 +1,27 @@
-.complaints.aside-page {
-    width: 20%;
-    padding: 2%;
-}
-.complaints.content-page {
-    width: 75%;
-    height: 100%;
+.complaints-aside{
+    order: 2;
+    width: 22%;
+    font-size: 1.2rem;
+    font-family: var(--p-font);
     background-color: var(--background-card-color);
+    text-align: center;
+    padding: 20px;
     border-radius: 20px;
 }
+.complaints-form-section {
+    flex: 1;
+    margin-right: 20px;
+    
+}
 .complaints-form-content {
+    background-color: var(--background-card-color);
+    padding: 20px;
     width: 100%;
+    border-radius: 20px;
+}
+.complaints-aside,
+.complaints-form-content {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .complaints-content {
     display: grid;
