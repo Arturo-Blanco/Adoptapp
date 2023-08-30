@@ -23,7 +23,7 @@ export const Modal = ({ children, isOpen, closeModal, selectPetName, modalNumber
                 {modalNumber === "1" ? (
                     <>
                         <div className='modal-title-content'>
-                            <p className='modal-title'>Esta interesado en adoptar a {selectPetName}.</p>
+                            <p className='modal-title'>Está interesado en adoptar a {selectPetName}.</p>
                             <p className='modal-text'>Complete el formulario con sus datos y nos comunicaremos a la brevedad.</p>
                         </div>
                         <div className='modal-img-container'>

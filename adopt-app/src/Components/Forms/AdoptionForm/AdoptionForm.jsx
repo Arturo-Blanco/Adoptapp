@@ -81,13 +81,24 @@ const AdoptionForm = ({ petId, closeModal1 }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Se verifica formato de email y telefono
-    const validateEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-    const validatePhone = /^\d{8,}$/;
-    const isValidForm = validateForm(formData) && validateEmail.test(formData.email) &&
-      validatePhone.test(formData.phoneNumber) && formData.age >= 21;
+    const isValidForm = validateForm(formData);
+    const validateEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(formData.email)
+    const validatePhone = /^\d{8,}$/.test(formData.phoneNumber);
 
     if (!isValidForm) {
-      alert('Por favor ingrese los datos correctamente');
+      alert('Por favor complete los datos para enviar el formulario');
+      return;
+    }
+    if (!validateEmail) {
+      alert('Ingrese una direccíon de correo válido.');
+      return;
+    }
+    if (!validatePhone) {
+      alert('Ingrese una número de telefóno válido.');
+      return;
+    }
+    if (formData.age <= 21) {
+      alert('Debe ser mayor de 21 años para poder solicitar una mascota.');
       return;
     }
     // Si pasa las verificaciones se envia el formulario
@@ -129,7 +140,7 @@ const AdoptionForm = ({ petId, closeModal1 }) => {
             onChange={handleInputChange}
           />
           <TextInput
-            className='adoption'
+            className={`adoption`}
             label="Edad"
             placeholder="Ingrese su edad"
             id="edad"
@@ -147,7 +158,7 @@ const AdoptionForm = ({ petId, closeModal1 }) => {
             onChange={handleInputChange}
           />
           <TextInput
-            className='adoption'
+            className={`adoption`}
             label="Email"
             placeholder="email@correo.com"
             type="email"
@@ -157,7 +168,7 @@ const AdoptionForm = ({ petId, closeModal1 }) => {
             onChange={handleInputChange}
           />
           <TextInput
-            className='adoption'
+            className={`adoption`}
             label="Numero de telefono"
             placeholder="2901xxxxxx"
             type="number"
