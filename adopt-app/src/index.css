@@ -112,9 +112,9 @@ html {
 
 :root {
     --main-bg-color : #28b95f;
-    /*--main-bg-color : #149d4f;*/
-    --background-color: #c9c9cc;
-    --background-card-color: #9a9b9c62;
+    --background-color: #f1f1f8;
+    --background-card-color: #fafafa;
+    /*--background-card-color: #9a9b9c62;*/
     --title-font: 'Mona-Sans', sans-serif;
     --p-font: 'Gilroy-Regular', sans-serif;
     --white-color: white;

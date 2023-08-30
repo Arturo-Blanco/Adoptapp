@@ -9,14 +9,13 @@
 }
 
 .adoption.aside-page {
-    width: 16%;
-    margin-right: auto;
-    margin-left: 0;
+    width: 18%;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
 }
 
 .adoption.content-page {
-    margin-right: 0;
-    width: 82%;
+    width: 80%;
 }
 
 .active-page {

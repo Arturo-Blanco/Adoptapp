@@ -8,6 +8,7 @@
     height: 80px;
     background-color: var(--main-bg-color);
     text-align: center;
+    margin: 2% auto;
 }
 .title-section-block {
     font-size: 3rem;

@@ -1,7 +1,7 @@
 @import './index.css';
 
 body {
-	background-color: rgb(241, 241, 237);
+	background-color: rgba(220, 220, 220, 0.705);
 }
 button {
 	cursor: pointer;
