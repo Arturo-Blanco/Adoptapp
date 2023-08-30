@@ -1,4 +1,3 @@
-import TitleBlock from 'Components/Blocks/TitleBlock/TitleBlock';
 import SectionStructure from 'Components/home/HomeSections/SectionStructure/SectionStructure';
 import PetCards from 'Components/Card/PetCards/PetCards';
 import NotFoundImg from 'assets/not-found.svg'
@@ -94,9 +93,8 @@ const NewPetsSection = () => {
 
     return (
         <SectionStructure
-            className='new-pets'>
-            <TitleBlock
-                title='Ellos son los nuevos miembros de nuestra familia' />
+            className='new-pets'
+            sectionTitle='Ellos son los nuevos miembros de nuestra familia'>
             <div className='home-cards-container'>
                 {petList && petList.length > 0 ? (
                     <>

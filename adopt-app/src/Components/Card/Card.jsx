@@ -22,7 +22,7 @@ const Card = (props) => {
     })
 
     return (
-        <div className='pet-card' ref={isShowDescription}>
+        <article className='pet-card' ref={isShowDescription}>
             <div className='img-description-container'>
                 <img className='card-img' src={petImg} alt='Mascota'></img>
                 <div className='div-description'>
@@ -47,7 +47,7 @@ const Card = (props) => {
                 </button>
                 <p className="pet-interested"> {interested}</p>
             </div>
-        </div>
+        </article>
     )
 }
 export default Card;

@@ -1,4 +1,3 @@
-import TitleBlock from 'Components/Blocks/TitleBlock/TitleBlock';
 import ContentBlock from 'Components/Blocks/ContentBlock/ContentBlock';
 import SectionStructure from 'Components/home/HomeSections/SectionStructure/SectionStructure';
 import './matchSection.css';
@@ -6,9 +5,8 @@ import './matchSection.css';
 const MatchSection = () => {
     return (
         <SectionStructure
-        className='match'>
-            <TitleBlock 
-            title='Ya hicieron match'/>
+        className='match'
+        sectionTitle='Ya hicieron match'>
             <ContentBlock
             className="match"
             title="Ellos ya encontraron un hogar donde le brinden amor."
