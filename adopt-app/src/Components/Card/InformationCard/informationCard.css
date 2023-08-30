@@ -27,16 +27,14 @@
 .cardInfo-content{
     margin: 1rem;
     margin-top: 0.5rem;
+    height: 35%;
+    overflow: hidden;
 }
 .cardInfo-h3{
     font-size: 1.5em;
 }
 .cardInfo-p{
     font-size: 1em;
-}
-.cardInfo-h3,.cardInfo-p{
-    margin: 0;
-    padding: 0;
 }
 .cardInfo-title{
     margin-bottom: 0.5rem;
@@ -53,4 +51,26 @@
     background-color: var(--main-bg-color);
     color: var(--white-color);
     margin: 5%;
+}
+.information-modal-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--main-bg-color);
+    padding-bottom: 10px;
+}
+.content-modal-img {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 60%;
+    height: 40%;
+    float: right;
+    margin-left: 20px;
+}
+.information-modal-text {
+    font-size: 1rem;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
 }

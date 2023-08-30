@@ -10,6 +10,7 @@ export const Modal = ({ children, isOpen, closeModal, selectPetName, modalNumber
     const handLeClick = (event) => {
         event.stopPropagation()
     }
+
     return ReactDOM.createPortal(
         <div className={`modal-${modalNumber} ${isOpen && `is-open`}`} onClick={closeModal}>
             <div className={`modal-container`} onClick={handLeClick}>
@@ -32,9 +33,6 @@ export const Modal = ({ children, isOpen, closeModal, selectPetName, modalNumber
                     </>
                 ) : (
                     <>
-                        <div className='modal-img-container'>
-                            <img className='modal-img' src={ModalImg} alt='modalImg'></img>
-                        </div>
                         {children}
                     </>
                 )}

@@ -1,7 +1,8 @@
 @import 'index.css';
 
 .modal-1,
-.modal-2 {
+.modal-2,
+.modal-3{
     position: fixed;
     z-index: 999;
     top: 0;
@@ -16,7 +17,8 @@
 }
 
 .modal-1.is-open,
-.modal-2.is-open {
+.modal-2.is-open,
+.modal-3.is-open {
     display: flex;
 }
 
