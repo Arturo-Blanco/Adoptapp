@@ -115,7 +115,7 @@ const NewPetsSection = () => {
 
                         <div className='btn-see-more-container'>
                             <button className='btn-see-more' id='btn-see-more' onClick={scrollToTop}>
-                                <Link to='/adopciones/mascotas' >Ver mas</Link>
+                                <Link to='/adopciones/mascotas' >Ver más</Link>
                             </button>
                         </div>
                     </>

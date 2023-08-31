@@ -22,7 +22,7 @@ const InformationCard = ({ title, imageUrl, body }) => {
             </div>
             <div className="btn">
                 <button onClick={() => setIsOpenModal3(true)}>
-                    Leer Mas
+                    Leer más
                 </button>
             </div>
             <Modal modalNumber='3' isOpen={isOpenModal3} closeModal={() => { setIsOpenModal3(false) }}>
