@@ -16,7 +16,7 @@ const HomeRequirement = () => {
                     <li className="requirement-li">La seguridad de las mascotas es nuestra prioridad.</li>
                     <li className="requirement-li">Cada solicitud es evaluada por especialistas para garantizar una adopción segura y responsable.</li>
                 </ul>
-                </ContentBlock>
+                </ContentBlock>  
         </div>
     )
 }
