@@ -66,54 +66,16 @@ const HomeQuestions = () => {
                 subtitle="Contamos con 9 razones para que adoptar sea la mejor eleccion"
                 url='https://images.pexels.com/photos/9942475/pexels-photo-9942475.jpeg?auto=compress&cs=tinysrgb&w=600'>
                 <ul className="questions-list">
-                <li className='question' onClick={() => toggleAnswer(1)}
-                    selected={selectedQuestion === 1}>
-                    <div className="question-div">
-                        <div className="toggle-icon">
-                            {selectedQuestion === 1 ?  plusIcon  :  lessIcon }
-                        </div>
-                        <p className="question-p">1.Evita la superpoblación</p>
-                    </div>
-                    <p className={`${selectedQuestion === 1 ? 'show-answer' : 'answer'}`} > Al adoptar se contribuye a reducir la superpoblación, ya que si se compra una mascota se quita la oportunidad 
-        de brindarle el refugio y cariño a una mascota de la calle indefensa
-                    </p>
-                </li>
-                <li className='question' onClick={() => toggleAnswer(2)}
-                    selected={selectedQuestion === 2}>
-                    <div className="question-div">
-                        <div className="toggle-icon">
-                            {selectedQuestion === 2 ? plusIcon : lessIcon }
-                        </div>
-                        <p className="question-p">2.Una vida no tiene precio</p>
-                    </div>
-                    <p className={`${selectedQuestion === 2 ? 'show-answer' : 'answer'}`} > Los animales sienten y sufren, por tanto deberíamos abandonar el pensamiento de ver a una mascota como un producto
-        que se consigue a cualquier precio.
-        Al comprar una se afianza sobre la creencia de poder mercantilizar animales sin importar su integridad
-                    </p>
-                </li>
-                <li className='question' onClick={() => toggleAnswer(3)}
-                    selected={selectedQuestion === 3}>
-                    <div className="question-div">
-                        <div className="toggle-icon">
-                            {selectedQuestion === 3 ? plusIcon : lessIcon }
-                        </div>
-                        <p className="question-p">3.Estarás ayudando a otro animal de la calle</p>
-                    </div>
-                    <p className={`${selectedQuestion === 3 ? 'show-answer' : 'answer'}`}>Las personas que se llevan a un gato o perro de un refugio animal, colaboran con el rescate de otros animales,
-        ya que estos centros de adopcion renuevan un espacio para otro animales que estén en peligro o abandono
-                    </p>
-                </li>
                 <li className='question' onClick={() => toggleAnswer(4)}
                     selected={selectedQuestion === 4}>
                     <div className="question-div">
                         <div className="toggle-icon">
-                            {selectedQuestion === 4 ? plusIcon : lessIcon }
+                            {selectedQuestion === 4 ?  plusIcon  :  lessIcon }
                         </div>
-                        <p className="question-p">4.No se incita a la venta animal</p>
+                        <p className="question-p">1.Evita la superpoblación</p>
                     </div>
-                    <p className={`${selectedQuestion === 4 ? 'show-answer' : 'answer'}`}>La comercializacion animal fortalece el maltrato y trafico animal. 
-        Quienes organizan esto, no respetan el ciclo de reproducción de las hembras,                 
-        lo que produce problemas en el desarrollo de la vida de los propios animales
+                    <p className={`${selectedQuestion === 4 ? 'show-answer' : 'answer'}`} > Al adoptar se contribuye a reducir la superpoblación, ya que si se compra una mascota se quita la oportunidad 
+        de brindarle el refugio y cariño a una mascota de la calle indefensa
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(5)}
@@ -122,10 +84,10 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 5 ? plusIcon : lessIcon }
                         </div>
-                        <p className="question-p">5.Los animales de refugio no son agresivos</p>
+                        <p className="question-p">2.Una vida no tiene precio</p>
                     </div>
-                    <p className={`${selectedQuestion === 5 ? 'show-answer' : 'answer'}`}> Los animales al convivir con personas y con otros de su especie, 
-        se vuelven mas tolerantes y pacíficos, mas allá de que cada mascota tiene su propio caracter
+                    <p className={`${selectedQuestion === 5 ? 'show-answer' : 'answer'}`} > Los animales sienten y sufren.
+        Al comprar una se afianza sobre la creencia de poder mercantilizar animales sin importar su integridad
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(6)}
@@ -134,10 +96,10 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 6 ? plusIcon : lessIcon }
                         </div>
-                        <p className="question-p"> 6.Variedad de opciones</p>
+                        <p className="question-p">3.Estarás ayudando a otro animal de la calle</p>
                     </div>
-                    <p className={`${selectedQuestion === 6 ? 'show-answer' : 'answer'}`}> Se puede escoger de diferentes tamaños y edades, de acuerdo al gusto, el tiempo, 
-        paciencia y experiencia propia
+                    <p className={`${selectedQuestion === 6 ? 'show-answer' : 'answer'}`}>Las personas que se llevan a un gato o perro de un refugio animal, colaboran con el rescate de otros animales,
+        ya que estos centros de adopcion renuevan un espacio para otro animales que estén en peligro o abandono
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(7)}
@@ -146,10 +108,11 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 7 ? plusIcon : lessIcon }
                         </div>
-                        <p className="question-p">7.Son los animales más cariñosos</p>
+                        <p className="question-p">4.No se incita a la venta animal</p>
                     </div>
-                    <p className={`${selectedQuestion === 7 ? 'show-answer' : 'answer'}`}>Ellos reconocen quién les quiere y agradecen esta oportunidad, por esta razón 
-        estos animalitos serán los más fieles
+                    <p className={`${selectedQuestion === 7 ? 'show-answer' : 'answer'}`}>La comercializacion animal fortalece el maltrato y trafico animal. 
+        Quienes organizan esto, no respetan el ciclo de reproducción de las hembras,                 
+        lo que produce problemas en el desarrollo de la vida de los propios animales
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(8)}
@@ -158,11 +121,10 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 8 ? plusIcon : lessIcon }
                         </div>
-                        <p className="question-p">8.Adoptarás a una mascota sola</p>
+                        <p className="question-p">5.Los animales de refugio no son agresivos</p>
                     </div>
-                    <p className={`${selectedQuestion === 8 ? 'show-answer' : 'answer'}`}>Los refugios en la mayoría de los casos se responsabilizan de tener a los animales 
-        lo mas saludable posible para que el adoptante no tenga dificultades o dudas a la hora de llevarse 
-        una mascota a sus hogares
+                    <p className={`${selectedQuestion === 8 ? 'show-answer' : 'answer'}`}> Los animales al convivir con personas y con otros de su especie, 
+        se vuelven mas tolerantes y pacíficos, mas allá de que cada mascota tiene su propio caracter
                     </p>
                 </li>
                 <li className='question' onClick={() => toggleAnswer(9)}
@@ -171,9 +133,46 @@ const HomeQuestions = () => {
                         <div className="toggle-icon">
                             {selectedQuestion === 9 ? plusIcon : lessIcon }
                         </div>
+                        <p className="question-p"> 6.Variedad de opciones</p>
+                    </div>
+                    <p className={`${selectedQuestion === 9 ? 'show-answer' : 'answer'}`}> Se puede escoger de diferentes tamaños y edades, de acuerdo al gusto, el tiempo, 
+        paciencia y experiencia propia
+                    </p>
+                </li>
+                <li className='question' onClick={() => toggleAnswer(10)}
+                    selected={selectedQuestion === 10}>
+                    <div className="question-div">
+                        <div className="toggle-icon">
+                            {selectedQuestion === 10 ? plusIcon : lessIcon }
+                        </div>
+                        <p className="question-p">7.Son los animales más cariñosos</p>
+                    </div>
+                    <p className={`${selectedQuestion === 10 ? 'show-answer' : 'answer'}`}>Ellos reconocen quién les quiere y agradecen esta oportunidad, por esta razón 
+        estos animalitos serán los más fieles
+                    </p>
+                </li>
+                <li className='question' onClick={() => toggleAnswer(11)}
+                    selected={selectedQuestion === 11}>
+                    <div className="question-div">
+                        <div className="toggle-icon">
+                            {selectedQuestion === 11 ? plusIcon : lessIcon }
+                        </div>
+                        <p className="question-p">8.Adoptarás a una mascota sola</p>
+                    </div>
+                    <p className={`${selectedQuestion === 11 ? 'show-answer' : 'answer'}`}>Los refugios en la mayoría de los casos se responsabilizan de tener a los animales 
+        lo mas saludable posible para que el adoptante no tenga dificultades o dudas a la hora de llevarse 
+        una mascota a sus hogares
+                    </p>
+                </li>
+                <li className='question' onClick={() => toggleAnswer(12)}
+                    selected={selectedQuestion === 12}>
+                    <div className="question-div">
+                        <div className="toggle-icon">
+                            {selectedQuestion === 12 ? plusIcon : lessIcon }
+                        </div>
                         <p className="question-p">9.Encontrarás un compañero único</p>
                     </div>
-                    <p className={`${selectedQuestion === 9 ? 'show-answer' : 'answer'}`}>Los animales tienen una sensibilidad especial y sienten nuestras vibras y energias;
+                    <p className={`${selectedQuestion === 12 ? 'show-answer' : 'answer'}`}>Los animales tienen una sensibilidad especial y sienten nuestras vibras y energias;
         la mascota se amoldará al dueño y también imitará algunas actitudes nuestras
                     </p>
                 </li>
