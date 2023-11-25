@@ -23,7 +23,11 @@ const PetCards = ({ petList }) => {
                     attribute={pet.attributes.map((attribut) => (
                         <li key={attribut.attribut.id}>{attribut.attribut.attribut}</li>
                     ))}
+                    // attribute={pet.attributes.map((attribut, index) => (
+                    //     <li key={index}>{attribut}</li>
+                    // ))}
                     location={pet.city}
+                    // location={pet.institution.name}
                     onClick={() => { setSelectPetId(pet.id); setSelectPetName(pet.name); setIsOpenModal1(true) }}
                     interested={pet.interested > 0 ? `${pet.interested} interesados`
                         : '0 interesados'}
