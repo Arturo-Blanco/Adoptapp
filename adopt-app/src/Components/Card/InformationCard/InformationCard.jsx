@@ -3,7 +3,7 @@ import './informationCard.css';
 import { useState } from "react";
 import Modal from "Components/Modales/Modal";
 
-const InformationCard = ({ title, imageUrl, body }) => {
+const InformationCard = ({ title, imageUrl, body, imageUrlBody }) => {
 
     const [isOpenModal3, setIsOpenModal3] = useState(false);
 
@@ -30,7 +30,7 @@ const InformationCard = ({ title, imageUrl, body }) => {
                     <div className='modal-content'>
                         <h2 className='information-modal-title'>{title}</h2>
                         <div className='content-modal-img'>
-                            <img className='' src={imageUrl} alt="" />
+                            <img className='' src={imageUrlBody ? imageUrlBody : imageUrl} alt="" />
                         </div>
                         <div className='information-modal-text'>{body}</div>
                     </div>
